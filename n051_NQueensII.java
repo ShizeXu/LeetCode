@@ -35,7 +35,7 @@ public class n051_NQueensII {
 		}
 		cnt *= 2;
 		if (n % 2 == 1) {
-			res[0] = n / 2;
+			res[0] = n / 2; // put at the middle
 			cnt += subCnt(res, n, 1);
 		}
 		return cnt;

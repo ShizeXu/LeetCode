@@ -1,6 +1,12 @@
 package LeetCode;
 
 public class n030_NextPermutation {
+	void swap(int[] num, int x, int y) {
+		int tmp = num[x];
+		num[x] = num[y];
+		num[y] = tmp;
+	}
+
 	public void nextPermutation(int[] num) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
@@ -11,21 +17,14 @@ public class n030_NextPermutation {
 		while (i > 0 && num[i] <= num[i - 1])
 			i--;
 		int j = n - 1;
-		int t;
 		if (i > 0) {
 			while (num[j] <= num[i - 1])
 				j--;
-			t = num[j];
-			num[j] = num[i - 1];
-			num[i - 1] = t;
+			swap(num, j, i - 1);
 		}
 		j = n - 1;
 		while (i < j) {
-			t = num[j];
-			num[j] = num[i];
-			num[i] = t;
-			i++;
-			j--;
+			swap(num, i++, j--);
 		}
 	}
 }

@@ -9,10 +9,7 @@ public class n050_NQueens {
 			for (int i = 0; i < n; i++) {
 				StringBuilder sb = new StringBuilder();
 				for (int j = 0; j < n; j++) {
-					if (j == res[i])
-						sb.append('Q');
-					else
-						sb.append('.');
+					sb.append(j == res[i] ? 'Q' : '.');
 				}
 				tmp[i] = sb.toString();
 			}

@@ -35,7 +35,7 @@ public class n056_InsertInterval {
 			return intervals;
 		}
 		int tmpL = intervals.get(i).start;
-		int l = (tmpL <= newInterval.start ? tmpL : newInterval.start);
+		int l = Math.min(tmpL, newInterval.start);
 		// 第二步，找到右端点
 		while (i < n && intervals.get(i).end <= newInterval.end) {
 			i++;

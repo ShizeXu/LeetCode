@@ -21,21 +21,13 @@ public class n002_MedianofTwoSortedArrays {
 				return (A[i] + Math.max(A[i - 1], B[j])) / 2.0;
 			else if (i > 0)
 				return (A[i] + A[i - 1]) / 2.0;
-			else
-				return (A[i] + B[j]) / 2.0;
+			return (A[i] + B[j]) / 2.0;
 		}
 	}
 
 	public double findMedianSortedArrays(int A[], int B[]) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		int m = A.length;
-		int n = B.length;
-		if (m == 0) {
-			return n % 2 == 1 ? B[n / 2] : (B[n / 2 - 1] + B[n / 2]) / 2.0;
-		} else if (n == 0) {
-			return m % 2 == 1 ? A[m / 2] : (A[m / 2 - 1] + A[m / 2]) / 2.0;
-		}
-		return findMedian(A, B, 0, m - 1);
+		return findMedian(A, B, 0, A.length - 1);
 	}
 }

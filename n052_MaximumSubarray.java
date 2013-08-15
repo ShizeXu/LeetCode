@@ -10,7 +10,7 @@ public class n052_MaximumSubarray {
 		if (n < 1)
 			return 0;
 		maxLast[0] = A[0];
-		max[0] = A[0]; // 若无要求至少一个元素，这里是Math.max(0, A[0])
+		max[0] = A[0]; // 若不要求至少一个元素，这里是Math.max(0, A[0])
 		for (int i = 1; i < n; i++) {
 			maxLast[i] = Math.max(A[i], A[i] + maxLast[i - 1]);
 			max[i] = Math.max(maxLast[i], max[i - 1]);

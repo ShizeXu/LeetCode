@@ -4,23 +4,23 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class n038_CombinationSum {
-	public boolean subCombine(ArrayList<ArrayList<Integer>> resArr,
+	public void subCombine(ArrayList<ArrayList<Integer>> resArr,
 			ArrayList<Integer> res, int[] candidates, int t, int index) {
-		if (t == 0)
-			return true;
-		int n = candidates.length;
-		for (int i = index; i < n; i++) {
-			int val = candidates[i];
-			if (val <= t) {
-				res.add(val);
-				if (subCombine(resArr, res, candidates, t - val, i))
-					resArr.add((ArrayList<Integer>) res.clone());
-				res.remove(res.size() - 1);
-			} else {
-				break; // ¼ôÖ¦
-			}
+		if (t == 0) {
+			resArr.add(new ArrayList<Integer>(res));
+			return;
 		}
-		return false;
+		int n = candidates.length;
+		if (index == n) // Fail
+			return;
+		if (candidates[index] <= t) {
+			res.add(candidates[index]);
+			subCombine(resArr, res, candidates, t - candidates[index], index);
+			res.remove(res.size() - 1);
+		} else {
+			return; // ¼ôÖ¦
+		}
+		subCombine(resArr, res, candidates, t, index + 1);
 	}
 
 	public ArrayList<ArrayList<Integer>> combinationSum(int[] candidates,

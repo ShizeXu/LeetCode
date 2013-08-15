@@ -20,22 +20,23 @@ public class n024_ReverseNodesinKGroup {
 		root.next = head;
 		ListNode pre = root;
 		ListNode cur = head;
-		Boolean flag = true;
 		while (true) {
 			ListNode tmp = cur;
-			for (int i = 0; i < k; i++) {
+			int i = 0;
+			// whether can rotate
+			for (i = 0; i < k; i++) {
 				if (tmp == null) {
-					flag = false;
 					break;
 				}
 				tmp = tmp.next;
 			}
-			if (flag != true)
+			if (i < k)
 				break;
+			// rotate
 			ListNode remain = cur;
 			tmp = cur.next;
 			ListNode suf = null;
-			for (int i = 0; i < k - 1; i++) {
+			for (i = 0; i < k - 1; i++) {
 				suf = tmp.next;
 				tmp.next = cur;
 				cur = tmp;

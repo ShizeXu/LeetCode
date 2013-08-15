@@ -49,6 +49,7 @@ public class n018_LetterCombinationsofaPhoneNumber {
 			tmpArr.add("");
 			return tmpArr;
 		}
+
 		int ind = digits.charAt(0) - 48;
 		ArrayList<String> suf = recurse(digits.substring(1), arr);
 		int m = suf.size();

@@ -7,8 +7,8 @@ public class n026_RemoveElement {
 		int n = A.length;
 		int m = 0;
 		for (int i = 0; i < n; i++) {
-			if (elem != A[i]) {
-				A[m++] = A[i];
+			if (elem != A[i] && (m++) < i) {
+				A[m - 1] = A[i];
 			}
 		}
 		return m;

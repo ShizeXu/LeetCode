@@ -44,7 +44,7 @@ public class n036_SudokuSolver {
 				board[p][q] = (char) ('0' + 1 + i);
 				if (subSolve(board)) // SUCCESS
 					return true;
-				board[p][q] = '.';
+				board[p][q] = '.'; // Back-trace
 			}
 		}
 		return false; // FAIL

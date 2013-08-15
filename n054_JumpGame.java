@@ -6,15 +6,15 @@ public class n054_JumpGame {
 		// DO NOT write main() function
 		int n = A.length;
 		int far = 0;
-		for (int i = 0; i < n - 1; i++) {
+		for (int i = 0; i < n; i++) {
 			if (i <= far) { // 该节点能到达
-				if (i + A[i] > far) {
-					far = i + A[i];
-				}
+				far = Math.max(i + A[i], far);
+				if (far >= n - 1)
+					return true;
 			} else { // 该节点不可到达
 				break;
 			}
 		}
-		return (far >= n - 1);
+		return false;
 	}
 }

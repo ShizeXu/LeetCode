@@ -13,12 +13,10 @@ public class n033_SearchforaRange {
 			return sub_search(A, m + 1, r, t, isLeft);
 		if (A[m] > t)
 			return sub_search(A, l, m - 1, t, isLeft);
-		else {
-			if (isLeft)
-				return sub_search(A, l, m - 1, t, isLeft);
-			else
-				return sub_search(A, m + 1, r, t, isLeft);
-		}
+		// else if A[m]==t
+		if (isLeft)
+			return sub_search(A, l, m - 1, t, isLeft);
+		return sub_search(A, m + 1, r, t, isLeft);
 	}
 
 	public int[] searchRange(int[] A, int target) {

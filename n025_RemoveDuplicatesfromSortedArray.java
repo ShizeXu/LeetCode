@@ -19,7 +19,7 @@ public class n025_RemoveDuplicatesfromSortedArray {
 				prev = A[i];
 				A[m] = A[i];
 				m++;
-			}
+			} // else continue
 		}
 		return m;
 	}

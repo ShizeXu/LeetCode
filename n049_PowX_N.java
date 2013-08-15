@@ -11,7 +11,7 @@ public class n049_PowX_N {
 			n = -n;
 		}
 		while (n > 0) {
-			if ((n ^ (n - 1)) == 1)
+			if ((n ^ (n - 1)) == 1) // n%2==1
 				res *= x;
 			n >>= 1;
 			x *= x;
