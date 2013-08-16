@@ -28,7 +28,7 @@ public class n073_SetMatrixZeroes {
 				if (matrix[i][j] == 0) {
 					matrix[i][0] = 0;
 					matrix[0][j] = 0;
-					// 这里不能break
+					// should not break
 				}
 			}
 		}

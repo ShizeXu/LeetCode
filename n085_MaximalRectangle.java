@@ -1,5 +1,6 @@
 package LeetCode;
 
+
 public class n085_MaximalRectangle {
 	public int maximalRectangle(char[][] matrix) {
 		int m = matrix.length;
@@ -20,7 +21,7 @@ public class n085_MaximalRectangle {
 			for (int j = 0; j < n; ++j) {
 				if (matrix[i][j] == '1') {
 					++H[j];
-					L[j] = Math.max(L[j], left); // �ؼ���
+					L[j] = Math.max(L[j], left); // 和上层一起选出短板
 				} else {
 					left = j + 1;
 					H[j] = 0;
@@ -30,7 +31,7 @@ public class n085_MaximalRectangle {
 			for (int j = n - 1; j >= 0; j--) {
 				if (matrix[i][j] == '1') {
 					R[j] = Math.min(R[j], right);
-					res = Math.max(res, H[j] * (R[j] - L[j]));
+					res = Math.max(res, H[j] * (R[j] - L[j])); // 和上层一起选出短板
 				} else {
 					right = j;
 					R[j] = n;

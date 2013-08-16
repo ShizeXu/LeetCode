@@ -15,31 +15,24 @@ public class n062_UniquePathsII {
 		for (i = 0; i < m; i++)
 			res[i] = new int[n];
 		res[m - 1][n - 1] = 1;
-		boolean flag = true;
 		for (i = m - 2; i >= 0; i--) {
-			if (obstacleGrid[i][n - 1] == 0 && flag)
+			if (obstacleGrid[i][n - 1] == 0)
 				res[i][n - 1] = 1;
-			else {
-				res[i][n - 1] = 0;
-				flag = false;
-			}
+			else
+				break;
 		}
-		flag = true;
 		for (i = n - 2; i >= 0; i--) {
-			if (obstacleGrid[m - 1][i] == 0 && flag)
+			if (obstacleGrid[m - 1][i] == 0)
 				res[m - 1][i] = 1;
-			else {
-				res[m - 1][i] = 0;
-				flag = false;
-			}
+			else
+				break;
 		}
 		for (i = m - 2; i >= 0; i--) {
 			for (j = n - 2; j >= 0; j--) {
 				if (obstacleGrid[i][j] == 1)
 					res[i][j] = 0;
 				else {
-					res[i][j] = res[i + 1][j];
-					res[i][j] += res[i][j + 1];
+					res[i][j] = res[i + 1][j] + res[i][j + 1];
 				}
 			}
 		}

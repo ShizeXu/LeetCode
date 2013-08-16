@@ -8,12 +8,9 @@ public class n067_PlusOne {
 		if (n == 0)
 			return new int[] { 1 };
 		int[] res = new int[n];
-		int tmp = digits[n - 1] + 1;
-		int add = 0;
-		res[n - 1] = tmp % 10;
-		add = tmp / 10;
-		for (int i = n - 2; i >= 0; i--) {
-			tmp = digits[i] + add;
+		int add = 1;
+		for (int i = n - 1; i >= 0; i--) {
+			int tmp = digits[i] + add;
 			res[i] = tmp % 10;
 			add = tmp / 10;
 		}
@@ -24,8 +21,7 @@ public class n067_PlusOne {
 				newRes[i + 1] = res[i];
 			}
 			return newRes;
-		} else {
-			return res;
 		}
+		return res;
 	}
 }

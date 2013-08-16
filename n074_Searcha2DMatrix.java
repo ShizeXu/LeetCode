@@ -1,46 +1,32 @@
 package LeetCode;
 
 public class n074_Searcha2DMatrix {
+	// 拉成一维感觉直观一些
+	boolean subSearch(int[][] matrix, int l, int r, int tar) {
+		if (l > r)
+			return false;
+		int m = l + (r - l) / 2;
+		int val = findVal(matrix, m);
+		if (val == tar)
+			return true;
+		if (val > tar)
+			return subSearch(matrix, l, m - 1, tar);
+		return subSearch(matrix, m + 1, r, tar);
+	}
+
+	int findVal(int[][] matrix, int index) {
+		int n = matrix[0].length;
+		int x = index / n;
+		int y = index % n;
+		return matrix[x][y];
+	}
+
 	public boolean searchMatrix(int[][] matrix, int target) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		int m = matrix.length;
-		if (m == 0)
+		if (matrix.length == 0)
 			return false;
-		int n = matrix[0].length;
-		if (n == 0)
-			return false;
-		int l = 0, r = m - 1;
-		int p = 0;
-		boolean flag = false;
-		while (l <= r) {
-			p = (l + r) / 2;
-			if (matrix[p][0] > target) {
-				r = p - 1;
-			} else {
-				if (p < m - 1 && matrix[p + 1][0] <= target) { // 特殊处理，区别是在该行还是后面的行中
-					l = p + 1;
-				} else {
-					flag = true; // 找到可能在的行
-					break;
-				}
-			}
-		}
-		if (!flag)
-			return false;
-		l = 0;
-		r = n - 1;
-		int q = 0;
-		while (l <= r) {
-			q = (l + r) / 2;
-			if (matrix[p][q] > target) {
-				r = q - 1;
-			} else if (matrix[p][q] < target) {
-				l = q + 1;
-			} else {
-				return true;
-			}
-		}
-		return false;
+		return subSearch(matrix, 0, matrix.length * matrix[0].length - 1,
+				target);
 	}
 }

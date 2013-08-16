@@ -3,29 +3,29 @@ package LeetCode;
 public class n079_WordSearch {
 	public boolean subExist(char[][] board, int x, int y, boolean[][] flag,
 			String word, int i) {
-		int n = word.length();
+		if (i == word.length())
+			return true;
 		int X = board.length;
 		int Y = board[0].length;
-		if (i == n)
-			return true;
-		flag[x][y] = false; // 扩展节点
-		if (x < X - 1 && flag[x + 1][y] && board[x + 1][y] == word.charAt(i)) { // 向下，注意扩展的三个条件
+
+		flag[x][y] = true; // mark used
+		if (x < X - 1 && !flag[x + 1][y] && board[x + 1][y] == word.charAt(i)) { // down, note three conditions
 			if (subExist(board, x + 1, y, flag, word, i + 1))
 				return true;
 		}
-		if (y < Y - 1 && flag[x][y + 1] && board[x][y + 1] == word.charAt(i)) { // 向右
+		if (y < Y - 1 && !flag[x][y + 1] && board[x][y + 1] == word.charAt(i)) { // right
 			if (subExist(board, x, y + 1, flag, word, i + 1))
 				return true;
 		}
-		if (x > 0 && flag[x - 1][y] && board[x - 1][y] == word.charAt(i)) { // 向上
+		if (x > 0 && !flag[x - 1][y] && board[x - 1][y] == word.charAt(i)) { // up
 			if (subExist(board, x - 1, y, flag, word, i + 1))
 				return true;
 		}
-		if (y > 0 && flag[x][y - 1] && board[x][y - 1] == word.charAt(i)) { // 向左
+		if (y > 0 && !flag[x][y - 1] && board[x][y - 1] == word.charAt(i)) { // left
 			if (subExist(board, x, y - 1, flag, word, i + 1))
 				return true;
 		}
-		flag[x][y] = true; // 注意回溯操作
+		flag[x][y] = false; // back-trace
 		return false;
 	}
 
@@ -38,13 +38,7 @@ public class n079_WordSearch {
 		int Y = board[0].length;
 		if (Y < 1)
 			return false;
-		boolean[][] flag = new boolean[X][];
-		for (int i = 0; i < X; i++) {
-			flag[i] = new boolean[Y];
-			for (int j = 0; j < Y; j++) {
-				flag[i][j] = true;
-			}
-		}
+		boolean[][] flag = new boolean[X][Y];
 		for (int i = 0; i < X; i++) {
 			for (int j = 0; j < Y; j++) {
 				if (board[i][j] == word.charAt(0)) {

@@ -19,12 +19,12 @@ public class n076_MinimumWindowSubstring {
 			need[T.charAt(i)]++;
 		int end = 0, start = 0;
 		int cnt = 0;
-		for (end = 0; end < m; end++) {
+		for (end = 0; end < m; end++) { // O(m)
 			char x = S.charAt(end);
 			has[x]++;
 			if (has[x] <= need[x])
 				cnt++;
-			if (need[x] > 0 && cnt == n) { // find a window，红字主要用来提升速度
+			if (need[x] > 0 && cnt == n) { // find a qualified window
 				for (; start <= end; start++) { // minimize window size
 					char y = S.charAt(start);
 					if (has[y] > need[y])

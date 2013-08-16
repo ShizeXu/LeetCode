@@ -6,7 +6,7 @@ public class n075_SortColors {
 		// DO NOT write main() function
 		int n = A.length;
 		int x0 = 0, x1 = n - 1, x2 = n - 1;
-		while (x0 <= x1) {
+		while (x0 <= x1) { // O(n)
 			int t = A[x0];
 			if (A[x0] == 2) {
 				A[x0] = A[x2];

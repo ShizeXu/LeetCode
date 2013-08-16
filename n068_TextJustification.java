@@ -6,7 +6,7 @@ public class n068_TextJustification {
 	public String justify(String[] w, int x, int y, int cnt, int L) {
 		int n = w.length;
 		String res = "";
-		if (x == y || y == n - 1) { // left justify¡£Á½¸öÌõ¼ş£ºÖ»ÓĞÒ»¸öµ¥´Ê£¬»òÕß×îºóÒ»ĞĞ¡£
+		if (x == y || y == n - 1) { // left justifyã€‚ä¸¤ä¸ªæ¡ä»¶ï¼šåªæœ‰ä¸€ä¸ªå•è¯ï¼Œæˆ–è€…æœ€åä¸€è¡Œã€‚
 			res = w[x];
 			for (int i = x + 1; i <= y; i++) {
 				res += " " + w[i];
@@ -17,7 +17,7 @@ public class n068_TextJustification {
 		}
 		int gap = L - cnt;
 		for (int i = y; i > x; i--) {
-			int tmp = gap / (i - x); // ÈôÎŞ·¨Æ½·ÖÔò×ó±ß±ÈÓÒ±ß¶à¿Õ¸ñ
+			int tmp = gap / (i - x); // è‹¥æ— æ³•å¹³åˆ†åˆ™å·¦è¾¹æ¯”å³è¾¹å¤šç©ºæ ¼
 			gap -= tmp;
 			String tmpRes = " ";
 			while (tmp > 0) {
@@ -45,12 +45,12 @@ public class n068_TextJustification {
 				if (cnt > 0) {
 					if (cnt + words[j].length() + 1 > L)
 						break;
-					cnt++; // ×¢ÒâÊÇ²»breakÇÒ²»ÊÇµÚÒ»¸ö´ÊµÄÊ±ºò²Å++
+					cnt++; // æ³¨æ„æ˜¯ä¸breakä¸”ä¸æ˜¯ç¬¬ä¸€ä¸ªè¯çš„æ—¶å€™æ‰++
 				}
 				cnt += words[j].length();
 			}
-			res.add(justify(words, i, j - 1, cnt, L)); // ¼ÇµÃj-1
-			i = j; // ÏÂÒ»¸ö×Ö·û
+			res.add(justify(words, i, j - 1, cnt, L)); // è®°å¾—j-1
+			i = j; // ä¸‹ä¸€ä¸ªå­—ç¬¦
 		}
 		return res;
 	}

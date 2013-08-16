@@ -1,29 +1,45 @@
 package LeetCode;
 
+import java.util.Stack;
+
 public class n084_LargestRectangleinHistogram {
+	class Pair {
+		int index;
+		int preIndex;
+
+		Pair(int i, int p) {
+			index = i;
+			preIndex = p;
+		}
+	}
+
+	// 分三种情况，比前面大的直接压栈，一样的话就忽略，小的话就计算前面的柱能够撑得最大面积。
+	// 同时记录下以当前坐标为高所能够到的最早的坐标，以便下次计算。
 	public int largestRectangleArea(int[] height) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		int n = height.length;
-		if (n < 1)
+		Stack<Pair> sta = new Stack<Pair>();
+		if (height.length == 0)
 			return 0;
-		int[] r = new int[n];
-		int[] l = new int[n];
-		for (int i = 0; i < n; i++) {
-			l[i] = i;
-			while (l[i] > 0 && height[l[i] - 1] >= height[i])
-				l[i] = l[l[i] - 1]; // ��Ծʽ����ǰ�ң�l[i]--�Ļ�����ʱ
+		int res = 0;
+		int i = 0;
+		for (; i < height.length; i++) {
+			int preH = sta.isEmpty() ? -1 : height[sta.peek().index];
+			if (height[i] > preH) // 情况1
+				sta.push(new Pair(i, i));
+			else if (height[i] < preH) { // 情况3
+				int last = 0;
+				do {
+					last = sta.pop().preIndex;
+					res = Math.max((i - last) * preH, res);
+				} while (!sta.isEmpty() && (preH = height[sta.peek().index]) >= height[i]);
+				sta.push(new Pair(i, last));
+			}
 		}
-		for (int i = n - 1; i >= 0; i--) {
-			r[i] = i;
-			while (r[i] < n - 1 && height[r[i] + 1] >= height[i])
-				r[i] = r[r[i] + 1]; // ��Ծʽ�������ң�r[i]++�Ļ�����ʱ
+		while (!sta.isEmpty()) {
+			Pair cur = sta.pop();
+			res = Math.max((i - cur.preIndex) * height[cur.index], res);
 		}
-		int max = 0;
-		for (int i = 0; i < n; i++) {
-			int tmp = (r[i] - l[i] + 1) * height[i];
-			max = (max >= tmp ? max : tmp);
-		}
-		return max;
+		return res;
 	}
 }

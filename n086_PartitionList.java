@@ -17,8 +17,6 @@ public class n086_PartitionList {
 
 		ListNode small1 = null, small2 = null, big1 = null, big2 = null;
 		while (head != null) {
-			ListNode next = head.next; // 记得先备份
-			head.next = null; // 在这里就置空了
 			if (head.val < x) {
 				if (small1 == null) {
 					small1 = small2 = head;
@@ -34,11 +32,13 @@ public class n086_PartitionList {
 					big2 = head;
 				}
 			}
-			head = next; // 重新赋值
+			head = head.next;
 		}
 		if (small1 == null)
 			return big1;
 		small2.next = big1;
+		if (big1 != null)
+			big2.next = null; // to prevent linking back
 		return small1;
 	}
 }
