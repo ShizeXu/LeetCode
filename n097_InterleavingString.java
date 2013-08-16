@@ -16,7 +16,7 @@ public class n097_InterleavingString {
 		for (int i = n - 1; i >= 0; i--) {
 			res[m][i] = (res[m][i + 1] && s2.charAt(i) == s3.charAt(m + i));
 		}
-		// 每一个点依赖于右边和下面的点
+		// 姣忎竴涓偣渚濊禆浜庡彸杈瑰拰涓嬮潰鐨勭偣
 		for (int i = m - 1; i >= 0; i--) {
 			for (int j = n - 1; j >= 0; j--) {
 				res[i][j] = (res[i + 1][j] && s1.charAt(i) == s3.charAt(i + j)) || (res[i][j + 1] && s2

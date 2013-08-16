@@ -7,11 +7,11 @@ public class n054_JumpGame {
 		int n = A.length;
 		int far = 0;
 		for (int i = 0; i < n; i++) {
-			if (i <= far) { // ¸Ã½ÚµãÄÜµ½´ï
+			if (i <= far) { // è¯¥èŠ‚ç‚¹èƒ½åˆ°è¾¾
 				far = Math.max(i + A[i], far);
 				if (far >= n - 1)
 					return true;
-			} else { // ¸Ã½Úµã²»¿Éµ½´ï
+			} else { // è¯¥èŠ‚ç‚¹ä¸å¯åˆ°è¾¾
 				break;
 			}
 		}

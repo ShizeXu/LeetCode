@@ -30,7 +30,7 @@ public class n055_MergeIntervals {
 	public ArrayList<Interval> merge(ArrayList<Interval> intervals) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		Collections.sort(intervals, new mycmp()); // 按起始坐标排序，总体O(nlgn)
+		Collections.sort(intervals, new mycmp()); // 鎸夎捣濮嬪潗鏍囨帓搴忥紝鎬讳綋O(nlgn)
 		int n = intervals.size();
 		ArrayList<Interval> res = new ArrayList<Interval>();
 		if (n < 1)

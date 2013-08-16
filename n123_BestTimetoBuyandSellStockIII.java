@@ -11,13 +11,13 @@ public class n123_BestTimetoBuyandSellStockIII {
 		int[] lr = new int[n];
 		for (int i = 1; i < n; i++) {
 			min = Math.min(prices[i], min);
-			lr[i] = Math.max(lr[i - 1], prices[i] - min); // ÓëµÚÒ»Ìâ²»Í¬£¬ÕâÀïÃ¿¸öÎ»ÖÃ¶¼Òª¼ÇÂ¼ÖÃ£¬ËùÒÔ¸É´àÊ¡µôÅĞ¶Ïprices[i]>minµÄÅĞ¶Ï¡£
+			lr[i] = Math.max(lr[i - 1], prices[i] - min); // ä¸ç¬¬ä¸€é¢˜ä¸åŒï¼Œè¿™é‡Œæ¯ä¸ªä½ç½®éƒ½è¦è®°å½•ç½®ï¼Œæ‰€ä»¥å¹²è„†çœæ‰åˆ¤æ–­prices[i]>minçš„åˆ¤æ–­ã€‚
 		}
-		int res = lr[n - 1]; // ³õÊ¼»¯¶ş´Î½»Ò××î´óÊÕÒæÎªµ¥´Î½»Ò×µÄ×î´óÊÕÒæ
+		int res = lr[n - 1]; // åˆå§‹åŒ–äºŒæ¬¡äº¤æ˜“æœ€å¤§æ”¶ç›Šä¸ºå•æ¬¡äº¤æ˜“çš„æœ€å¤§æ”¶ç›Š
 		int max = prices[n - 1];
 		int rl = 0;
 		for (int i = n - 2; i >= 1; i--) {
-			if (prices[i] > max) { // rl ²»ÓÃÃ¿¸öÎ»ÖÃ¶¼¼ÇÂ¼ÏÂÀ´£¬ËùÒÔ²ÉÓÃºÍµÚÒ»ÌâÒ»ÑùµÄ²ßÂÔ
+			if (prices[i] > max) { // rl ä¸ç”¨æ¯ä¸ªä½ç½®éƒ½è®°å½•ä¸‹æ¥ï¼Œæ‰€ä»¥é‡‡ç”¨å’Œç¬¬ä¸€é¢˜ä¸€æ ·çš„ç­–ç•¥
 				max = prices[i];
 			} else {
 				rl = Math.max(rl, max - prices[i]);

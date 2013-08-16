@@ -14,7 +14,7 @@ public class n108_ConvertSortedArraytoBinarySearchTree {
 	public TreeNode build(int[] num, int begin, int end) {
 		if (begin > end)
 			return null;
-		int i = (end + begin + 1) / 2; // È·¶¨¸ù
+		int i = (end + begin + 1) / 2; // ç¡®å®šæ ¹
 		TreeNode root = new TreeNode(num[i]);
 		root.left = build(num, begin, i - 1);
 		root.right = build(num, i + 1, end);

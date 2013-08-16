@@ -29,17 +29,17 @@ public class n131_PalindromePartitioning {
 			return resArr;
 		boolean[][] res = new boolean[n][n];
 		for (int i = 0; i < n; i++)
-			res[i][i] = true; // 第一层初始化
+			res[i][i] = true; // 绗竴灞傚垵濮嬪寲
 		for (int i = 0; i < n - 1; i++)
-			res[i][i + 1] = (s.charAt(i) == s.charAt(i + 1)); // 第二层初始化
+			res[i][i + 1] = (s.charAt(i) == s.charAt(i + 1)); // 绗簩灞傚垵濮嬪寲
 		for (int k = 2; k < n; k++) {
 			for (int i = 0; i < n - k; i++) {
 				res[i][i + k] = (s.charAt(i) == s.charAt(i + k) && res[i + 1][i + k
-						- 1]); // 递推公式
+						- 1]); // 閫掓帹鍏紡
 			}
 		}
 		ArrayList<String> tmp = new ArrayList<String>();
-		join(resArr, res, tmp, 0, s); // 拼接结果
+		join(resArr, res, tmp, 0, s); // 鎷兼帴缁撴灉
 		return resArr;
 	}
 }

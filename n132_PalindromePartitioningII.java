@@ -10,7 +10,7 @@ public class n132_PalindromePartitioningII {
 		boolean[][] res = new boolean[n][n];
 		int[] dp = new int[n];
 		for (int i = 0; i < n; i++)
-			res[i][i] = true; // 第一层初始化
+			res[i][i] = true; // 绗竴灞傚垵濮嬪寲
 		for (int i = 1; i < n; i++) {
 			int min = Integer.MAX_VALUE;
 			for (int j = i; j >= 0; j--) {

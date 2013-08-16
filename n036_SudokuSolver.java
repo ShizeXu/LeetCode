@@ -20,19 +20,19 @@ public class n036_SudokuSolver {
 		boolean[] num = new boolean[9];
 		for (int i = 0; i < 9; i++)
 			num[i] = false;
-		for (int i = 0; i < 9; i++) { // µÚÒ»²ã
+		for (int i = 0; i < 9; i++) { // ç¬¬ä¸€å±‚
 			char x = board[p][i];
 			if (x <= '9' && x >= '0')
 				num[x - '0' - 1] = true;
 		}
-		for (int i = 0; i < 9; i++) { // µÚ¶þ²ã
+		for (int i = 0; i < 9; i++) { // ç¬¬äºŒå±‚
 			char x = board[i][q];
 			if (x <= '9' && x >= '0')
 				num[x - '0' - 1] = true;
 		}
 		int m = p / 3;
 		int n = q / 3;
-		for (int i = m * 3; i < m * 3 + 3; i++) { // µÚÈý²ã
+		for (int i = m * 3; i < m * 3 + 3; i++) { // ç¬¬ä¸‰å±‚
 			for (int j = n * 3; j < n * 3 + 3; j++) {
 				char x = board[i][j];
 				if (x <= '9' && x >= '0')

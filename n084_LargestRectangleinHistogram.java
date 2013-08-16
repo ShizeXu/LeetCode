@@ -25,9 +25,9 @@ public class n084_LargestRectangleinHistogram {
 		int i = 0;
 		for (; i < height.length; i++) {
 			int preH = sta.isEmpty() ? -1 : height[sta.peek().index];
-			if (height[i] > preH) // 情况1
+			if (height[i] > preH) // situation 1
 				sta.push(new Pair(i, i));
-			else if (height[i] < preH) { // 情况3
+			else if (height[i] < preH) { // situation 3
 				int last = 0;
 				do {
 					last = sta.pop().preIndex;

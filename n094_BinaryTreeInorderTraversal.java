@@ -25,7 +25,7 @@ public class n094_BinaryTreeInorderTraversal {
 				root = root.left;
 			}
 			root = sta.pop();
-			res.add(root.val); // 先序的话就把这句移到push前，后序的话需要增加flag表示当前节点是否访问了右子树
+			res.add(root.val); // 鍏堝簭鐨勮瘽灏辨妸杩欏彞绉诲埌push鍓嶏紝鍚庡簭鐨勮瘽闇�瑕佸鍔爁lag琛ㄧず褰撳墠鑺傜偣鏄惁璁块棶浜嗗彸瀛愭爲
 			root = root.right;
 		}
 		return res;

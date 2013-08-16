@@ -25,7 +25,7 @@ public class n056_InsertInterval {
 		ArrayList<Interval> res = new ArrayList<Interval>();
 		int n = intervals.size();
 		int i = 0;
-		// µÚÒ»²½£¬ÕÒµ½×ó¶Ëµã
+		// ç¬¬ä¸€æ­¥ï¼Œæ‰¾åˆ°å·¦ç«¯ç‚¹
 		while (i < n && intervals.get(i).end < newInterval.start) {
 			res.add(intervals.get(i));
 			i++;
@@ -36,7 +36,7 @@ public class n056_InsertInterval {
 		}
 		int tmpL = intervals.get(i).start;
 		int l = Math.min(tmpL, newInterval.start);
-		// µÚ¶þ²½£¬ÕÒµ½ÓÒ¶Ëµã
+		// ç¬¬äºŒæ­¥ï¼Œæ‰¾åˆ°å³ç«¯ç‚¹
 		while (i < n && intervals.get(i).end <= newInterval.end) {
 			i++;
 		}
@@ -51,7 +51,7 @@ public class n056_InsertInterval {
 			res.add(new Interval(l, intervals.get(i).end));
 			i++;
 		}
-		// µÚÈý²½£¬°ÑÊ£ÏÂµÄ¼ÓÈë½á¹û¼¯
+		// ç¬¬ä¸‰æ­¥ï¼ŒæŠŠå‰©ä¸‹çš„åŠ å…¥ç»“æžœé›†
 		while (i < n) {
 			res.add(intervals.get(i++));
 		}

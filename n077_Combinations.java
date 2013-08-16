@@ -11,9 +11,9 @@ public class n077_Combinations {
 		}
 		if (k + start - 1 > n)
 			return;
-		subCombine(resArr, res, start + 1, n, k); // ��ȡ
+		subCombine(resArr, res, start + 1, n, k); // 不取
 		res.add(start);
-		subCombine(resArr, res, start + 1, n, k - 1); // ȡ
+		subCombine(resArr, res, start + 1, n, k - 1); // 取
 		res.remove((Integer) start);
 	}
 

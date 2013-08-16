@@ -17,9 +17,9 @@ public class n027_ImplementstrStr {
 		while (i < m) {
 			if (j == -1 || haystack.charAt(i) == needle.charAt(j)) {
 				i++;
-				j++; // ÓëiÒ»ÆðµÝÔö
+				j++; // ä¸Žiä¸€èµ·é€’å¢ž
 			} else {
-				j = next[j]; // µÝ¼õ£¬Òò´ËµÝ¼õ´ÎÊý²»»á³¬¹ýiµÄµÝÔö´ÎÊý(m)£¬Òò´Ë×Ü´ú¼ÛÒ²ÊÇ2*m = O(m)
+				j = next[j]; // é€’å‡ï¼Œå› æ­¤é€’å‡æ¬¡æ•°ä¸ä¼šè¶…è¿‡içš„é€’å¢žæ¬¡æ•°(m)ï¼Œå› æ­¤æ€»ä»£ä»·ä¹Ÿæ˜¯2*m = O(m)
 			}
 			if (j == n)
 				return haystack.substring(i - n);
@@ -34,9 +34,9 @@ public class n027_ImplementstrStr {
 		int i = 0, j = -1;
 		while (i < n - 1) {
 			if (j < 0 || needle.charAt(i) == needle.charAt(j)) {
-				next[++i] = ++j; // ÓëiÒ»ÆðµÝÔö
+				next[++i] = ++j; // ä¸Žiä¸€èµ·é€’å¢ž
 			} else {
-				j = next[j]; // µÝ¼õ£¬Òò´ËµÝ¼õ´ÎÊý²»»á³¬¹ýiµÄµÝÔö´ÎÊý(m)£¬Òò´Ë×Ü´ú¼ÛÒ²ÊÇ2*m = O(m)
+				j = next[j]; // é€’å‡ï¼Œå› æ­¤é€’å‡æ¬¡æ•°ä¸ä¼šè¶…è¿‡içš„é€’å¢žæ¬¡æ•°(m)ï¼Œå› æ­¤æ€»ä»£ä»·ä¹Ÿæ˜¯2*m = O(m)
 			}
 		}
 		return next;

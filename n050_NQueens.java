@@ -30,7 +30,7 @@ public class n050_NQueens {
 			if (flag) {
 				res[x] = i;
 				subSolve(resArr, res, n, x + 1);
-				res[x] = -1; // ¿ÉÓĞ¿ÉÎŞ£¬ÒòÎª²»»áÓ°Ïìµ½ºóĞø×ÓÎÊÌâ
+				res[x] = -1; // å¯æœ‰å¯æ— ï¼Œå› ä¸ºä¸ä¼šå½±å“åˆ°åç»­å­é—®é¢˜
 			}
 		}
 	}

@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.ArrayList;
 
 public class n042_MultiplyStrings {
-	// ¼ÆËã´óÊıºÍËÄÎ»ÊıÒÔÄÚÊıµÄ³Ë·¨
+	// è®¡ç®—å¤§æ•°å’Œå››ä½æ•°ä»¥å†…æ•°çš„ä¹˜æ³•
 	public String subTask(String a, String b) {
 		int n = a.length();
 		int val = Integer.parseInt(b);
@@ -30,7 +30,7 @@ public class n042_MultiplyStrings {
 		return res;
 	}
 
-	// ¼ÆËã´óÊıºÍ´óÊıµÄ¼Ó·¨
+	// è®¡ç®—å¤§æ•°å’Œå¤§æ•°çš„åŠ æ³•
 	public String sumTask(String a, String b) {
 		int add = 0;
 		StringBuilder res = new StringBuilder();
@@ -65,11 +65,11 @@ public class n042_MultiplyStrings {
 		return res.reverse().toString();
 	}
 
-	// ¼ÆËã´óÊıºÍ´óÊıµÄ³Ë·¨
+	// è®¡ç®—å¤§æ•°å’Œå¤§æ•°çš„ä¹˜æ³•
 	public String multiply(String a, String b) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		if ("0".equals(b) || "0".equals(a)) // ÏÈÅÅ³ı£¬²»È»ºóÃæÅÅ³ı¸üÂé·³
+		if ("0".equals(b) || "0".equals(a)) // å…ˆæ’é™¤ï¼Œä¸ç„¶åé¢æ’é™¤æ›´éº»çƒ¦
 			return "0";
 		int m = a.length();
 		int n = b.length();

@@ -12,12 +12,12 @@ public class n044_JumpGameII {
 		int cnt = 1;
 		while (far < n - 1) {
 			int tmpFar = far;
-			for (int j = preFar + 1; j <= far; j++) { // 从上次计算结束的地方开始计算，以免重复
+			for (int j = preFar + 1; j <= far; j++) { // 浠庝笂娆¤绠楃粨鏉熺殑鍦版柟寮�濮嬭绠楋紝浠ュ厤閲嶅
 				if (j + A[j] > tmpFar) {
 					tmpFar = j + A[j];
 				}
 			}
-			preFar = far; // preFar用来剪枝，即上次算到这里
+			preFar = far; // preFar鐢ㄦ潵鍓灊锛屽嵆涓婃绠楀埌杩欓噷
 			far = tmpFar;
 			cnt++;
 		}

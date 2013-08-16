@@ -16,8 +16,8 @@ public class n083_RemoveDuplicatesfromSortedListII {
 		// DO NOT write main() function
 		if (head == null || head.next == null)
 			return head;
-		ListNode prev = new ListNode(0); // µ±Ç°µÄÇ°Çı½Úµã
-		ListNode root = prev; // ÕûÌåµÄÇ°Çı½Úµã
+		ListNode prev = new ListNode(0); // å½“å‰çš„å‰é©±èŠ‚ç‚¹
+		ListNode root = prev; // æ•´ä½“çš„å‰é©±èŠ‚ç‚¹
 		int preVal = head.val;
 		ListNode cur = head;
 		boolean dup = false;
@@ -25,7 +25,7 @@ public class n083_RemoveDuplicatesfromSortedListII {
 			if (cur.next.val == preVal) {
 				dup = true;
 			} else {
-				if (!dup) { // ²»ÖØ¸´µÄ»°¾Í°ÑÇ°Çı½áµãÒÆµ½µ±Ç°½Úµã£¬·ñÔòºöÂÔ
+				if (!dup) { // ä¸é‡å¤çš„è¯å°±æŠŠå‰é©±ç»“ç‚¹ç§»åˆ°å½“å‰èŠ‚ç‚¹ï¼Œå¦åˆ™å¿½ç•¥
 					prev.next = cur;
 					prev = prev.next;
 				}
@@ -34,7 +34,7 @@ public class n083_RemoveDuplicatesfromSortedListII {
 			}
 			cur = cur.next;
 		}
-		prev.next = dup ? null : cur; // ´¦Àí×îºóÒ»¸ö½Úµã
+		prev.next = dup ? null : cur; // å¤„ç†æœ€åä¸€ä¸ªèŠ‚ç‚¹
 		return root.next;
 	}
 }

@@ -12,7 +12,7 @@ public class n120_Triangle {
 		ArrayList<Integer> pre = new ArrayList<Integer>();
 		ArrayList<Integer> tmp = new ArrayList<Integer>();
 		for (int i = 0; i < n; i++)
-			pre.add(triangle.get(n - 1).get(i)); // 对最后一层初始化
+			pre.add(triangle.get(n - 1).get(i)); // 瀵规渶鍚庝竴灞傚垵濮嬪寲
 		for (int i = n - 2; i >= 0; i--) {
 			tmp.clear();
 			for (int j = 0; j <= i; j++) {

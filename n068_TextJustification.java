@@ -6,7 +6,7 @@ public class n068_TextJustification {
 	public String justify(String[] w, int x, int y, int cnt, int L) {
 		int n = w.length;
 		String res = "";
-		if (x == y || y == n - 1) { // left justify。两个条件：只有一个单词，或者最后一行。
+		if (x == y || y == n - 1) { // left justify銆備袱涓潯浠讹細鍙湁涓�釜鍗曡瘝锛屾垨鑰呮渶鍚庝竴琛屻�
 			res = w[x];
 			for (int i = x + 1; i <= y; i++) {
 				res += " " + w[i];
@@ -17,7 +17,7 @@ public class n068_TextJustification {
 		}
 		int gap = L - cnt;
 		for (int i = y; i > x; i--) {
-			int tmp = gap / (i - x); // 若无法平分则左边比右边多空格
+			int tmp = gap / (i - x); // 鑻ユ棤娉曞钩鍒嗗垯宸﹁竟姣斿彸杈瑰绌烘牸
 			gap -= tmp;
 			String tmpRes = " ";
 			while (tmp > 0) {
@@ -45,12 +45,12 @@ public class n068_TextJustification {
 				if (cnt > 0) {
 					if (cnt + words[j].length() + 1 > L)
 						break;
-					cnt++; // 注意是不break且不是第一个词的时候才++
+					cnt++; // 娉ㄦ剰鏄笉break涓斾笉鏄涓�釜璇嶇殑鏃跺�鎵�+
 				}
 				cnt += words[j].length();
 			}
-			res.add(justify(words, i, j - 1, cnt, L)); // 记得j-1
-			i = j; // 下一个字符
+			res.add(justify(words, i, j - 1, cnt, L)); // 璁板緱j-1
+			i = j; // 涓嬩竴涓瓧绗�
 		}
 		return res;
 	}

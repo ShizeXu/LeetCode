@@ -19,7 +19,7 @@ public class n089_GrayCode {
 			int tmp = k;
 			int res = 0;
 			for (int i = 0; i < n - 1; i++) {
-				res += multi * ((tmp & 1) ^ ((tmp >> 1) & 1)); // ¸ñÀ×Âë¹æÔò
+				res += multi * ((tmp & 1) ^ ((tmp >> 1) & 1)); // æ ¼é›·ç è§„åˆ™
 				multi *= 2;
 				tmp = tmp >> 1;
 			}

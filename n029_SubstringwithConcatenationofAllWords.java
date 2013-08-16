@@ -46,9 +46,9 @@ public class n029_SubstringwithConcatenationofAllWords {
 			}
 			dictSubStr.put(L[i], 1);
 		}
-		// ¶¼²»ÓÃDP...ÕæÉËĞÄ...
+		// éƒ½ä¸ç”¨DP...çœŸä¼¤å¿ƒ...
 		for (int i = 0; i <= n - length; i++) {
-			if (subFind(dictSubStr, m, perLen, S.substring(i, i + length), 0, L)) { // Ö»´«²¿·Ö×Ö´®ÄÜÓÅ»¯Ğ§ÂÊ
+			if (subFind(dictSubStr, m, perLen, S.substring(i, i + length), 0, L)) { // åªä¼ éƒ¨åˆ†å­—ä¸²èƒ½ä¼˜åŒ–æ•ˆç‡
 				res.add(i);
 			}
 		}

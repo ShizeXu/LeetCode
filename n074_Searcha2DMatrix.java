@@ -1,7 +1,7 @@
 package LeetCode;
 
 public class n074_Searcha2DMatrix {
-	// ����һά�о�ֱ��һЩ
+	// 拉成一维感觉直观一些
 	boolean subSearch(int[][] matrix, int l, int r, int tar) {
 		if (l > r)
 			return false;

@@ -5,7 +5,7 @@ public class n049_PowX_N {
 		// Start typing your Java solution below
 		// DO NOT write main() function
 		double res = 1d;
-		boolean flag = false; // ¿ÉÄÜĞ¡ÓÚÁã
+		boolean flag = false; // å¯èƒ½å°äºé›¶
 		if (n < 0) {
 			flag = true;
 			n = -n;

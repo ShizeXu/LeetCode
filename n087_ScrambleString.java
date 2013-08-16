@@ -5,19 +5,19 @@ public class n087_ScrambleString {
 
 	public boolean scramble(String a, String b, int p, int q, int len) {
 		if (flag[len][p][q] != 0)
-			return (flag[len][p][q] == 1 ? true : false); // ÒÑ¾­¼ÆËã¹ı
-		if (a.substring(p, p + len + 1).equals(b.substring(q, q + len + 1))) { // ×Ó´®ÏàµÈ
+			return (flag[len][p][q] == 1 ? true : false); // å·²ç»è®¡ç®—è¿‡
+		if (a.substring(p, p + len + 1).equals(b.substring(q, q + len + 1))) { // å­ä¸²ç›¸ç­‰
 			flag[len][p][q] = 1;
 			return true;
 		}
-		for (int i = p + 1; i < p + len + 1; i++) { // i ÊÇµÚÒ»¸ö´®ÖĞµÚ¶ş¸ö×Ó´®µÄÆğÊ¼Î»ÖÃ
+		for (int i = p + 1; i < p + len + 1; i++) { // i æ˜¯ç¬¬ä¸€ä¸ªä¸²ä¸­ç¬¬äºŒä¸ªå­ä¸²çš„èµ·å§‹ä½ç½®
 			if (scramble(a, b, p, q, i - p - 1) && scramble(a, b, i, q + i - p,
-					len - i + p)) { // ¶ÔÓ¦Æ¥Åä
+					len - i + p)) { // å¯¹åº”åŒ¹é…
 				flag[len][p][q] = 1;
 				return true;
 			}
 			if (scramble(a, b, p, q + len - (i - p - 1), i - p - 1) && scramble(
-					a, b, i, q, len - i + p)) { // ½»²æÆ¥Åä
+					a, b, i, q, len - i + p)) { // äº¤å‰åŒ¹é…
 				flag[len][p][q] = 1;
 				return true;
 			}

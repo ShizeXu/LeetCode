@@ -18,7 +18,7 @@ public class n038_CombinationSum {
 			subCombine(resArr, res, candidates, t - candidates[index], index);
 			res.remove(res.size() - 1);
 		} else {
-			return; // ¼ôÖ¦
+			return; // å‰ªæ
 		}
 		subCombine(resArr, res, candidates, t, index + 1);
 	}

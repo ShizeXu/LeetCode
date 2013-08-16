@@ -10,14 +10,14 @@ public class n091_SubsetsII {
 			resArr.add((ArrayList<Integer>) res.clone());
 			return;
 		}
-		if (cnt[i] > 0) { // Ñ¡1µ½¶à¸ö
+		if (cnt[i] > 0) { // é€‰1åˆ°å¤šä¸ª
 			cnt[i]--;
 			res.add(num[i]);
 			subset(resArr, res, num, cnt, n, i);
 			res.remove((Integer) num[i]);
 			cnt[i]++;
 		}
-		subset(resArr, res, num, cnt, n, i + 1); // ²»Ñ¡
+		subset(resArr, res, num, cnt, n, i + 1); // ä¸é€‰
 	}
 
 	public ArrayList<ArrayList<Integer>> subsetsWithDup(int[] num) {

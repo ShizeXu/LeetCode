@@ -25,15 +25,15 @@ public class n129_SumRoottoLeafNumbers {
 		while (begin < end) {
 			for (int i = begin; i < end; i++) {
 				TreeNode tmpNode = tmp.get(i);
-				if (tmpNode.left == null && tmpNode.right == null) { // Óöµ½Ò¶½Úµã£¬¸üÐÂsum
+				if (tmpNode.left == null && tmpNode.right == null) { // é‡åˆ°å¶èŠ‚ç‚¹ï¼Œæ›´æ–°sum
 					res += tmpNode.val;
 					continue;
 				}
-				if (tmpNode.left != null) { // ³Ë10ºóÀÛ¼Óµ½×ó×Ó½áµã
+				if (tmpNode.left != null) { // ä¹˜10åŽç´¯åŠ åˆ°å·¦å­ç»“ç‚¹
 					tmpNode.left.val = tmpNode.left.val + 10 * tmpNode.val;
 					tmp.add(tmpNode.left);
 				}
-				if (tmpNode.right != null) { // ³Ë10ºóÀÛ¼Óµ½ÓÒ×Ó½áµã
+				if (tmpNode.right != null) { // ä¹˜10åŽç´¯åŠ åˆ°å³å­ç»“ç‚¹
 					tmpNode.right.val = tmpNode.right.val + 10 * tmpNode.val;
 					tmp.add(tmpNode.right);
 				}

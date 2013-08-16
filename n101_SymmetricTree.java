@@ -19,7 +19,7 @@ public class n101_SymmetricTree {
 		// DO NOT write main() function
 		if (root == null)
 			return true;
-		Queue<TreeNode> p = new LinkedList<TreeNode>(); // ¿ÉÓÃstackÌæ»»
+		Queue<TreeNode> p = new LinkedList<TreeNode>(); // å¯ç”¨stackæ›¿æ¢
 		Queue<TreeNode> q = new LinkedList<TreeNode>();
 		p.offer(root.left);
 		q.offer(root.right);
@@ -32,7 +32,7 @@ public class n101_SymmetricTree {
 				return false;
 			if (tmpp.val != tmpq.val)
 				return false;
-			// ×¢Òâ¶Ô³ÆĞÔ
+			// æ³¨æ„å¯¹ç§°æ€§
 			p.offer(tmpp.left);
 			q.offer(tmpq.right);
 			p.offer(tmpp.right);

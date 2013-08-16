@@ -22,13 +22,13 @@ public class n060_RotateList {
 			n--;
 			firstNode = firstNode.next;
 			if (firstNode == null)
-				firstNode = head; // 循环到头结点
+				firstNode = head; // 寰幆鍒板ご缁撶偣
 		}
 		while (firstNode.next != null) {
 			firstNode = firstNode.next;
 			secNode = secNode.next;
 		}
-		firstNode.next = head; // 三个操作
+		firstNode.next = head; // 涓変釜鎿嶄綔
 		head = secNode.next;
 		secNode.next = null;
 		return head;

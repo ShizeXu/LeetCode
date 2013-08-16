@@ -22,7 +22,7 @@ public class n126_WordLadder {
 			for (int k = 0; k < size; k++) {
 				StringBuffer sb = new StringBuffer(pre.poll());
 				for (int i = 0; i < m; i++) {
-					for (char j = 'a'; j <= 'z'; j++) { // ÕâÑù¶ÔÓÚ´ó´Êµä»¹ÄÜ¿ìÒ»Ð©
+					for (char j = 'a'; j <= 'z'; j++) { // è¿™æ ·å¯¹äºŽå¤§è¯å…¸è¿˜èƒ½å¿«ä¸€äº›
 						if (j == sb.charAt(i))
 							continue;
 						char x = sb.charAt(i);

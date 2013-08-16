@@ -22,7 +22,7 @@ public class n106_ConstructBinaryTreefromInorderandPostorderTraversal {
 		int i = i1;
 		for (i = i1; i <= i2; i++) {
 			if (inorder[i] == rootVal)
-				break; // 找到根节点在中序中的位置 i
+				break; // 鎵惧埌鏍硅妭鐐瑰湪涓簭涓殑浣嶇疆 i
 		}
 		root.left = findRoot(inorder, postorder, i1, i - 1, p1, p1 + i - i1 - 1);
 		root.right = findRoot(inorder, postorder, i + 1, i2, p2 - i2 + i,

@@ -22,9 +22,9 @@ public class n096_UniqueBinarySearchTreesII {
 			return res;
 		}
 		for (int i = l; i <= r; i++) {
-			ArrayList<TreeNode> leftArr = subGen(l, i - 1); // ×ó×ÓÊ÷µÄËùÓĞ¿ÉÄÜ
-			ArrayList<TreeNode> rightArr = subGen(i + 1, r); // ÓÒ×ÓÊ÷µÄËùÓĞ¿ÉÄÜ
-			for (int p = 0; p < leftArr.size(); p++) { // Ã¶¾Ù×éºÏ
+			ArrayList<TreeNode> leftArr = subGen(l, i - 1); // å·¦å­æ ‘çš„æ‰€æœ‰å¯èƒ½
+			ArrayList<TreeNode> rightArr = subGen(i + 1, r); // å³å­æ ‘çš„æ‰€æœ‰å¯èƒ½
+			for (int p = 0; p < leftArr.size(); p++) { // æšä¸¾ç»„åˆ
 				for (int q = 0; q < rightArr.size(); q++) {
 					TreeNode root = new TreeNode(i);
 					root.left = leftArr.get(p);

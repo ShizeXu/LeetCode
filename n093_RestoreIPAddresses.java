@@ -8,7 +8,7 @@ public class n093_RestoreIPAddresses {
 		int len = res.length();
 		if (num == 5) {
 			if (n == 0) {
-				res = res.substring(0, len - 1); // É¾³ı×îºóÒ»¸ö"."
+				res = res.substring(0, len - 1); // åˆ é™¤æœ€åä¸€ä¸ª"."
 				resArr.add(res);
 			}
 			return;

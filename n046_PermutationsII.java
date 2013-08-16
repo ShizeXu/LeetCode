@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class n046_PermutationsII {
-	// ÊÔ×Å»»Ò»ÖÖµİ¹é
+	// è¯•ç€æ¢ä¸€ç§é€’å½’
 	public void perm(ArrayList<ArrayList<Integer>> resArr,
 			ArrayList<Integer> res, int[] num, int[] cnt) {
 		int n = num.length;
@@ -18,7 +18,7 @@ public class n046_PermutationsII {
 			return;
 		}
 		for (; i < n; i++) {
-			if (cnt[i] > 0) { // À©Õ¹µÄÌõ¼ş
+			if (cnt[i] > 0) { // æ‰©å±•çš„æ¡ä»¶
 				res.add(num[i]);
 				cnt[i]--;
 				perm(resArr, res, num, cnt);

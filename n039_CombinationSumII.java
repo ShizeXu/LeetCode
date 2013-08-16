@@ -43,7 +43,7 @@ public class n039_CombinationSumII {
 		// DO NOT write main() function
 		int n = num.length;
 		Arrays.sort(num);
-		// »•÷ÿ
+		// ÂéªÈáç
 		int prev = Integer.MAX_VALUE;
 		ArrayList<Pair> newNum = new ArrayList<Pair>();
 		for (int i = 0; i < n; i++) {

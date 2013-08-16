@@ -4,7 +4,7 @@ public class n059_PermutationSequence {
 	public String getPermutation(int n, int k) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		int[] fact = new int[8]; // ½×³Ë±í
+		int[] fact = new int[8]; // é˜¶ä¹˜è¡¨
 		int tmp = 1, i = 0;
 		for (i = 1; i <= 8; i++) {
 			tmp *= i;
@@ -13,7 +13,7 @@ public class n059_PermutationSequence {
 		StringBuilder sb = new StringBuilder();
 		if (n < 2)
 			return "1";
-		boolean[] flag = new boolean[9]; // ±ê¼Çº¯Êý
+		boolean[] flag = new boolean[9]; // æ ‡è®°å‡½æ•°
 		for (i = 0; i < 9; i++) {
 			flag[i] = false;
 		}
@@ -34,7 +34,7 @@ public class n059_PermutationSequence {
 			k -= (tmp - 1) * fact[n - 2];
 			n--;
 		}
-		for (i = 0; i < 9; i++) { // ²¹ÉÏ×îºóÒ»¸ö
+		for (i = 0; i < 9; i++) { // è¡¥ä¸Šæœ€åŽä¸€ä¸ª
 			if (!flag[i])
 				break;
 		}

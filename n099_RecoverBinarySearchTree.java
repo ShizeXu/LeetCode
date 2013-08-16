@@ -11,21 +11,21 @@ public class n099_RecoverBinarySearchTree {
 		}
 	}
 
-	class Ref { // ÓÃÀ´·â×°ÒıÓÃµÄÀà
+	class Ref { // ç”¨æ¥å°è£…å¼•ç”¨çš„ç±»
 		TreeNode ref = null;
 	}
 
 	public void find(TreeNode root, Ref pre, Ref first, Ref second) {
 		if (root == null)
 			return;
-		find(root.left, pre, first, second); // ±éÀú×ó×ÓÊ÷
-		if (pre.ref != null && pre.ref.val > root.val) { // ½«Ç°ÇıÖµÓëµ±Ç°Öµ±È½Ï
+		find(root.left, pre, first, second); // éå†å·¦å­æ ‘
+		if (pre.ref != null && pre.ref.val > root.val) { // å°†å‰é©±å€¼ä¸å½“å‰å€¼æ¯”è¾ƒ
 			if (first.ref == null)
 				first.ref = pre.ref;
 			second.ref = root;
 		}
 		pre.ref = root;
-		find(root.right, pre, first, second); // ±éÀúÓÒ×ÓÊ÷
+		find(root.right, pre, first, second); // éå†å³å­æ ‘
 	}
 
 	public void recoverTree(TreeNode root) {

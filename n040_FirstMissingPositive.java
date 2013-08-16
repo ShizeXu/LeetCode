@@ -6,12 +6,12 @@ public class n040_FirstMissingPositive {
 		// DO NOT write main() function
 		int n = A.length;
 		int i = 0;
-		for (i = 0; i < n; i++) { // Ô¤´¦Àí
+		for (i = 0; i < n; i++) { // é¢„å¤„ç†
 			if (A[i] <= 0)
 				A[i] = n + 1;
 		}
 		for (i = 0; i < n; i++) {
-			int val = Math.abs(A[i]); // Ö»È¡ÕýÊý²¿·Ö
+			int val = Math.abs(A[i]); // åªå–æ­£æ•°éƒ¨åˆ†
 			if (val <= n)
 				A[val - 1] = 0 - Math.abs(A[val - 1]); // KEY POINT
 		}

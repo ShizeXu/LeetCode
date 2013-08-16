@@ -15,7 +15,7 @@ public class n016_3SumClosest {
 			int r = n - 1;
 			while (l < r) {
 				int tmp = num[l] + num[r] + num[i];
-				// ºÍ3Sum±È¾ÍÕâÀï²»Ò»Ñù£¬ÅÐµÈ¸ÄÎªÅÐÊÇ·ñ¸üÐ¡
+				// å’Œ3Sumæ¯”å°±è¿™é‡Œä¸ä¸€æ ·ï¼Œåˆ¤ç­‰æ”¹ä¸ºåˆ¤æ˜¯å¦æ›´å°
 				if (Math.abs(tmp - target) < min) {
 					min = Math.abs(tmp - target);
 					res = tmp;

@@ -30,7 +30,7 @@ public class n114_FlattenBinaryTreetoLinkedList {
 			root = sta.pop();
 			root = root.right;
 		}
-		res.add(null); // 方便起见
+		res.add(null); // 鏂逛究璧疯
 		for (int i = res.size() - 2; i >= 0; i--) {
 			res.get(i).left = null;
 			res.get(i).right = res.get(i + 1);

@@ -17,16 +17,16 @@ public class n053_SpiralMatrix {
 		int i = 0, j = 0;
 		for (i = 0; i < round; i++) {
 			for (j = i; j <= n - i - 1; j++)
-				res.add(matrix[i][j]); // ȫ
+				res.add(matrix[i][j]); // 全
 			for (j = i + 1; j < m - i - 1; j++)
-				res.add(matrix[j][n - i - 1]); // ȥͷβ
+				res.add(matrix[j][n - i - 1]); // 去头尾
 			if (m - i - 1 > i) {
 				for (j = n - i - 1; j >= i; j--)
-					res.add(matrix[m - i - 1][j]); // ȫ
+					res.add(matrix[m - i - 1][j]); // 全
 			}
 			if (n - i - 1 > i) {
 				for (j = m - i - 2; j > i; j--)
-					res.add(matrix[j][i]); // ȥͷβ
+					res.add(matrix[j][i]); // 去头尾
 			}
 		}
 		return res;

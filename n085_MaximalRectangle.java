@@ -1,6 +1,5 @@
 package LeetCode;
 
-
 public class n085_MaximalRectangle {
 	public int maximalRectangle(char[][] matrix) {
 		int m = matrix.length;

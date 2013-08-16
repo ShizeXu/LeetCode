@@ -11,20 +11,20 @@ public class n037_CountandSay {
 			if (cur == prev)
 				cnt++;
 			else {
-				if (prev != 0) { // µÚÒ»ÌõÊÇ¿Õ
+				if (prev != 0) { // ç¬¬ä¸€æ¡æ˜¯ç©º
 					StringBuilder tmp = new StringBuilder();
 					while (cnt > 0) {
 						tmp.append((char) (cnt % 10 + '0'));
 						cnt = cnt / 10;
 					}
-					sb.append(tmp.reverse()); // ·­×ª
+					sb.append(tmp.reverse()); // ç¿»è½¬
 					sb.append(prev);
 				}
 				cnt = 1;
 				prev = cur;
 			}
 		}
-		if (prev != 0) { // ²¹Â©
+		if (prev != 0) { // è¡¥æ¼
 			StringBuilder tmp = new StringBuilder();
 			while (cnt > 0) {
 				tmp.append((char) (cnt % 10 + '0'));

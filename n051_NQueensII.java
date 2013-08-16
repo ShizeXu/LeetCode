@@ -28,7 +28,7 @@ public class n051_NQueensII {
 		int[] res = new int[n];
 		int cnt = 0;
 
-		// 利用对称性。实际上等于subCnt(res, n, 0)
+		// 鍒╃敤瀵圭О鎬с�傚疄闄呬笂绛変簬subCnt(res, n, 0)
 		for (int i = 0; i < n / 2; i++) {
 			res[0] = i;
 			cnt += subCnt(res, n, 1);

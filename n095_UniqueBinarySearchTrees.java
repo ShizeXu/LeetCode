@@ -13,7 +13,7 @@ public class n095_UniqueBinarySearchTrees {
 			res[i] = 0;
 		}
 		for (int i = 2; i <= n; i++) {
-			for (int j = 0; j < i / 2; j++) { // ö�ٸ��ڵ�
+			for (int j = 0; j < i / 2; j++) { // 枚举根节点
 				res[i] += 2 * res[j] * res[i - j - 1];
 			}
 			if (i % 2 == 1)

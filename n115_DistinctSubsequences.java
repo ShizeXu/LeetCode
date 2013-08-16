@@ -10,13 +10,13 @@ public class n115_DistinctSubsequences {
 			return 0;
 		int[][] res = new int[n + 1][m + 1];
 		for (int i = m; i >= 0; i--)
-			res[n][i] = 1; // ¶îÍâ³õÊ¼»¯Ò»²ã£¬·½±ãÍ³Ò»´¦Àí
-		for (int i = n - 1; i >= 0; i--) { // Ã¿´ÎÍùÇ°¶àÆ¥Åä T µÄÒ»¸ö×Ö·û
+			res[n][i] = 1; // é¢å¤–åˆå§‹åŒ–ä¸€å±‚ï¼Œæ–¹ä¾¿ç»Ÿä¸€å¤„ç†
+		for (int i = n - 1; i >= 0; i--) { // æ¯æ¬¡å¾€å‰å¤šåŒ¹é… T çš„ä¸€ä¸ªå­—ç¬¦
 			char x = T.charAt(i);
 			for (int j = m + i - n; j >= 0; j--) {
 				res[i][j] = res[i][j + 1];
 				if (S.charAt(j) == x) {
-					res[i][j] += res[i + 1][j + 1]; // ÄÜÔö¼ÓÕâÃ´¶àÖÖ¿ÉÄÜ
+					res[i][j] += res[i + 1][j + 1]; // èƒ½å¢åŠ è¿™ä¹ˆå¤šç§å¯èƒ½
 				}
 			}
 		}

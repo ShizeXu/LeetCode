@@ -9,7 +9,7 @@ public class n062_UniquePathsII {
 			return 0;
 		int n = obstacleGrid[0].length;
 		if (n == 0 || obstacleGrid[m - 1][n - 1] == 1)
-			return 0; // 终点是障碍的情况
+			return 0; // 缁堢偣鏄殰纰嶇殑鎯呭喌
 		int[][] res = new int[m][];
 		int i = 0, j = 0;
 		for (i = 0; i < m; i++)

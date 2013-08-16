@@ -12,8 +12,8 @@ public class n110_BalancedBinaryTree {
 	}
 
 	class Pair {
-		boolean flag = false; // ÊÇ·ñÆ½ºâ
-		int depth = 0; // Ê÷µÄ¸ß¶È
+		boolean flag = false; // æ˜¯å¦å¹³è¡¡
+		int depth = 0; // æ ‘çš„é«˜åº¦
 
 		Pair(boolean f, int d) {
 			flag = f;
@@ -27,11 +27,11 @@ public class n110_BalancedBinaryTree {
 		Pair left = is(root.left);
 		Pair right = is(root.right);
 		if (!left.flag || !right.flag)
-			return new Pair(false, 0); // ×ÓÊ÷²»Æ½ºâ
+			return new Pair(false, 0); // å­æ ‘ä¸å¹³è¡¡
 		int max = Math.max(left.depth, right.depth);
 		int min = Math.min(left.depth, right.depth);
 		if (max - min > 1)
-			return new Pair(false, 0); // µ±Ç°Ê÷²»Æ½ºâ
+			return new Pair(false, 0); // å½“å‰æ ‘ä¸å¹³è¡¡
 		return new Pair(true, max + 1);
 	}
 

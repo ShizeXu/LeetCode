@@ -19,15 +19,15 @@ public class n116_PopulatingNextRightPointersinEachNode {
 		while (next != null) {
 			while (true) {
 				root.left.next = root.right;
-				if (root.next == null) { // ±¾²ãµÄ×Ó½Úµã´¦ÀíÍê±Ï
+				if (root.next == null) { // æœ¬å±‚çš„å­èŠ‚ç‚¹å¤„ç†å®Œæ¯•
 					root.right.next = null;
 					break;
 				}
 				root.right.next = root.next.left;
 				root = root.next;
 			}
-			root = next; // ¸¸½ÚµãÏÂÒÆÒ»²ã
-			next = next.left; // ×Ó½ÚµãÒ²ÏÂÒÆÒ»²ã
+			root = next; // çˆ¶èŠ‚ç‚¹ä¸‹ç§»ä¸€å±‚
+			next = next.left; // å­èŠ‚ç‚¹ä¹Ÿä¸‹ç§»ä¸€å±‚
 		}
 	}
 }

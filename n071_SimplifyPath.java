@@ -14,13 +14,13 @@ public class n071_SimplifyPath {
 		for (int i = 0; i < n; i++) {
 			String tmp = arr[i].trim();
 			if (tmp.equals("") || tmp.equals("."))
-				continue; // ��
-			if (tmp.equals("..")) { // ��ջ
+				continue; // 过
+			if (tmp.equals("..")) { // 出栈
 				if (pathName.size() == 0)
 					continue;
 				pathName.pop();
 			} else
-				pathName.push(tmp); // ѹջ
+				pathName.push(tmp); // 压栈
 		}
 		String res = "";
 		while (pathName.size() > 0) {

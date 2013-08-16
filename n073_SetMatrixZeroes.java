@@ -10,7 +10,7 @@ public class n073_SetMatrixZeroes {
 		int n = matrix[0].length;
 		if (n < 1 || (n == 1 && m == 1))
 			return;
-		boolean row = true, column = true; // Á½¸ö±ê¼ÇÁ¿
+		boolean row = true, column = true; // ä¸¤ä¸ªæ ‡è®°é‡
 		for (int i = 0; i < m; i++) {
 			if (matrix[i][0] == 0) {
 				column = false;

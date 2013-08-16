@@ -33,7 +33,7 @@ public class n109_ConvertSortedListtoBinarySearchTree {
 		}
 		TreeNode root = new TreeNode(cur.val);
 		root.left = build(head, mid - 1);
-		root.right = build(cur.next, end - 1 - mid); // ½ØÈ¡Ò»°ë
+		root.right = build(cur.next, end - 1 - mid); // æˆªå–ä¸€åŠ
 		return root;
 	}
 

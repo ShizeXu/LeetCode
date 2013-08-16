@@ -19,9 +19,9 @@ public class n124_BinaryTreeMaximumPathSum {
 		int maxL = sum(root.left);
 		int maxR = sum(root.right);
 		int tmpMax = root.val + Math.max(maxL, maxR);
-		tmpMax = Math.max(tmpMax, root.val); // ¾­¹ıµ±Ç°ÔªËØµÄ×î´óÖµ
+		tmpMax = Math.max(tmpMax, root.val); // ç»è¿‡å½“å‰å…ƒç´ çš„æœ€å¤§å€¼
 		max = Math.max(max, tmpMax);
-		max = Math.max(max, root.val + maxL + maxR); // ²»¾­¹ıµÄ×î´óÖµ
+		max = Math.max(max, root.val + maxL + maxR); // ä¸ç»è¿‡çš„æœ€å¤§å€¼
 		return tmpMax;
 	}
 

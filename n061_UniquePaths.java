@@ -1,6 +1,6 @@
 package LeetCode;
 
-/*[(m-1)+(n-1)]!/[(m-1)!*(n-1)!]£¬Æ«²»ÓÃDP...*/
+/*[(m-1)+(n-1)]!/[(m-1)!*(n-1)!]ï¼Œåä¸ç”¨DP...*/
 
 public class n061_UniquePaths {
 	public int uniquePaths(int m, int n) {

@@ -17,7 +17,7 @@ public class n112_PathSum {
 		if (root == null)
 			return false;
 		if (root.left == null && root.right == null && root.val == sum)
-			return true; // 成功条件
+			return true; // 鎴愬姛鏉′欢
 		return (hasPathSum(root.left, sum - root.val) || hasPathSum(root.right,
 				sum - root.val));
 	}

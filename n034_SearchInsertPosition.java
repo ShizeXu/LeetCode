@@ -3,7 +3,7 @@ package LeetCode;
 public class n034_SearchInsertPosition {
 	public int sub_search(int[] A, int l, int r, int t) {
 		if (l > r)
-			return l; // ���ؽϴ�ı߽�
+			return l; // 返回较大的边界
 		int m = (l + r) / 2;
 		if (A[m] == t)
 			return m;

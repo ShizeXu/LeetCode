@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class n048_Anagrams {
-	public String hashFunc(String s) { // ÖØ×é×Ö·û
+	public String hashFunc(String s) { // é‡ç»„å­—ç¬¦
 		char[] charArr = s.toCharArray();
 		Arrays.sort(charArr);
 		return charArr.toString();

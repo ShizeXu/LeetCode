@@ -7,12 +7,12 @@ public class n032_SearchinRotatedSortedArray {
 		int m = l + (r - l) / 2;
 		if (A[m] == t)
 			return m;
-		if (A[m] >= A[l]) { // вС╠ъсппР
+		if (A[m] >= A[l]) { // Е╥╕Х╬╧Ф°┴Е╨▐
 			if (t < A[m] && t >= A[l])
 				return sub_search(A, l, m - 1, t);
 			return sub_search(A, m + 1, r, t);
 		}
-		// ср╠ъсппР
+		// Е▐ЁХ╬╧Ф°┴Е╨▐
 		if (t > A[m] && t <= A[r])
 			return sub_search(A, m + 1, r, t);
 		return sub_search(A, l, m - 1, t);

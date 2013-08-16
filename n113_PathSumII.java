@@ -17,15 +17,15 @@ public class n113_PathSumII {
 			ArrayList<Integer> res, TreeNode root, int sum) {
 		if (root == null)
 			return;
-		if (root.left == null && root.right == null && root.val == sum) { // 成功条件
+		if (root.left == null && root.right == null && root.val == sum) { // 鎴愬姛鏉′欢
 			res.add(root.val);
 			resArr.add((ArrayList<Integer>) res.clone());
-			res.remove(res.size() - 1); // 记得
+			res.remove(res.size() - 1); // 璁板緱
 			return;
 		}
 		res.add(root.val);
-		sum(resArr, res, root.left, sum - root.val); // 搜左子树
-		sum(resArr, res, root.right, sum - root.val); // 搜右子树
+		sum(resArr, res, root.left, sum - root.val); // 鎼滃乏瀛愭爲
+		sum(resArr, res, root.right, sum - root.val); // 鎼滃彸瀛愭爲
 		res.remove(res.size() - 1);
 	}
 
