@@ -24,7 +24,7 @@ public class n107_BinaryTreeLevelOrderTraversalII {
 			return resArr;
 		Queue<TreeNode> pre = new LinkedList<TreeNode>();
 		ArrayList<Integer> valArr = new ArrayList<Integer>();
-		pre.add(root);
+		pre.offer(root);
 		while (pre.size() > 0) {
 			int n = pre.size();
 			for (int i = 0; i < n; i++) {

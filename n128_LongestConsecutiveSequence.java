@@ -15,21 +15,21 @@ public class n128_LongestConsecutiveSequence {
 			int tmp = num[i];
 			if (res.containsKey(tmp))
 				continue;
-			if (!res.containsKey(tmp - 1) && !res.containsKey(tmp + 1))
+			if (!res.containsKey(tmp - 1) && !res.containsKey(tmp + 1)) // 孤立点
 				res.put(tmp, 1);
-			else if (res.containsKey(tmp - 1) && res.containsKey(tmp + 1)) {
+			else if (res.containsKey(tmp - 1) && res.containsKey(tmp + 1)) { // 中间节点
 				int val1 = res.get(tmp - 1), val2 = res.get(tmp + 1);
 				int len = val1 + val2 + 1;
 				res.put(tmp, 0);
 				res.put(tmp - val1, len);
 				res.put(tmp + val2, len);
 				max = Math.max(max, len);
-			} else if (res.containsKey(tmp - 1)) {
+			} else if (res.containsKey(tmp - 1)) { // 右端点
 				int val = res.get(tmp - 1);
 				res.put(tmp, val + 1);
 				res.put(tmp - val, val + 1);
 				max = Math.max(max, val + 1);
-			} else {
+			} else { // 左端点
 				int val = res.get(tmp + 1);
 				res.put(tmp, val + 1);
 				res.put(tmp + val, val + 1);

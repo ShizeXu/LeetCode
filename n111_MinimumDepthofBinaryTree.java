@@ -1,6 +1,7 @@
 package LeetCode;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class n111_MinimumDepthofBinaryTree {
 	class TreeNode {
@@ -16,28 +17,25 @@ public class n111_MinimumDepthofBinaryTree {
 	public int minDepth(TreeNode root) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		ArrayList<TreeNode> tmp = new ArrayList<TreeNode>();
+		Queue<TreeNode> q = new LinkedList<TreeNode>();
 		if (root == null)
 			return 0;
-		int begin = 0;
-		tmp.add(root);
+		q.offer(root);
 		int depth = 1;
-		int end = 1;
 		while (true) {
-			for (int i = begin; i < end; i++) {
-				TreeNode tmpNode = tmp.get(i);
+			int n = q.size();
+			while ((n--) > 0) {
+				TreeNode tmpNode = q.poll();
 				if (tmpNode.left == null && tmpNode.right == null)
 					return depth;
 				if (tmpNode.left != null) {
-					tmp.add(tmpNode.left);
+					q.offer(tmpNode.left);
 				}
 				if (tmpNode.right != null) {
-					tmp.add(tmpNode.right);
+					q.offer(tmpNode.right);
 				}
 			}
 			depth++;
-			begin = end;
-			end = tmp.size();
 		}
 	}
 }

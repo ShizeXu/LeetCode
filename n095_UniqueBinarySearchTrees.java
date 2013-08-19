@@ -21,4 +21,17 @@ public class n095_UniqueBinarySearchTrees {
 		}
 		return res[n];
 	}
+
+	// Catalan Numbers
+	int numTrees_O_n(int n) {
+		if (n == 0)
+			return 0;
+		double res = 1;
+		for (int i = 2 * n; i > n; i--) {
+			res *= i;
+			res /= (i - n);
+		}
+		res /= (n + 1);
+		return (int) Math.round(res);
+	}
 }

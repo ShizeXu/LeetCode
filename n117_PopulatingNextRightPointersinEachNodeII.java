@@ -10,6 +10,7 @@ public class n117_PopulatingNextRightPointersinEachNodeII {
 		}
 	}
 
+	// O(1) space
 	public void connect(TreeLinkNode root) {
 		// Start typing your Java solution below
 		// DO NOT write main() function

@@ -11,6 +11,7 @@ public class n124_BinaryTreeMaximumPathSum {
 		}
 	}
 
+	// 用全局变量或Pair类
 	public int max;
 
 	public int sum(TreeNode root) {
@@ -18,10 +19,9 @@ public class n124_BinaryTreeMaximumPathSum {
 			return 0;
 		int maxL = sum(root.left);
 		int maxR = sum(root.right);
-		int tmpMax = root.val + Math.max(maxL, maxR);
-		tmpMax = Math.max(tmpMax, root.val); // 经过当前元素的最大值
+		int tmpMax = Math.max(root.val + Math.max(maxL, maxR), root.val); // 经过当前元素继续往上走
 		max = Math.max(max, tmpMax);
-		max = Math.max(max, root.val + maxL + maxR); // 不经过的最大值
+		max = Math.max(max, root.val + maxL + maxR); // max{不可扩展路径,可往上扩展的路径,原始值}
 		return tmpMax;
 	}
 

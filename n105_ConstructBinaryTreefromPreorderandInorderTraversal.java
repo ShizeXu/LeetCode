@@ -19,13 +19,13 @@ public class n105_ConstructBinaryTreefromPreorderandInorderTraversal {
 		if (p1 == p2)
 			return root;
 		int rootVal = preorder[p1];
-		int i = i1;
-		for (i = i1; i <= i2; i++) {
-			if (inorder[i] == rootVal)
+		int k = i1;
+		for (k = i1; k <= i2; k++) {
+			if (inorder[k] == rootVal)
 				break; // 找到根节点在中序中的位置 i
 		}
-		root.left = findRoot(preorder, inorder, p1 + 1, p1 + i - i1, i1, i - 1);
-		root.right = findRoot(preorder, inorder, p2 - i2 + i + 1, p2, i + 1, i2);
+		root.left = findRoot(preorder, inorder, p1 + 1, p1 + k - i1, i1, k - 1);
+		root.right = findRoot(preorder, inorder, p2 - i2 + k + 1, p2, k + 1, i2);
 		return root;
 	}
 

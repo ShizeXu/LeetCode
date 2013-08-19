@@ -14,30 +14,25 @@ public class n092_ReverseLinkedListII {
 	public ListNode reverseBetween(ListNode head, int m, int n) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		if (m == n)
-			return head;
+		ListNode newHead = new ListNode(0);
+		newHead.next = head;
+		ListNode cur = head, pre = newHead;
 		int k = n - m;
-		m--;
-		ListNode n0 = new ListNode(0);
-		n0.next = head;
-		ListNode n1 = n0;
-		while (m > 0) {
-			n1 = n1.next;
+		while (m > 1) {
+			pre = cur;
+			cur = cur.next;
 			m--;
 		}
-		ListNode n2 = n1.next;
-		ListNode n3 = n2;
-		ListNode n4 = n2.next;
-		ListNode n5 = n4;
+		ListNode tmp = cur.next, preTmp = cur, next = tmp;
 		while (k > 0) {
-			n5 = n5.next;
-			n4.next = n3;
-			n3 = n4;
-			n4 = n5;
 			k--;
+			next = tmp.next;
+			tmp.next = preTmp;
+			preTmp = tmp;
+			tmp = next;
 		}
-		n1.next = n3;
-		n2.next = n4;
-		return n0.next;
+		cur.next = next;
+		pre.next = preTmp;
+		return newHead.next;
 	}
 }

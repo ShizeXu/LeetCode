@@ -1,6 +1,7 @@
 package LeetCode;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class n104_MaximumDepthofBinaryTree {
 	class TreeNode {
@@ -18,21 +19,19 @@ public class n104_MaximumDepthofBinaryTree {
 		// DO NOT write main() function
 		if (root == null)
 			return 0;
-		ArrayList<TreeNode> tmp = new ArrayList<TreeNode>();
-		tmp.add(root);
-		int begin = 0, end = 1;
+		Queue<TreeNode> q = new LinkedList<TreeNode>();
+		q.offer(root);
 		int depth = 0;
-		while (begin < end) {
-			for (int i = begin; i < end; i++) {
-				TreeNode tmpNode = tmp.get(i);
+		while (!q.isEmpty()) {
+			int n = q.size();
+			while ((n--) > 0) {
+				TreeNode tmpNode = q.poll();
 				if (tmpNode.left != null)
-					tmp.add(tmpNode.left);
+					q.offer(tmpNode.left);
 				if (tmpNode.right != null)
-					tmp.add(tmpNode.right);
+					q.offer(tmpNode.right);
 			}
 			depth++;
-			begin = end;
-			end = tmp.size();
 		}
 		return depth;
 	}

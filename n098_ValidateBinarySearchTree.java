@@ -1,6 +1,5 @@
 package LeetCode;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class n098_ValidateBinarySearchTree {
@@ -20,19 +19,17 @@ public class n098_ValidateBinarySearchTree {
 		if (root == null)
 			return true;
 		Stack<TreeNode> sta = new Stack<TreeNode>();
-		ArrayList<Integer> res = new ArrayList<Integer>();
+		int pre = Integer.MIN_VALUE;
 		while (root != null || sta.size() > 0) {
 			while (root != null) {
 				sta.push(root);
 				root = root.left;
 			}
 			root = sta.pop();
-			res.add(root.val);
-			root = root.right;
-		}
-		for (int i = 1; i < res.size(); i++) {
-			if (res.get(i) <= res.get(i - 1))
+			if (root.val <= pre)
 				return false;
+			pre = root.val;
+			root = root.right;
 		}
 		return true;
 	}

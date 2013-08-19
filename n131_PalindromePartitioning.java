@@ -1,23 +1,34 @@
 package LeetCode;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Stack;
 
 public class n131_PalindromePartitioning {
-	void join(ArrayList<ArrayList<String>> resArr, boolean[][] res,
-			ArrayList<String> tmp, int begin, String s) {
+	// 不DP不舒服斯基
+	ArrayList<Stack<String>> join(boolean[][] res, int begin, String s,
+			HashMap<Integer, ArrayList<Stack<String>>> dp) {
 		int n = s.length();
+		ArrayList<Stack<String>> resArr = new ArrayList<Stack<String>>();
 		if (begin == n) {
-			resArr.add((ArrayList<String>) tmp.clone());
-			return;
+			resArr.add(new Stack<String>());
+			return resArr;
 		}
+		if (dp.containsKey(begin))
+			return dp.get(begin);
 		for (int i = begin; i < n; i++) {
 			if (res[begin][i]) {
-				tmp.add(s.substring(begin, i + 1));
-				join(resArr, res, tmp, i + 1, s);
-				tmp.remove(tmp.size() - 1);
+				ArrayList<Stack<String>> arr = join(res, i + 1, s, dp);
+				String str = s.substring(begin, i + 1);
+				for (Stack<String> sta : arr) {
+					Stack<String> tmp = (Stack<String>) sta.clone();
+					tmp.push(str);
+					resArr.add(tmp);
+				}
 			}
 		}
-		return;
+		dp.put(begin, resArr);
+		return resArr;
 	}
 
 	public ArrayList<ArrayList<String>> partition(String s) {
@@ -38,8 +49,15 @@ public class n131_PalindromePartitioning {
 						- 1]); // 递推公式
 			}
 		}
-		ArrayList<String> tmp = new ArrayList<String>();
-		join(resArr, res, tmp, 0, s); // 拼接结果
+		HashMap<Integer, ArrayList<Stack<String>>> dp = new HashMap<Integer, ArrayList<Stack<String>>>();
+		ArrayList<Stack<String>> resSta = join(res, 0, s, dp); // 拼接结果
+		for (Stack<String> sta : resSta) {
+			ArrayList<String> arr = new ArrayList<String>();
+			while (!sta.isEmpty()) {
+				arr.add(sta.pop());
+			}
+			resArr.add(arr);
+		}
 		return resArr;
 	}
 }

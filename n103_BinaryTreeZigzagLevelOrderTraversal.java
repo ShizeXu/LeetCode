@@ -25,10 +25,10 @@ public class n103_BinaryTreeZigzagLevelOrderTraversal {
 		pre.add(root);
 		boolean flag = true;
 		while (pre.size() > 0) {
-			for (int i = pre.size() - 1; i >= 0; i--) {
+			for (int i = pre.size() - 1; i >= 0; i--) { // 逆序
 				TreeNode tmpNode = pre.get(i);
 				valArr.add(tmpNode.val);
-				if (flag) {
+				if (flag) { // 区分添加顺序
 					if (tmpNode.left != null)
 						tmp.add(tmpNode.left);
 					if (tmpNode.right != null)

@@ -11,7 +11,7 @@ public class n123_BestTimetoBuyandSellStockIII {
 		int[] lr = new int[n];
 		for (int i = 1; i < n; i++) {
 			min = Math.min(prices[i], min);
-			lr[i] = Math.max(lr[i - 1], prices[i] - min); // 与第一题不同，这里每个位置都要记录置，所以干脆省掉判断prices[i]>min的判断。
+			lr[i] = Math.max(lr[i - 1], prices[i] - min); // 与第一题不同，这里每个位置都要记录，所以干脆省掉判断prices[i]>min的判断。
 		}
 		int res = lr[n - 1]; // 初始化二次交易最大收益为单次交易的最大收益
 		int max = prices[n - 1];

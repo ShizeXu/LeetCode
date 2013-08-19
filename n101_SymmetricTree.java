@@ -14,6 +14,7 @@ public class n101_SymmetricTree {
 		}
 	}
 
+	// Non-recursively
 	public boolean isSymmetric(TreeNode root) {
 		// Start typing your Java solution below
 		// DO NOT write main() function

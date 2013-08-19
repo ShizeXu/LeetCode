@@ -14,8 +14,7 @@ public class n132_PalindromePartitioningII {
 		for (int i = 1; i < n; i++) {
 			int min = Integer.MAX_VALUE;
 			for (int j = i; j >= 0; j--) {
-				if (s.charAt(j) == s.charAt(i) && (i - j < 2 || res[i - 1][j + 1])) { // key
-																						// condition
+				if (s.charAt(j) == s.charAt(i) && (i - j < 2 || res[i - 1][j + 1])) { // key_condition
 					res[i][j] = true;
 					if (j == 0)
 						min = 0;

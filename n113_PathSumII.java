@@ -20,13 +20,13 @@ public class n113_PathSumII {
 		if (root.left == null && root.right == null && root.val == sum) { // 成功条件
 			res.add(root.val);
 			resArr.add((ArrayList<Integer>) res.clone());
-			res.remove(res.size() - 1); // 记得
+			res.remove(res.size() - 1); // back-trace
 			return;
 		}
 		res.add(root.val);
-		sum(resArr, res, root.left, sum - root.val); // 搜左子树
-		sum(resArr, res, root.right, sum - root.val); // 搜右子树
-		res.remove(res.size() - 1);
+		sum(resArr, res, root.left, sum - root.val); // search left
+		sum(resArr, res, root.right, sum - root.val); // search right
+		res.remove(res.size() - 1); // back-trace
 	}
 
 	public ArrayList<ArrayList<Integer>> pathSum(TreeNode root, int sum) {
