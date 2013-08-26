@@ -1,49 +1,46 @@
 package LeetCode;
 
 public class n079_WordSearch {
-	public boolean subExist(char[][] board, int x, int y, boolean[][] flag,
-			String word, int i) {
-		if (i == word.length())
-			return true;
-		int X = board.length;
-		int Y = board[0].length;
+	static int[][] d = { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } };
 
-		flag[x][y] = true; // mark used
-		if (x < X - 1 && !flag[x + 1][y] && board[x + 1][y] == word.charAt(i)) { // down, note three conditions
-			if (subExist(board, x + 1, y, flag, word, i + 1))
-				return true;
+	boolean isValid(char[][] matrix, int i, int j) {
+		return (i >= 0 && i < matrix.length && j >= 0 && j < matrix[0].length);
+	}
+
+	boolean isExist(char[][] matrix, boolean[][] flag, int i, int j, String word) {
+		if (word.equals(""))
+			return true;
+		char x = word.charAt(0);
+		word = word.substring(1);
+		for (int k = 0; k < 4; k++) {
+			int m = i + d[k][0];
+			int n = j + d[k][1];
+			if (isValid(matrix, m, n) && matrix[m][n] == x && !flag[m][n]) {
+				flag[m][n] = true;
+				if (isExist(matrix, flag, m, n, word))
+					return true;
+				flag[m][n] = false;
+			}
 		}
-		if (y < Y - 1 && !flag[x][y + 1] && board[x][y + 1] == word.charAt(i)) { // right
-			if (subExist(board, x, y + 1, flag, word, i + 1))
-				return true;
-		}
-		if (x > 0 && !flag[x - 1][y] && board[x - 1][y] == word.charAt(i)) { // up
-			if (subExist(board, x - 1, y, flag, word, i + 1))
-				return true;
-		}
-		if (y > 0 && !flag[x][y - 1] && board[x][y - 1] == word.charAt(i)) { // left
-			if (subExist(board, x, y - 1, flag, word, i + 1))
-				return true;
-		}
-		flag[x][y] = false; // back-trace
 		return false;
 	}
 
 	public boolean exist(char[][] board, String word) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		int X = board.length;
-		if (X < 1)
+		int m, n;
+		if (board == null || (m = board.length) == 0
+				|| (n = board[0].length) == 0)
 			return false;
-		int Y = board[0].length;
-		if (Y < 1)
-			return false;
-		boolean[][] flag = new boolean[X][Y];
-		for (int i = 0; i < X; i++) {
-			for (int j = 0; j < Y; j++) {
-				if (board[i][j] == word.charAt(0)) {
-					if (subExist(board, i, j, flag, word, 1))
+		boolean[][] flag = new boolean[m][n];
+		char x = word.charAt(0);
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				if (x == board[i][j]) {
+					flag[i][j] = true;
+					if (isExist(board, flag, i, j, word.substring(1)))
 						return true;
+					flag[i][j] = false;
 				}
 			}
 		}
