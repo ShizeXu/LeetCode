@@ -24,7 +24,7 @@ public class beta09_Decimal2Fraction {
 			max *= 10;
 			tmp = x * max;
 		}
-		// denominator minimization with iterative division algorithm
+		// denominator minimization via iterative division algorithm
 		long i = (long) tmp, j = (long) max;
 		while (i > 0 && j > 0) {
 			if (i >= j)
