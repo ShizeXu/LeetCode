@@ -15,7 +15,6 @@ public class n005_LongestPalindromicSubstring {
 		String ss = sb.toString();
 		int n = ss.length();
 		int[] res = new int[n];
-		res[0] = 0;
 		int far = 0;
 		int index = 0;
 		for (int i = 1; i < n; i++) {
@@ -31,13 +30,13 @@ public class n005_LongestPalindromicSubstring {
 					&& ss.charAt(j) == ss.charAt(i * 2 - j)) {
 				j++;
 			}
-			res[i] = j - i - 1;
-			if (res[i] > max) {
+			far = j - 1;
+			index = i;
+			res[i] = far - i;
+			if (max < res[i]) {
 				max = res[i];
 				maxi = i;
 			}
-			far = j - 1;
-			index = i;
 		}
 		sb = new StringBuilder();
 		for (int i = maxi - max + 1; i <= maxi + max - 1; i += 2) {
