@@ -4,23 +4,17 @@ public class n014_LongestCommonPrefix {
 	public String longestCommonPrefix(String[] strs) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		StringBuilder res = new StringBuilder();
-		int n = strs.length;
-		int len = strs[0].length();
-		for (int i = 0; i < len; i++) {
-			char tmp = strs[0].charAt(i);
-			int j = 1;
-			for (j = 1; j < n; j++) {
-				if (i >= strs[j].length() || tmp != strs[j].charAt(i)) {
-					break;
-				}
+		StringBuilder sb = new StringBuilder();
+		if (strs == null || strs.length == 0)
+			return sb.toString();
+		for (int i = 0; i < strs[0].length(); i++) {
+			char x = strs[0].charAt(i);
+			for (int j = 1; j < strs.length; j++) {
+				if (i >= strs[j].length() || strs[j].charAt(i) != x)
+					return sb.toString();
 			}
-			if (j == n) {
-				res.append(tmp);
-			} else {
-				break;
-			}
+			sb.append(x);
 		}
-		return res.toString();
+		return sb.toString();
 	}
 }

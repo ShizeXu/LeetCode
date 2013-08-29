@@ -40,4 +40,49 @@ public class n015_3Sum {
 		}
 		return array;
 	}
+
+	// 不用map的版本
+	public ArrayList<ArrayList<Integer>> threeSumNew(int[] num) {
+		// Start typing your Java solution below
+		// DO NOT write main() function
+		ArrayList<ArrayList<Integer>> resArr = new ArrayList<ArrayList<Integer>>();
+		int n = num.length;
+		Arrays.sort(num);
+		for (int i = 0; i < n - 2; i = next(num, i, n - 2, true)) {
+			int t = 0 - num[i];
+			int l = i + 1, r = n - 1;
+			while (l < r) {
+				if (num[l] + num[r] < t) {
+					l = next(num, l, r, true);
+				} else if (num[l] + num[r] > t) {
+					r = next(num, l, r, false);
+				} else {
+					ArrayList<Integer> res = new ArrayList<Integer>();
+					res.add(num[i]);
+					res.add(num[l]);
+					res.add(num[r]);
+					resArr.add(res);
+					l = next(num, l, r, true);
+					r = next(num, l, r, false);
+				}
+			}
+		}
+		return resArr;
+	}
+
+	int next(int[] num, int l, int r, boolean isLeft) { // 找到不重复的下一个数
+		if (isLeft) {
+			int i = l + 1;
+			while (i < r && num[i] == num[l]) {
+				i++;
+			}
+			return i;
+		} else {
+			int i = r - 1;
+			while (i > l && num[i] == num[r]) {
+				i--;
+			}
+			return i;
+		}
+	}
 }

@@ -6,39 +6,32 @@ public class n010_RegularExpressionMatching {
 	public boolean isMatch(String s, String p) {
 		// Start typing your Java solution below
 		// DO NOT write main() function
-		HashMap<String, Boolean> mapDp = new HashMap<String, Boolean>();
-		return isMatch(s, p, mapDp, 0, 0);
+		if (s == null || p == null)
+			return false;
+		HashMap<String, Boolean> dp = new HashMap<String, Boolean>();
+		return match(s, p, 0, 0, dp);
 	}
 
-	boolean isMatch(String s, String p, HashMap<String, Boolean> mapDp, int i,
-			int j) {
-		int m = s.length();
-		int n = p.length();
-		if (j == n && i == m)
-			return true;
-		if (j == n || i > m)
-			return false;
+	boolean match(String s, String p, int i, int j, HashMap<String, Boolean> dp) {
+		if (j == p.length())
+			return i == s.length();
 		String str = String.valueOf(i) + "_" + String.valueOf(j);
-		if (mapDp.containsKey(str))
-			return mapDp.get(str);
-		boolean res = false;
-		char y = p.charAt(j);
-		if (j + 1 == n || p.charAt(j + 1) != '*') {
-			if (i == m) {
-				mapDp.put(str, false);
-				return false;
-			}
-			res = (s.charAt(i) == y || y == '.') && isMatch(s, p, mapDp, i + 1,
-					j + 1);
-		} else {
+		if (dp.containsKey(str))
+			return dp.get(str);
+		char x = p.charAt(j);
+		if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
 			int k = i;
 			do {
-				res = isMatch(s, p, mapDp, k, j + 2);
-				if (res)
-					break;
-			} while (k < m && (s.charAt(k++) == y || y == '.'));
+				if (match(s, p, k, j + 2, dp))
+					return true;
+			} while (k < s.length() && (x == s.charAt(k++) || x == '.'));
 		}
-		mapDp.put(str, res);
-		return res;
+		if (i == s.length())
+			return false;
+		if ((s.charAt(i) == x || x == '.') && (match(s, p, i + 1, j + 1, dp))) {
+			return true;
+		}
+		dp.put(str, false);
+		return false;
 	}
 }
