@@ -1,7 +1,7 @@
-#include <201. Bitwise AND of Numbers Range.cpp>
+#include <898. Bitwise ORs of Subarrays.cpp>
 
 int main()
 {
-    P_201 test;
+    P_898 test;
     test.RunTest();
 }
