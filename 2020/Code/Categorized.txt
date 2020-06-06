@@ -1,0 +1,26 @@
+---- 5/25 ----
+201 Bitwise AND of Numbers Range                        Bit                             M
+202 Happy Number                                        Digits / Map                    E
+898 Bitwise ORs of Subarrays                            Bit / Map                       M
+4   Median of Two Sorted Arrays                         Binary Search                   H
+
+---- 6/5 ----
+1   Two Sum                                             Map                             E
+2   Add Two Numbers                                     Digits / LinkedList             M
+3   Longest Substring Without Repeating Characters      String / Map / Greedy           M
+5   Longest Palindromic Substring                       String / Greedy (DP:Manacher)   M
+7   Reverse Integer                                     Digits                          E
+9   Palindrome Number                                   Digits                          E
+
+---- 6/6 ----
+8   String to Integer (atoi)                            Digits                          M
+10  Regular Expression Matching                         String / DP-matrix              H
+11  Container With Most Water                           Greedy                          M
+14  Longest Common Prefix                               String                          E
+15  3Sum                                                Loop                            M
+16  3Sum Closest                                        Loop                            M
+18  4Sum                                                Loop                            M 
+17  Letter Combinations of a Phone Number               Map / Loop(Recursion)           M
+19  Remove Nth Node From End of List                    LinkedList                      M
+21  Merge Two Sorted Lists                              LinkedList                      E
+23  Merge k Sorted Lists                                LinkedList                      H

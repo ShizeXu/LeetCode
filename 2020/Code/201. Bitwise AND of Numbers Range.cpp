@@ -5,6 +5,8 @@ class P_201 {
 public:
     int rangeBitwiseAnd(int m, int n) {
         int res = 0;
+
+        // Find the smallest bit that are still the same. Then the remainings would be 0s.
         for (int i = 30; i >= 0; i--)
         {
             int tmp = (1 << i);
@@ -12,6 +14,7 @@ public:
             {
                 break;
             }
+
             res |= (m & tmp);
         }
         return res;
