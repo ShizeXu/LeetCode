@@ -1,3 +1,5 @@
+#   Title                                               Category                        Level   Extension
+
 ---- 5/25 ----
 201 Bitwise AND of Numbers Range                        Bit                             M
 202 Happy Number                                        Digits / Map                    E
@@ -14,7 +16,7 @@
 
 ---- 6/6 ----
 8   String to Integer (atoi)                            Digits                          M
-10  Regular Expression Matching                         String / DP-matrix              H
+10  Regular Expression Matching                         String / DP-matrix              H       Maximize regex matching in a stream
 11  Container With Most Water                           Greedy                          M
 14  Longest Common Prefix                               String                          E
 15  3Sum                                                Loop                            M
@@ -23,4 +25,10 @@
 17  Letter Combinations of a Phone Number               Map / Loop(Recursion)           M
 19  Remove Nth Node From End of List                    LinkedList                      M
 21  Merge Two Sorted Lists                              LinkedList                      E
-23  Merge k Sorted Lists                                LinkedList                      H
+23  Merge k Sorted Lists                                LinkedList / P-Queue (DC)       H
+20  Valid Parentheses                                   String / Stack                  E
+22  Generate Parentheses                                String / Recursion              M
+32  Longest Valid Parentheses                           String / Stack (DP)             H
+
+---- 6/8 ----
+24
