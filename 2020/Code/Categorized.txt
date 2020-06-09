@@ -38,5 +38,6 @@
 28  Implement strStr()                                                                  E
 29	Divide Two Integers                                 Loop                            M
 30	Substring with Concatenation of All Words           Map                             H
+41  First Missing Positive                              Sort-Bucket                     H
 
 ---- 6/9 ----
