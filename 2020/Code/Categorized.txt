@@ -1,43 +1,51 @@
-#   Title                                               Category                        Level   Extension
+#   Title                                                   Category                        Level   Extension
 
 ---- 5/25 ----
-201 Bitwise AND of Numbers Range                        Bit                             M
-202 Happy Number                                        Digits / Map                    E
-898 Bitwise ORs of Subarrays                            Bit / Map                       M
-4   Median of Two Sorted Arrays                         Binary Search                   H
+201 Bitwise AND of Numbers Range                            Bit                             M
+202 Happy Number                                            Digits / Map                    E
+898 Bitwise ORs of Subarrays                                Bit / Map                       M
+4   Median of Two Sorted Arrays                             Search-Binary                   H
 
 ---- 6/5 ----
-1   Two Sum                                             Map                             E
-2   Add Two Numbers                                     Digits / LinkedList             M
-3   Longest Substring Without Repeating Characters      String / Map / Greedy           M
-5   Longest Palindromic Substring                       String / Greedy (DP:Manacher)   M
-7   Reverse Integer                                     Digits                          E
-9   Palindrome Number                                   Digits                          E
+1   Two Sum                                                 Map                             E
+2   Add Two Numbers                                         Digits / LinkedList             M
+3   Longest Substring Without Repeating Characters          String / Map / Greedy           M
+5   Longest Palindromic Substring                           String / Greedy (DP:Manacher)   M
+7   Reverse Integer                                         Digits                          E
+9   Palindrome Number                                       Digits                          E
 
 ---- 6/6 ----
-8   String to Integer (atoi)                            Digits                          M
-10  Regular Expression Matching                         String / DP-matrix              H       Maximize regex matching in a stream
-11  Container With Most Water                           Greedy                          M
-14  Longest Common Prefix                               String                          E
-15  3Sum                                                                                M
-16  3Sum Closest                                                                        M
-18  4Sum                                                                                M 
-17  Letter Combinations of a Phone Number               Map / Loop(Recursion)           M
-19  Remove Nth Node From End of List                    LinkedList                      M
-21  Merge Two Sorted Lists                              LinkedList                      E
-23  Merge k Sorted Lists                                LinkedList / P-Queue (DC)       H
-20  Valid Parentheses                                   String / Stack                  E
-22  Generate Parentheses                                String / Recursion              M
-32  Longest Valid Parentheses                           String / Stack (DP)             H
+8   String to Integer (atoi)                                Digits                          M
+10  Regular Expression Matching                             String / DP-matrix              H       Maximize regex matching in a stream
+11  Container With Most Water                               Greedy                          M
+14  Longest Common Prefix                                   String                          E
+15  3Sum                                                                                    M
+16  3Sum Closest                                                                            M
+18  4Sum                                                                                    M 
+17  Letter Combinations of a Phone Number                   Map / Loop(Recursion)           M
+19  Remove Nth Node From End of List                        LinkedList                      M
+21  Merge Two Sorted Lists                                  LinkedList                      E
+23  Merge k Sorted Lists                                    LinkedList / P-Queue (DC)       H
+20  Valid Parentheses                                       String / Stack                  E
+22  Generate Parentheses                                    String / Recursion              M
+32  Longest Valid Parentheses                               String / Stack (DP)             H
 
 ---- 6/8 ----
-24  Swap Nodes in Pairs                                 LinkedList                      M
-25  Reverse Nodes in k-Group                            LinkedList                      H
-26  Remove Duplicates from Sorted Array                                                 E
-27  Remove Element                                                                      E
-28  Implement strStr()                                                                  E
-29	Divide Two Integers                                 Loop                            M
-30	Substring with Concatenation of All Words           Map                             H
-41  First Missing Positive                              Sort-Bucket                     H
+24  Swap Nodes in Pairs                                     LinkedList                      M
+25  Reverse Nodes in k-Group                                LinkedList                      H
+26  Remove Duplicates from Sorted Array                                                     E
+27  Remove Element                                                                          E
+28  Implement strStr()                                                                      E
+29	Divide Two Integers                                     Loop                            M
+30	Substring with Concatenation of All Words               Map                             H
+41  First Missing Positive                                  Sort-Bucket                     H
 
 ---- 6/9 ----
+31  Next Permutation                                                                        M
+33  Search in Rotated Sorted Array                          Search-Binary                   M
+34  Find First and Last Position of Element in Sorted Array Search-Binary                   M
+35  Search Insert Position                                  Search-Binary                   E
+36  Valid Sudoku                                                                            M
+37  Sudoku Solver                                           Recursion                       H
+
+---- 6/10 ----
