@@ -49,3 +49,11 @@
 37  Sudoku Solver                                           Recursion                       H
 
 ---- 6/10 ----
+38  Count and Say                                           String / Recursion(Loop)        E
+39  Combination Sum                                         Recursion (Cache-Map)           M
+40  Combination Sum II                                      Recursion                       M
+42  Trapping Rain Water                                     Greedy                          H
+43  Multiply Strings                                        (Loop)                          M
+44  Wildcard Matching                                       String / DP-matrix              H
+
+---- 6/11 ----
