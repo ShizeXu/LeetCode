@@ -67,12 +67,12 @@
 50  Pow(x, n)                                               Bit                             M
 
 ---- 6/12 ----
-49  Group Anagrams
-48  Rotate Image
-51  N-Queens
-52  N-Queens II
-54  Spiral Matrix
-59  Spiral Matrix II
+49  Group Anagrams                                          Map                             M
+48  Rotate Image                                                                            M
+51  N-Queens                                                
+52  N-Queens II                                             
+54  Spiral Matrix                                                                           M
+59  Spiral Matrix II                                                                        M
 
 ---- 6/13 ----
 53  Maximum Subarray
