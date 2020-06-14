@@ -79,12 +79,24 @@
 56  Merge Intervals                                                                         M
 57  Insert Interval                                                                         H
 58  Length of Last Word                                                                     E
-60  Permutation Sequence                                    
-61  Rotate List
-62  Unique Paths
-63  Unique Paths II
-64  Minimum Path Sum
-65  Valid Number
+60  Permutation Sequence                                                                    M
+61  Rotate List                                             LinkedList                      M
+62  Unique Paths                                            DP-2D(P-C)                      M
+63  Unique Paths II                                         DP-2D                           M
+64  Minimum Path Sum                                        DP-2D                           M
+65  Valid Number                                                                            H
+
+---- 6/15 ----
+
+
+
+
+
+
+
+
+
+
 
 
 
