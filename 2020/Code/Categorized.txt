@@ -86,9 +86,15 @@
 64  Minimum Path Sum                                        DP-2D                           M
 65  Valid Number                                                                            H
 
+980 Unique Paths III                                        ?
+
 ---- 6/15 ----
-
-
+66  Plus One
+67  Add Binary
+69  Sqrt(x)
+70  Climbing Stairs
+71  Simplify Path
+72  Edit Distance
 
 
 
