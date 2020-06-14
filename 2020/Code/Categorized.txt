@@ -84,9 +84,8 @@
 62  Unique Paths                                            DP-2D(P-C)                      M
 63  Unique Paths II                                         DP-2D                           M
 64  Minimum Path Sum                                        DP-2D                           M
+980 Unique Paths III                                        Recursion / DFS                 H
 65  Valid Number                                                                            H
-
-980 Unique Paths III                                        ?
 
 ---- 6/15 ----
 66  Plus One
