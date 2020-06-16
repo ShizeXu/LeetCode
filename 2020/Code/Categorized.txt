@@ -88,13 +88,21 @@
 65  Valid Number                                                                            H
 
 ---- 6/15 ----
-66  Plus One
-67  Add Binary
-69  Sqrt(x)
-70  Climbing Stairs
-71  Simplify Path
-72  Edit Distance
+66  Plus One                                                Digits                          E
+67  Add Binary                                              Digits                          E
+69  Sqrt(x)                                                 Search-Binary                   E
+70  Climbing Stairs                                         DP-1D                           E
+71  Simplify Path                                           String / Stack                  M
+72  Edit Distance                                           DP-2D                           H
+73  Set Matrix Zeroes                                                                       M
 
+---- 6/16 ----
+74  Search a 2D Matrix
+75  Sort Colors
+76  Minimum Window Substring
+77  Combinations
+78  Subsets
+79  Word Search
 
 
 
