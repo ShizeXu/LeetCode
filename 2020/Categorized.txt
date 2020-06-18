@@ -104,6 +104,7 @@
 76  Minimum Window Substring                                Map / Greedy                    H
 77  Combinations                                            Recursion(Loop)                 M
 78  Subsets                                                 Recursion(Loop)                 M 
+90  Subsets II                                              Recursion(Loop)                 M (6/18)
 79  Word Search                                             Recursion / DFS                 M
 87  Scramble String                                         Recursion(Cache-Map)            H
 
@@ -116,9 +117,8 @@
 97  Interleaving String                                     String / DP-2D                  H
 
 ---- 6/18 ----
-88  Merge Sorted Array
-89  Gray Code
-90  Subsets II
+88  Merge Sorted Array                                                                      E
+89  Gray Code                                               Bit                             M
 91  Decode Ways
 92  Reverse Linked List II
 93  Restore IP Addresses
