@@ -1,7 +1,7 @@
-#include <898. Bitwise ORs of Subarrays.cpp>
+#include <4. Median of Two Sorted Arrays.cpp>
 
 int main()
 {
-    P_898 test;
+    P_4 test;
     test.RunTest();
 }

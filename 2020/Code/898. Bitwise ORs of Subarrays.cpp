@@ -14,6 +14,8 @@ public:
         {
             tmpSet.insert(A[i]);
             res.insert(A[i]);
+
+            // Expect the size of this set to be much smaller then i
             for (auto j = curSet.begin(); j != curSet.end(); ++j)
             {
                 int x = A[i] | (*j);

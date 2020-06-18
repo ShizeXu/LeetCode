@@ -2,13 +2,9 @@
     "files.associations": {
         "vector": "cpp",
         "xstring": "cpp",
-<<<<<<< HEAD
         "iostream": "cpp",
         "set": "cpp",
         "ostream": "cpp",
         "unordered_set": "cpp"
-=======
-        "iostream": "cpp"
->>>>>>> 3659cdb77088650019881affdcbc3c684ccfd8b0
     }
 }
