@@ -126,16 +126,25 @@
 101 Symmetric Tree                                          Tree / Recursion(Queue)         E
 
 ---- 6/19 ----
-94  Binary Tree Inorder Traversal
-96  Unique Binary Search Trees
-95  Unique Binary Search Trees II
-98  Validate Binary Search Tree
-99  Recover Binary Search Tree
+94  Binary Tree Inorder Traversal                           Tree / In /Stack                M
+98  Validate Binary Search Tree                             Tree / In / Stack               M
+99  Recover Binary Search Tree                              Tree / In / Stack               H
+96  Unique Binary Search Trees                              Tree / DP-1D                    M
+95  Unique Binary Search Trees II                           Tree / Recursion                M
 
-
-
-
-
+---- 6/20 ----
+107 Binary Tree Level Order Traversal II
+102 Binary Tree Level Order Traversal
+103 Binary Tree Zigzag Level Order Traversal
+104 Maximum Depth of Binary Tree
+105 Construct Binary Tree from Preorder and Inorder Traversal
+106 Construct Binary Tree from Inorder and Postorder Traversal
+108 Convert Sorted Array to Binary Search Tree
+109 Convert Sorted List to Binary Search Tree
+110 Balanced Binary Tree
+111 Minimum Depth of Binary Tree
+112 Path Sum
+113 Path Sum II
 
 
 
