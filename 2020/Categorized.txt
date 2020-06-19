@@ -1,4 +1,4 @@
-#   Title                                                   Category                        Level   Extension
+#   Title                                                   Category                        Level       Extension
 
 ---- 5/25 ----
 201 Bitwise AND of Numbers Range                            Bit                             M
@@ -16,7 +16,7 @@
 
 ---- 6/6 ----
 8   String to Integer (atoi)                                Digits                          M
-10  Regular Expression Matching                             String / DP-2D                  H       Maximize regex matching in a stream
+10  Regular Expression Matching                             String / DP-2D                  H           Maximize regex matching in a stream
 11  Container With Most Water                               Greedy                          M
 14  Longest Common Prefix                                   String                          E
 15  3Sum                                                                                    M
@@ -61,7 +61,7 @@
 ---- 6/11 ----
 55  Jump Game                                               Greedy                          M
 45  Jump Game II                                            Greedy                          H
-1306 Jump Game III                                          DFS / Stack(BFS/queue)          M
+1306 Jump Game III                                          DFS / Stack(BFS/Queue)          M
 1345 Jump Game IV                                           BFS / Queue-with-trim           H
 1340 Jump Game V                                            DP-1D                           H
 46  Permutations                                            Recursion(Loop)                 M
@@ -113,15 +113,17 @@
 82  Remove Duplicates from Sorted List II                   LinkedList                      M
 86  Partition List                                          LinkedList                      M
 84  Largest Rectangle in Histogram                          Stack / Greedy                  H
-85  Maximal Rectangle                                       Stack / Greedy                  H       Extended from 1-D problem
+85  Maximal Rectangle                                       Stack / Greedy                  H           Extended from 1-D problem
 97  Interleaving String                                     String / DP-2D                  H
 
 ---- 6/18 ----
 88  Merge Sorted Array                                                                      E
 89  Gray Code                                               Bit                             M
-91  Decode Ways
-92  Reverse Linked List II
-93  Restore IP Addresses
+91  Decode Ways                                             DP-1D                           M
+92  Reverse Linked List II                                  LinkedList                      M
+93  Restore IP Addresses                                    Recursion                       M
+100 Same Tree                                               Tree / Recursion(Queue)         E
+101 Symmetric Tree                                          Tree / Recursion(Queue)         E
 
 ---- 6/19 ----
 94  Binary Tree Inorder Traversal
@@ -129,7 +131,6 @@
 95  Unique Binary Search Trees II
 98  Validate Binary Search Tree
 99  Recover Binary Search Tree
-100 Same Tree
 
 
 
