@@ -129,7 +129,7 @@
 94  Binary Tree Inorder Traversal                           Tree / Stack / DFS                  M
 98  Validate Binary Search Tree                             Tree / In / Stack / DFS             M
 99  Recover Binary Search Tree                              Tree / In / Stack / DFS             H
-96  Unique Binary Search Trees                              Tree / DP-1D                        M
+96  Unique Binary Search Trees                              Tree(DP-1D)                         M
 95  Unique Binary Search Trees II                           Tree / Recursion                    M
 
 ---- 6/20 ----
@@ -145,6 +145,26 @@
 111 Minimum Depth of Binary Tree                            Tree / BFS                          E
 112 Path Sum                                                Tree / Recursion / DFS              E
 113 Path Sum II                                             Tree / Recursion / DFS              M
+121 Best Time to Buy and Sell Stock                                                             E
+122 Best Time to Buy and Sell Stock II                      Greedy                              E
+123 Best Time to Buy and Sell Stock III                     DP-1D                               H
+
+---- 6/22 ----
+114 Flatten Binary Tree to Linked List
+115 Distinct Subsequences
+116 Populating Next Right Pointers in Each Node
+117 Populating Next Right Pointers in Each Node II
+118 Pascal's Triangle
+119 Pascal's Triangle II
+120 Triangle
+
+
+
+
+
+
+
+
 
 
 
