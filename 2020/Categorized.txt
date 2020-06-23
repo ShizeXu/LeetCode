@@ -150,13 +150,23 @@
 123 Best Time to Buy and Sell Stock III                     DP-1D                               H
 
 ---- 6/22 ----
-114 Flatten Binary Tree to Linked List
-115 Distinct Subsequences
-116 Populating Next Right Pointers in Each Node
-117 Populating Next Right Pointers in Each Node II
+114 Flatten Binary Tree to Linked List                      Tree / Pre / Stack                  M
+115 Distinct Subsequences                                   String / DP-2D                      H
+116 Populating Next Right Pointers in Each Node             Tree / BFS                          M
+117 Populating Next Right Pointers in Each Node II          Tree / BFS                          M
+124 Binary Tree Maximum Path Sum                            Tree / Recursion / DFS              H
+
+---- 6/23 ----
 118 Pascal's Triangle
 119 Pascal's Triangle II
 120 Triangle
+125 Valid Palindrome
+127 Word Ladder
+126 Word Ladder II
+
+
+
+
 
 
 
