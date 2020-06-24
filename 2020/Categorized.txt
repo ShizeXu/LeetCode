@@ -157,12 +157,12 @@
 124 Binary Tree Maximum Path Sum                            Tree / Recursion / DFS              H
 
 ---- 6/23 ----
-118 Pascal's Triangle
-119 Pascal's Triangle II
-120 Triangle
-125 Valid Palindrome
-127 Word Ladder
-126 Word Ladder II
+118 Pascal's Triangle                                                                           E
+119 Pascal's Triangle II                                                                        E
+120 Triangle                                                                                    M
+125 Valid Palindrome                                        String                              E
+127 Word Ladder                                             String / Set / BFS(trim)            M
+126 Word Ladder II                                          BFS / Set / BFS(trim)               H
 
 ---- 6/24 ----
 128 Longest Consecutive Sequence
