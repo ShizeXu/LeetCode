@@ -37,8 +37,8 @@
 80  Remove Duplicates from Sorted Array II                                                  M (6/17)
 27  Remove Element                                                                          E
 28  Implement strStr()                                                                      E
-29	Divide Two Integers                                     Loop                            M
-30	Substring with Concatenation of All Words               Map                             H
+29  Divide Two Integers                                     Loop                            M
+30  Substring with Concatenation of All Words               Map                             H
 41  First Missing Positive                                  Sort-Bucket                     H
 
 ---- 6/9 ----
@@ -122,8 +122,8 @@
 91  Decode Ways                                             DP-1D                               M
 92  Reverse Linked List II                                  LinkedList                          M
 93  Restore IP Addresses                                    Recursion                           M
-100 Same Tree                                               Tree / Recursion(Loop) / BFS       E
-101 Symmetric Tree                                          Tree / Recursion(Loop) / BFS       E
+100 Same Tree                                               Tree / Recursion(Loop) / BFS        E
+101 Symmetric Tree                                          Tree / Recursion(Loop) / BFS        E
 
 ---- 6/19 ----
 94  Binary Tree Inorder Traversal                           Tree / Stack / DFS                  M
