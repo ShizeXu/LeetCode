@@ -182,17 +182,29 @@
 139 Word Break
 140 Word Break II
 146 LRU Cache
-
----- 6/26 ----
 141 Linked List Cycle
 142 Linked List Cycle II
 143 Reorder List
+
+---- 6/26 ----
 144 Binary Tree Preorder Traversal
 145 Binary Tree Postorder Traversal
 147 Insertion Sort List
 148 Sort List
+150 Evaluate Reverse Polish Notation
+151 Reverse Words in a String
+152 Maximum Product Subarray
+153 Find Minimum in Rotated Sorted Array
+154 Find Minimum in Rotated Sorted Array II
 
-
+---- 6/27 (Starting SD catchup) ----
+155 Min Stack
+160 Intersection of Two Linked Lists
+162 Find Peak Element
+164 Maximum Gap
+165 Compare Version Numbers
+166 Fraction to Recurring Decimal
+167 Two Sum II - Input array is sorted
 
 
 
