@@ -1,4 +1,4 @@
-#   Title                                                   Category                        Level   Extension
+#   Title                                                   Category                        Level       Extension
 
 ---- 5/25 ----
 201 Bitwise AND of Numbers Range                            Bit                             M
@@ -16,7 +16,7 @@
 
 ---- 6/6 ----
 8   String to Integer (atoi)                                Digits                          M
-10  Regular Expression Matching                             String / DP-2D                  H       Maximize regex matching in a stream
+10  Regular Expression Matching                             String / DP-2D                  H           Maximize regex matching in a stream
 11  Container With Most Water                               Greedy                          M
 14  Longest Common Prefix                                   String                          E
 15  3Sum                                                                                    M
@@ -61,7 +61,7 @@
 ---- 6/11 ----
 55  Jump Game                                               Greedy                          M
 45  Jump Game II                                            Greedy                          H
-1306 Jump Game III                                          DFS / Stack(BFS/queue)          M
+1306 Jump Game III                                          DFS / Stack(BFS/Queue)          M
 1345 Jump Game IV                                           BFS / Queue-with-trim           H
 1340 Jump Game V                                            DP-1D                           H
 46  Permutations                                            Recursion(Loop)                 M
@@ -104,6 +104,7 @@
 76  Minimum Window Substring                                Map / Greedy                    H
 77  Combinations                                            Recursion(Loop)                 M
 78  Subsets                                                 Recursion(Loop)                 M 
+90  Subsets II                                              Recursion(Loop)                 M (6/18)
 79  Word Search                                             Recursion / DFS                 M
 87  Scramble String                                         Recursion(Cache-Map)            H
 
@@ -112,24 +113,84 @@
 82  Remove Duplicates from Sorted List II                   LinkedList                      M
 86  Partition List                                          LinkedList                      M
 84  Largest Rectangle in Histogram                          Stack / Greedy                  H
-85  Maximal Rectangle                                       Stack / Greedy                  H       Extended from 1-D problem
+85  Maximal Rectangle                                       Stack / Greedy                  H           Extended from 1-D problem
 97  Interleaving String                                     String / DP-2D                  H
 
 ---- 6/18 ----
-88  Merge Sorted Array
-89  Gray Code
-90  Subsets II
-91  Decode Ways
-92  Reverse Linked List II
-93  Restore IP Addresses
+88  Merge Sorted Array                                                                          E
+89  Gray Code                                               Bit                                 M
+91  Decode Ways                                             DP-1D                               M
+92  Reverse Linked List II                                  LinkedList                          M
+93  Restore IP Addresses                                    Recursion                           M
+100 Same Tree                                               Tree / Recursion(Loop) / BFS       E
+101 Symmetric Tree                                          Tree / Recursion(Loop) / BFS       E
 
 ---- 6/19 ----
-94  Binary Tree Inorder Traversal
-96  Unique Binary Search Trees
-95  Unique Binary Search Trees II
-98  Validate Binary Search Tree
-99  Recover Binary Search Tree
-100 Same Tree
+94  Binary Tree Inorder Traversal                           Tree / Stack / DFS                  M
+98  Validate Binary Search Tree                             Tree / In / Stack / DFS             M
+99  Recover Binary Search Tree                              Tree / In / Stack / DFS             H
+96  Unique Binary Search Trees                              Tree(DP-1D)                         M
+95  Unique Binary Search Trees II                           Tree / Recursion                    M
+
+---- 6/20 ----
+102 Binary Tree Level Order Traversal                       Tree / BFS                          M
+107 Binary Tree Level Order Traversal II                    Tree / BFS                          E
+103 Binary Tree Zigzag Level Order Traversal                Tree / BFS                          M
+104 Maximum Depth of Binary Tree                            Tree / Recursion / DFS(Vector/BFS)  M
+105 Construct Binary Tree from Preorder and Inorder Traversal       Tree / Recursion            M
+106 Construct Binary Tree from Inorder and Postorder Traversal      Tree / Recursion            M
+108 Convert Sorted Array to Binary Search Tree              Tree / Recursion                    E
+109 Convert Sorted List to Binary Search Tree               Tree / LinkedList / Recursion       M
+110 Balanced Binary Tree                                    Tree / Recursion                    E
+111 Minimum Depth of Binary Tree                            Tree / BFS                          E
+112 Path Sum                                                Tree / Recursion / DFS              E
+113 Path Sum II                                             Tree / Recursion / DFS              M
+121 Best Time to Buy and Sell Stock                                                             E
+122 Best Time to Buy and Sell Stock II                      Greedy                              E
+123 Best Time to Buy and Sell Stock III                     DP-1D                               H
+
+---- 6/22 ----
+114 Flatten Binary Tree to Linked List                      Tree / Pre / Stack                  M
+115 Distinct Subsequences                                   String / DP-2D                      H
+116 Populating Next Right Pointers in Each Node             Tree / BFS                          M
+117 Populating Next Right Pointers in Each Node II          Tree / BFS                          M
+124 Binary Tree Maximum Path Sum                            Tree / Recursion / DFS              H
+
+---- 6/23 ----
+118 Pascal's Triangle                                                                           E
+119 Pascal's Triangle II                                                                        E
+120 Triangle                                                                                    M
+125 Valid Palindrome                                        String                              E
+127 Word Ladder                                             String / Set / BFS(trim)            M
+126 Word Ladder II                                          BFS / Set / BFS(trim)               H
+
+---- 6/24 ----
+128 Longest Consecutive Sequence                            Map                                 H
+129 Sum Root to Leaf Numbers                                Tree / Recursion(Loop)              M
+130 Surrounded Regions                                      Queue / DFS                         M
+131 Palindrome Partitioning                                 String / DFS / Recursion(Cache-Pre) M
+132 Palindrome Partitioning II                              String / DP-1D / Cache-Pre          H
+133 Clone Graph                                             Graph / Queue                       M
+134 Gas Station                                                                                 M
+135 Candy                                                   Sort(TwoPass)                       H
+149 Max Points on a Line                                    Map                                 H
+
+---- 6/25 ----
+136 Single Number
+137 Single Number II
+138 Copy List with Random Pointer
+139 Word Break
+140 Word Break II
+146 LRU Cache
+
+---- 6/26 ----
+141 Linked List Cycle
+142 Linked List Cycle II
+143 Reorder List
+144 Binary Tree Preorder Traversal
+145 Binary Tree Postorder Traversal
+147 Insertion Sort List
+148 Sort List
 
 
 
