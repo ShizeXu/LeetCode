@@ -122,8 +122,8 @@
 91  Decode Ways                                             DP-1D                               M
 92  Reverse Linked List II                                  LinkedList                          M
 93  Restore IP Addresses                                    Recursion                           M
-100 Same Tree                                               Tree / Recursion(Queue) / BFS       E
-101 Symmetric Tree                                          Tree / Recursion(Queue) / BFS       E
+100 Same Tree                                               Tree / Recursion(Loop) / BFS       E
+101 Symmetric Tree                                          Tree / Recursion(Loop) / BFS       E
 
 ---- 6/19 ----
 94  Binary Tree Inorder Traversal                           Tree / Stack / DFS                  M
@@ -165,16 +165,17 @@
 126 Word Ladder II                                          BFS / Set / BFS(trim)               H
 
 ---- 6/24 ----
-128 Longest Consecutive Sequence
-129 Sum Root to Leaf Numbers
-130 Surrounded Regions
-131 Palindrome Partitioning
-132 Palindrome Partitioning II
-133 Clone Graph
-134 Gas Station
+128 Longest Consecutive Sequence                            Map                                 H
+129 Sum Root to Leaf Numbers                                Tree / Recursion(Loop)              M
+130 Surrounded Regions                                      Queue / DFS                         M
+131 Palindrome Partitioning                                 String / DFS / Recursion(Cache-Pre) M
+132 Palindrome Partitioning II                              String / DP-1D / Cache-Pre          H
+133 Clone Graph                                             Graph / Queue                       M
+134 Gas Station                                                                                 M
+135 Candy                                                   Sort(TwoPass)                       H
+149 Max Points on a Line                                    Map                                 H
 
 ---- 6/25 ----
-135 Candy
 136 Single Number
 137 Single Number II
 138 Copy List with Random Pointer
@@ -190,7 +191,7 @@
 145 Binary Tree Postorder Traversal
 147 Insertion Sort List
 148 Sort List
-149 Max Points on a Line
+
 
 
 
