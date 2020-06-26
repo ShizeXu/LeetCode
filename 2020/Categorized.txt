@@ -170,21 +170,21 @@
 130 Surrounded Regions                                      Queue / DFS                         M
 131 Palindrome Partitioning                                 String / DFS / Recursion(Cache-Pre) M
 132 Palindrome Partitioning II                              String / DP-1D / Cache-Pre          H
-133 Clone Graph                                             Graph / Queue                       M
+133 Clone Graph                                             Graph / Map / Queue                 M
 134 Gas Station                                                                                 M
 135 Candy                                                   Sort(TwoPass)                       H
 149 Max Points on a Line                                    Map                                 H
 
 ---- 6/25 ----
-136 Single Number
-137 Single Number II
-138 Copy List with Random Pointer
-139 Word Break
-140 Word Break II
-146 LRU Cache
-141 Linked List Cycle
-142 Linked List Cycle II
-143 Reorder List
+136 Single Number                                           Bit                                 E
+137 Single Number II                                        Bit                                 M       C++ always applies arithmetic shift during right shift on signed int
+138 Copy List with Random Pointer                           Graph / Map / Queue                 M
+139 Word Break                                              String / Recursion / Cache-Map(Loop/DP-1D)  M
+140 Word Break II                                           String / Recursion  / Cache-Map(Loop)       H
+141 Linked List Cycle                                       LinkedList                          E
+142 Linked List Cycle II                                    LinkedList / Set(Arithmetic)        M
+143 Reorder List                                            LinkedList(SlowFast&Merge)          M
+146 LRU Cache                                               OOD / Map / D-List                  M
 
 ---- 6/26 ----
 144 Binary Tree Preorder Traversal
