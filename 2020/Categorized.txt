@@ -187,13 +187,13 @@
 146 LRU Cache                                               OOD / Map / D-List                  M
 
 ---- 6/26 ----
-144 Binary Tree Preorder Traversal
-145 Binary Tree Postorder Traversal
-147 Insertion Sort List
-148 Sort List
-150 Evaluate Reverse Polish Notation
-151 Reverse Words in a String
-152 Maximum Product Subarray
+144 Binary Tree Preorder Traversal                          Tree / Pre / Stack                  M
+145 Binary Tree Postorder Traversal                         Tree / In / Stack                   H
+147 Insertion Sort List                                     LinkedList
+148 Sort List                                               LinkedList / Sort-Merge / Recursion(Loop)   M
+150 Evaluate Reverse Polish Notation                        Stack                               M
+151 Reverse Words in a String                               String                              M
+152 Maximum Product Subarray                                Greedy                              M
 153 Find Minimum in Rotated Sorted Array
 154 Find Minimum in Rotated Sorted Array II
 
