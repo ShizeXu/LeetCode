@@ -194,8 +194,8 @@
 150 Evaluate Reverse Polish Notation                        Stack                               M
 151 Reverse Words in a String                               String                              M
 152 Maximum Product Subarray                                Greedy                              M
-153 Find Minimum in Rotated Sorted Array
-154 Find Minimum in Rotated Sorted Array II
+153 Find Minimum in Rotated Sorted Array                    Search-Binary                       M
+154 Find Minimum in Rotated Sorted Array II                 Search-Binary                       H
 
 ---- 6/27 (Starting SD catchup) ----
 155 Min Stack
