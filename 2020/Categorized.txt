@@ -8,6 +8,7 @@
 
 ---- 6/5 ----
 1   Two Sum                                                 Map                             E
+167 Two Sum II - Input array is sorted                                                      E (6/27)
 2   Add Two Numbers                                         Digits / LinkedList             M
 3   Longest Substring Without Repeating Characters          String / Map / Greedy           M
 5   Longest Palindromic Substring                           String / Greedy (DP:Manacher)   M
@@ -45,6 +46,8 @@
 31  Next Permutation                                                                        M
 33  Search in Rotated Sorted Array                          Search-Binary                   M
 81  Search in Rotated Sorted Array II                       Search-Binary                   M (6/17)
+153 Find Minimum in Rotated Sorted Array                    Search-Binary                   M (6/26)
+154 Find Minimum in Rotated Sorted Array II                 Search-Binary                   H (6/26)
 34  Find First and Last Position of Element in Sorted Array Search-Binary                   M
 35  Search Insert Position                                  Search-Binary                   E
 36  Valid Sudoku                                                                            M
@@ -170,44 +173,82 @@
 130 Surrounded Regions                                      Queue / DFS                         M
 131 Palindrome Partitioning                                 String / DFS / Recursion(Cache-Pre) M
 132 Palindrome Partitioning II                              String / DP-1D / Cache-Pre          H
-133 Clone Graph                                             Graph / Queue                       M
+133 Clone Graph                                             Graph / Map / Queue                 M
 134 Gas Station                                                                                 M
 135 Candy                                                   Sort(TwoPass)                       H
 149 Max Points on a Line                                    Map                                 H
 
 ---- 6/25 ----
-136 Single Number
-137 Single Number II
-138 Copy List with Random Pointer
-139 Word Break
-140 Word Break II
-146 LRU Cache
-141 Linked List Cycle
-142 Linked List Cycle II
-143 Reorder List
+136 Single Number                                           Bit                                 E
+137 Single Number II                                        Bit                                 M       C++ always applies arithmetic shift during right shift on signed int
+138 Copy List with Random Pointer                           Graph / Map / Queue                 M
+139 Word Break                                              String / Recursion / Cache-Map(Loop/DP-1D)  M
+140 Word Break II                                           String / Recursion  / Cache-Map(Loop)       H
+141 Linked List Cycle                                       LinkedList                          E
+142 Linked List Cycle II                                    LinkedList / Set(Arithmetic)        M
+143 Reorder List                                            LinkedList(SlowFast&Merge)          M
+146 LRU Cache                                               OOD / Map / D-List                  M
 
 ---- 6/26 ----
-144 Binary Tree Preorder Traversal
-145 Binary Tree Postorder Traversal
-147 Insertion Sort List
-148 Sort List
-150 Evaluate Reverse Polish Notation
-151 Reverse Words in a String
-152 Maximum Product Subarray
-153 Find Minimum in Rotated Sorted Array
-154 Find Minimum in Rotated Sorted Array II
+144 Binary Tree Preorder Traversal                          Tree / Pre / Stack                  M
+145 Binary Tree Postorder Traversal                         Tree / In / Stack                   H
+147 Insertion Sort List                                     LinkedList
+148 Sort List                                               LinkedList / Sort-Merge / Recursion(Loop)   M
+150 Evaluate Reverse Polish Notation                        Stack                               M
+151 Reverse Words in a String                               String                              M
+152 Maximum Product Subarray                                Greedy                              M
 
 ---- 6/27 (Starting SD catchup) ----
-155 Min Stack
-160 Intersection of Two Linked Lists
-162 Find Peak Element
-164 Maximum Gap
-165 Compare Version Numbers
-166 Fraction to Recurring Decimal
-167 Two Sum II - Input array is sorted
+155 Min Stack                                               Stack                               E
+160 Intersection of Two Linked Lists                        LinkedList                          E
+162 Find Peak Element                                       Search-Binary                       M
+164 Maximum Gap                                             Sort-Bucket                         H
+165 Compare Version Numbers                                 String                              M
+166 Fraction to Recurring Decimal                           Digits / Map                        M
+169 Majority Element                                                                            E
 
+---- 6/29 ----
+168 Excel Sheet Column Title
+171 Excel Sheet Column Number
+172 Factorial Trailing Zeroes
+173 Binary Search Tree Iterator
+174 Dungeon Game
 
+---- 6/30 ----
+175 Combine Two Tables
+176 Second Highest Salary
+177 Nth Highest Salary
+178 Rank Scores
+179 Largest Number
 
+---- 6/31 ----
+180 Consecutive Numbers
+181 Employees Earning More Than Their Managers
+184 Department Highest Salar
+185 Department Top Three Salaries
+182 Duplicate Emails
+
+---- 7/1 ----
+183 Customers Who Never Order
+187 Repeated DNA Sequences
+188 Best Time to Buy and Sell Stock IV
+189 Rotate Array
+190 Reverse Bits
+191 Number of 1 Bits
+
+---- 7/2 ----
+192 Word Frequency
+193 Valid Phone Numbers
+194 Transpose File
+195 Tenth Line
+196 Delete Duplicate Emails
+
+---- 7/3 ----
+197 Rising Temperature
+198 House Robber
+199 Binary Tree Right Side View
+200 Number of Islands
+472 Concatenated Words
 
 
 
