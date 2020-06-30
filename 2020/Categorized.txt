@@ -214,6 +214,7 @@
 173 Binary Search Tree Iterator                             OOD / Tree / In / Stack             M
 174 Dungeon Game                                            DP-2D-Back                          H
 179 Largest Number                                          String                              M
+215 Kth Largest Element in an Array                         Sort-Quick(MinHeap,Sort-Counting,Sort-merge)    M       Avg O(N) ( O(NlogN), O(N-range) ). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
 
 ---- 6/30 ----
 189 Rotate Array
@@ -236,7 +237,6 @@
 211 Add and Search Word - Data structure design
 212 Word Search II
 214 Shortest Palindrome
-215 Kth Largest Element in an Array
 216 Combination Sum III
 
 ---- 7/3 ----
