@@ -1,4 +1,4 @@
-#   Title                                                   Category                        Level       Extension
+#   Title                                                   Category                        Level       Extension/Note
 
 ---- 5/25 ----
 201 Bitwise AND of Numbers Range                            Bit                             M
@@ -208,52 +208,39 @@
 169 Majority Element                                                                            E
 
 ---- 6/29 ----
-168 Excel Sheet Column Title
-171 Excel Sheet Column Number
-172 Factorial Trailing Zeroes
-173 Binary Search Tree Iterator
-174 Dungeon Game
+168 Excel Sheet Column Title                                Digits                              E
+171 Excel Sheet Column Number                               Digits                              E
+172 Factorial Trailing Zeroes                               Arithmetic                          E
+173 Binary Search Tree Iterator                             OOD / Tree / In / Stack             M
+174 Dungeon Game                                            DP-2D-Back                          H
+179 Largest Number                                          String                              M
 
 ---- 6/30 ----
-175 Combine Two Tables
-176 Second Highest Salary
-177 Nth Highest Salary
-178 Rank Scores
-179 Largest Number
-
----- 6/31 ----
-180 Consecutive Numbers
-181 Employees Earning More Than Their Managers
-184 Department Highest Salar
-185 Department Top Three Salaries
-182 Duplicate Emails
-
----- 7/1 ----
-183 Customers Who Never Order
-187 Repeated DNA Sequences
-188 Best Time to Buy and Sell Stock IV
 189 Rotate Array
 190 Reverse Bits
 191 Number of 1 Bits
+187 Repeated DNA Sequences
+188 Best Time to Buy and Sell Stock IV
+199 Binary Tree Right Side View
+
+---- 7/1 ----
+198 House Robber
+213 House Robber II
+200 Number of Islands
+204 Count Primes
+205 Isomorphic Strings
+207 Course Schedule
+210 Course Schedule II
 
 ---- 7/2 ----
-192 Word Frequency
-193 Valid Phone Numbers
-194 Transpose File
-195 Tenth Line
-196 Delete Duplicate Emails
+211 Add and Search Word - Data structure design
+212 Word Search II
+214 Shortest Palindrome
+215 Kth Largest Element in an Array
+216 Combination Sum III
 
 ---- 7/3 ----
-197 Rising Temperature
-198 House Robber
-199 Binary Tree Right Side View
-200 Number of Islands
 472 Concatenated Words
-
-
-
-
-
 
 
 
@@ -261,3 +248,38 @@
 
 ---- Play ----
 6/10    1472    Design Browser History                          OOD / Stack(Vector)             M
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---- SQL ----
+175 Combine Two Tables                                      SQL / Join                      E (6/29)
+176 Second Highest Salary                                   SQL
+177 Nth Highest Salary                                      SQL
+178 Rank Scores                                             SQL
+180 Consecutive Numbers                                     SQL
+181 Employees Earning More Than Their Managers              SQL
+184 Department Highest Salar                                SQL
+185 Department Top Three Salaries                           SQL
+182 Duplicate Emails                                        SQL
+183 Customers Who Never Order                               SQL
+196 Delete Duplicate Emails                                 SQL
+197 Rising Temperature                                      SQL
+
+---- Bash ----
+192 Word Frequency                                          Bash
+193 Valid Phone Numbers                                     Bash
+194 Transpose File                                          Bash
+195 Tenth Line                                              Bash
