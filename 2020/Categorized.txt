@@ -147,8 +147,8 @@
 109 Convert Sorted List to Binary Search Tree               Tree / LinkedList / Recursion       M
 110 Balanced Binary Tree                                    Tree / Recursion                    E
 111 Minimum Depth of Binary Tree                            Tree / BFS                          E
-112 Path Sum                                                Tree / Recursion / DFS              E
-113 Path Sum II                                             Tree / Recursion / DFS              M
+112 Path Sum                                                Tree / Recursion(Post/Loop) / DFS   E
+113 Path Sum II                                             Tree / Recursion(Post/Loop) / DFS   M
 121 Best Time to Buy and Sell Stock                                                             E
 122 Best Time to Buy and Sell Stock II                      Greedy                              E
 123 Best Time to Buy and Sell Stock III                     DP-1D                               H
@@ -224,10 +224,11 @@
 191 Number of 1 Bits                                        Bit                                 E
 187 Repeated DNA Sequences                                  Map(Bit)                            M
 200 Number of Islands                                       DFS(BFS)                            M
+198 House Robber                                            DP-1D                               E
+213 House Robber II                                         DP-1D                               M
+337 House Robber III                                        Tree / Recursion / DFS              M
 
 ---- 7/1 ----
-198 House Robber
-213 House Robber II
 204 Count Primes
 205 Isomorphic Strings
 207 Course Schedule
