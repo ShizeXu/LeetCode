@@ -185,7 +185,7 @@
 137 Single Number II                                        Bit                                 M       C++ always applies arithmetic shift during right shift on signed int
 138 Copy List with Random Pointer                           Graph / Map / Queue                 M
 139 Word Break                                              String / Recursion / Cache-Map(Loop/DP-1D)  M
-140 Word Break II                                           String / Recursion  / Cache-Map(Loop)       H
+140 Word Break II                                           String / Recursion / Cache-Map(Loop)        H
 141 Linked List Cycle                                       LinkedList                          E
 142 Linked List Cycle II                                    LinkedList / Set(Arithmetic)        M
 143 Reorder List                                            LinkedList(SlowFast&Merge)          M
@@ -216,7 +216,7 @@
 173 Binary Search Tree Iterator                             OOD / Tree / In / Stack             M
 174 Dungeon Game                                            DP-2D-Back                          H
 179 Largest Number                                          String                              M
-215 Kth Largest Element in an Array                         Sort-Quick(MinHeap,Sort-Counting,Sort-merge)    M       Avg O(N) ( O(NlogN), O(N-range) ). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
+215 Kth Largest Element in an Array                         Sort-Quick(P-Queue(MinHeap), Sort-Counting, Sort-merge)     M   Avg O(N) ( O(NlogK), O(N-range) ). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
 
 ---- 6/30 ----
 189 Rotate Array                                                                                E
@@ -229,19 +229,25 @@
 337 House Robber III                                        Tree / Recursion / DFS              M
 
 ---- 7/1 ----
-204 Count Primes
-205 Isomorphic Strings
-207 Course Schedule
-210 Course Schedule II
+204 Count Primes                                            Arithmetic                          E
+205 Isomorphic Strings                                      Map                                 E
+207 Course Schedule                                         Graph / Sort-Topo                   M
+210 Course Schedule II                                      Graph / Sort-Topo                   M
+1462 Course Schedule IV                                     Graph / Sort-Topo / Set(Matrix)     M
+630 Course Schedule III                                     P-Queue / Greedy                    H
 
 ---- 7/2 ----
+209 Minimum Size Subarray Sum
+216 Combination Sum III
+208 Implement Trie (Prefix Tree)
 211 Add and Search Word - Data structure design
 212 Word Search II
 214 Shortest Palindrome
-216 Combination Sum III
+472 Concatenated Words
 
 ---- 7/3 ----
-472 Concatenated Words
+
+
 
 
 
