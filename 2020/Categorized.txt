@@ -237,16 +237,16 @@
 630 Course Schedule III                                     P-Queue / Greedy                    H
 
 ---- 7/2 ----
-209 Minimum Size Subarray Sum
-216 Combination Sum III
-208 Implement Trie (Prefix Tree)
-211 Add and Search Word - Data structure design
-212 Word Search II
+209 Minimum Size Subarray Sum                               2P Window                           M
+216 Combination Sum III                                     Recursion                           M
+208 Implement Trie (Prefix Tree)                            OOD / Trie                          M
+211 Add and Search Word - Data structure design             OOD / Trie                          M
+212 Word Search II                                          Trie / Recursion / DFS              H
 214 Shortest Palindrome
-472 Concatenated Words
 
 ---- 7/3 ----
-
+472 Concatenated Words
+907 Sum of Subarray Minimums
 
 
 
