@@ -242,15 +242,19 @@
 208 Implement Trie (Prefix Tree)                            OOD / Trie                          M
 211 Add and Search Word - Data structure design             OOD / Trie                          M
 212 Word Search II                                          Trie / Recursion / DFS              H
-214 Shortest Palindrome
 
----- 7/3 ----
+---- 7/5 ----
+203 Remove Linked List Elements                             LinkedList                          E
+206 Reverse Linked List                                     LinkedList                          E
+214 Shortest Palindrome                                     String(trim) (KMP)                  H
+230 Kth Smallest Element in a BST                           Stack / In                          M
 472 Concatenated Words
+
+---- 7/6 ----
+221 Maximal Square
+223 Rectangle Area
+218 The Skyline Problem
 907 Sum of Subarray Minimums
-
-
-
-
 
 
 ---- Play ----
