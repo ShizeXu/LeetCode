@@ -248,7 +248,7 @@
 206 Reverse Linked List                                     LinkedList                          E
 214 Shortest Palindrome                                     String(trim) (KMP)                  H
 230 Kth Smallest Element in a BST                           Stack / In                          M
-472 Concatenated Words
+472 Concatenated Words                                      Trie / Recursion / DFS              H
 
 ---- 7/6 ----
 221 Maximal Square
