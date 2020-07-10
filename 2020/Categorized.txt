@@ -117,7 +117,7 @@
 82  Remove Duplicates from Sorted List II                   LinkedList                      M
 86  Partition List                                          LinkedList                      M
 84  Largest Rectangle in Histogram                          Stack / Greedy                  H
-85  Maximal Rectangle                                       Stack / Greedy                  H           Extended from 1-D problem
+85  Maximal Rectangle                                       Stack / Greedy                  H           Extended from 1D problem (#84)
 97  Interleaving String                                     String / DP-2D                  H
 
 ---- 6/18 ----
@@ -251,9 +251,9 @@
 230 Kth Smallest Element in a BST                           Stack / In                          M
 
 ---- 7/6 ----
-221 Maximal Square
-223 Rectangle Area
-218 The Skyline Problem
+221 Maximal Square                                          DP-2D(Stack / Greedy)               M       Could be solved by easier 2D DP approach, or extended from #85 using stack.
+223 Rectangle Area                                          Geometry                            M
+218 The Skyline Problem                                     Recursion / D-C(P-Queue?)           H
 907 Sum of Subarray Minimums
 
 
