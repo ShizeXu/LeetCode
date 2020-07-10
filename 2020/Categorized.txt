@@ -27,7 +27,7 @@
 17  Letter Combinations of a Phone Number                   Map / Loop(Recursion)           M
 19  Remove Nth Node From End of List                        LinkedList                      M
 21  Merge Two Sorted Lists                                  LinkedList                      E
-23  Merge k Sorted Lists                                    LinkedList / P-Queue (DC)       H
+23  Merge k Sorted Lists                                    LinkedList / P-Queue (D&C)      H
 20  Valid Parentheses                                       String / Stack                  E
 22  Generate Parentheses                                    String / Recursion              M
 32  Longest Valid Parentheses                               String / Stack (DP-1D)          H
@@ -202,7 +202,7 @@
 152 Maximum Product Subarray                                Greedy                              M
 
 ---- 6/27 (Starting SD catchup) ----
-155 Min Stack                                               Stack                               E
+155 Min Stack                                               MinStack                            E
 160 Intersection of Two Linked Lists                        LinkedList                          E
 162 Find Peak Element                                       Search-Binary                       M
 164 Maximum Gap                                             Sort-Bucket                         H
@@ -251,10 +251,10 @@
 230 Kth Smallest Element in a BST                           Stack / In                          M
 
 ---- 7/6 ----
-221 Maximal Square                                          DP-2D(Stack / Greedy)               M       Could be solved by easier 2D DP approach, or extended from #85 using stack.
+221 Maximal Square                                          DP-2D (Stack / Greedy)              M       Could be solved by easier 2D DP approach, or extended from #85 using stack.
 223 Rectangle Area                                          Geometry                            M
-218 The Skyline Problem                                     Recursion / D-C(P-Queue?)           H
-907 Sum of Subarray Minimums
+218 The Skyline Problem                                     Recursion / D&C (Multiset)          H
+907 Sum of Subarray Minimums                                MinStack                            M
 
 
 ---- Play ----
