@@ -1,4 +1,4 @@
-#   Title                                                   Category                        Level       Extension
+#   Title                                                   Category                        Level       Extension/Note
 
 ---- 5/25 ----
 201 Bitwise AND of Numbers Range                            Bit                             M
@@ -12,6 +12,7 @@
 2   Add Two Numbers                                         Digits / LinkedList             M
 3   Longest Substring Without Repeating Characters          String / Map / Greedy           M
 5   Longest Palindromic Substring                           String / Greedy (DP:Manacher)   M
+214 Shortest Palindrome                                     String(trim) (KMP)              H (7/5)
 7   Reverse Integer                                         Digits                          E
 9   Palindrome Number                                       Digits                          E
 
@@ -26,7 +27,7 @@
 17  Letter Combinations of a Phone Number                   Map / Loop(Recursion)           M
 19  Remove Nth Node From End of List                        LinkedList                      M
 21  Merge Two Sorted Lists                                  LinkedList                      E
-23  Merge k Sorted Lists                                    LinkedList / P-Queue (DC)       H
+23  Merge k Sorted Lists                                    LinkedList / P-Queue (D&C)      H
 20  Valid Parentheses                                       String / Stack                  E
 22  Generate Parentheses                                    String / Recursion              M
 32  Longest Valid Parentheses                               String / Stack (DP-1D)          H
@@ -116,7 +117,7 @@
 82  Remove Duplicates from Sorted List II                   LinkedList                      M
 86  Partition List                                          LinkedList                      M
 84  Largest Rectangle in Histogram                          Stack / Greedy                  H
-85  Maximal Rectangle                                       Stack / Greedy                  H           Extended from 1-D problem
+85  Maximal Rectangle                                       Stack / Greedy                  H           Extended from 1D problem (#84)
 97  Interleaving String                                     String / DP-2D                  H
 
 ---- 6/18 ----
@@ -139,6 +140,7 @@
 102 Binary Tree Level Order Traversal                       Tree / BFS                          M
 107 Binary Tree Level Order Traversal II                    Tree / BFS                          E
 103 Binary Tree Zigzag Level Order Traversal                Tree / BFS                          M
+199 Binary Tree Right Side View                             Tree / BFS                          M (6/30)
 104 Maximum Depth of Binary Tree                            Tree / Recursion / DFS(Vector/BFS)  M
 105 Construct Binary Tree from Preorder and Inorder Traversal       Tree / Recursion            M
 106 Construct Binary Tree from Inorder and Postorder Traversal      Tree / Recursion            M
@@ -146,11 +148,12 @@
 109 Convert Sorted List to Binary Search Tree               Tree / LinkedList / Recursion       M
 110 Balanced Binary Tree                                    Tree / Recursion                    E
 111 Minimum Depth of Binary Tree                            Tree / BFS                          E
-112 Path Sum                                                Tree / Recursion / DFS              E
-113 Path Sum II                                             Tree / Recursion / DFS              M
+112 Path Sum                                                Tree / Recursion(Post/Loop) / DFS   E
+113 Path Sum II                                             Tree / Recursion(Post/Loop) / DFS   M
 121 Best Time to Buy and Sell Stock                                                             E
 122 Best Time to Buy and Sell Stock II                      Greedy                              E
 123 Best Time to Buy and Sell Stock III                     DP-1D                               H
+188 Best Time to Buy and Sell Stock IV                      DP-1D(trim)                         H (6/30)
 
 ---- 6/22 ----
 114 Flatten Binary Tree to Linked List                      Tree / Pre / Stack                  M
@@ -183,7 +186,7 @@
 137 Single Number II                                        Bit                                 M       C++ always applies arithmetic shift during right shift on signed int
 138 Copy List with Random Pointer                           Graph / Map / Queue                 M
 139 Word Break                                              String / Recursion / Cache-Map(Loop/DP-1D)  M
-140 Word Break II                                           String / Recursion  / Cache-Map(Loop)       H
+140 Word Break II                                           String / Recursion / Cache-Map(Loop)        H
 141 Linked List Cycle                                       LinkedList                          E
 142 Linked List Cycle II                                    LinkedList / Set(Arithmetic)        M
 143 Reorder List                                            LinkedList(SlowFast&Merge)          M
@@ -199,7 +202,7 @@
 152 Maximum Product Subarray                                Greedy                              M
 
 ---- 6/27 (Starting SD catchup) ----
-155 Min Stack                                               Stack                               E
+155 Min Stack                                               MinStack                            E
 160 Intersection of Two Linked Lists                        LinkedList                          E
 162 Find Peak Element                                       Search-Binary                       M
 164 Maximum Gap                                             Sort-Bucket                         H
@@ -208,56 +211,86 @@
 169 Majority Element                                                                            E
 
 ---- 6/29 ----
-168 Excel Sheet Column Title
-171 Excel Sheet Column Number
-172 Factorial Trailing Zeroes
-173 Binary Search Tree Iterator
-174 Dungeon Game
+168 Excel Sheet Column Title                                Digits                              E
+171 Excel Sheet Column Number                               Digits                              E
+172 Factorial Trailing Zeroes                               Arithmetic                          E
+173 Binary Search Tree Iterator                             OOD / Tree / In / Stack             M
+174 Dungeon Game                                            DP-2D-Back                          H
+179 Largest Number                                          String                              M
+215 Kth Largest Element in an Array                         Sort-Quick(P-Queue(MinHeap), Sort-Counting, Sort-merge)     M   Avg O(N) ( O(NlogK), O(N-range) ). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
 
 ---- 6/30 ----
-175 Combine Two Tables
-176 Second Highest Salary
-177 Nth Highest Salary
-178 Rank Scores
-179 Largest Number
-
----- 6/31 ----
-180 Consecutive Numbers
-181 Employees Earning More Than Their Managers
-184 Department Highest Salar
-185 Department Top Three Salaries
-182 Duplicate Emails
+189 Rotate Array                                                                                E
+190 Reverse Bits                                            Bit                                 E
+191 Number of 1 Bits                                        Bit                                 E
+187 Repeated DNA Sequences                                  Map(Bit)                            M
+200 Number of Islands                                       DFS(BFS)                            M
+198 House Robber                                            DP-1D                               E
+213 House Robber II                                         DP-1D                               M
+337 House Robber III                                        Tree / Recursion / DFS              M
 
 ---- 7/1 ----
-183 Customers Who Never Order
-187 Repeated DNA Sequences
-188 Best Time to Buy and Sell Stock IV
-189 Rotate Array
-190 Reverse Bits
-191 Number of 1 Bits
+204 Count Primes                                            Arithmetic                          E
+205 Isomorphic Strings                                      Map                                 E
+207 Course Schedule                                         Graph / Sort-Topo                   M
+210 Course Schedule II                                      Graph / Sort-Topo                   M
+1462 Course Schedule IV                                     Graph / Sort-Topo / Set(Matrix)     M
+630 Course Schedule III                                     P-Queue / Greedy                    H
 
 ---- 7/2 ----
-192 Word Frequency
-193 Valid Phone Numbers
-194 Transpose File
-195 Tenth Line
-196 Delete Duplicate Emails
+209 Minimum Size Subarray Sum                               2P Window                           M
+216 Combination Sum III                                     Recursion                           M
+208 Implement Trie (Prefix Tree)                            OOD / String / Trie                 M
+211 Add and Search Word - Data structure design             OOD / String / Trie                 M
+212 Word Search II                                          String / Trie / Recursion / DFS     H
+472 Concatenated Words                                      String / Trie / Recursion / DFS     H (7/5)
 
----- 7/3 ----
-197 Rising Temperature
-198 House Robber
-199 Binary Tree Right Side View
-200 Number of Islands
-472 Concatenated Words
+---- 7/5 ----
+203 Remove Linked List Elements                             LinkedList                          E
+206 Reverse Linked List                                     LinkedList                          E
+230 Kth Smallest Element in a BST                           Stack / In                          M
 
-
-
-
-
-
-
-
+---- 7/6 ----
+221 Maximal Square                                          DP-2D (Stack / Greedy)              M       Could be solved by easier 2D DP approach, or extended from #85 using stack.
+223 Rectangle Area                                          Geometry                            M
+218 The Skyline Problem                                     Recursion / D&C (Multiset)          H
+907 Sum of Subarray Minimums                                MinStack                            M
 
 
 ---- Play ----
 6/10    1472    Design Browser History                          OOD / Stack(Vector)             M
+6/30    1496    Path Crossing                                   Set                             E
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---- SQL ----
+175 Combine Two Tables                                      SQL / Join                      E (6/29)
+176 Second Highest Salary                                   SQL
+177 Nth Highest Salary                                      SQL
+178 Rank Scores                                             SQL
+180 Consecutive Numbers                                     SQL
+181 Employees Earning More Than Their Managers              SQL
+184 Department Highest Salar                                SQL
+185 Department Top Three Salaries                           SQL
+182 Duplicate Emails                                        SQL
+183 Customers Who Never Order                               SQL
+196 Delete Duplicate Emails                                 SQL
+197 Rising Temperature                                      SQL
+
+---- Bash ----
+192 Word Frequency                                          Bash
+193 Valid Phone Numbers                                     Bash
+194 Transpose File                                          Bash
+195 Tenth Line                                              Bash

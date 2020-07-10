@@ -1,0 +1,10 @@
+1. There are two key attributes that a problem must have in order for dynamic programming to be applicable: optimal substructure and overlapping sub-problems. 
+   If a problem can be solved by combining optimal solutions to non-overlapping sub-problems, the strategy is called "divide and conquer" instead.
+
+2. Build Max/Min heap
+    a. Bottom-up, O(N)
+    b. Top-down, O(NlogN)
+
+3. Heap (priority_queue) vs. BST (set/multiset)
+   Heap just guarantees that elements on higher levels are greater (for max-heap) or smaller (for min-heap) than elements on lower levels, whereas BST guarantees order (from "left" to "right"). 
+   If you want sorted elements, go with BST. Heap is better at findMin/findMax ( O(1) ), while BST is good at all finds ( O(logN) )

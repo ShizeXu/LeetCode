@@ -1,0 +1,7 @@
+1. Bit right shift (left is always logical):
+    a. c++:
+            i: signed int: logical 
+            ii: unsigned int: arithmetic
+    b. Jave:
+            i: >>: arithmetic
+            ii: >>>: logical
