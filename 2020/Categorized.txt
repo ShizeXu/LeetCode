@@ -190,7 +190,7 @@
 141 Linked List Cycle                                       LinkedList                          E
 142 Linked List Cycle II                                    LinkedList / Set(Arithmetic)        M
 143 Reorder List                                            LinkedList(SlowFast&Merge)          M
-146 LRU Cache                                               OOD / Map / D-List                  M
+146 LRU Cache                                               OOD / Map / DL-List                 M
 
 ---- 6/26 ----
 144 Binary Tree Preorder Traversal                          Tree / Pre / Stack                  M
@@ -262,14 +262,42 @@
 220 Contains Duplicate III                                  Map / Sort-Bucket                   M
 
 ---- 7/15 (Start TOP LIKED) ----
-226 Invert Binary Tree
-234 Palindrome Linked List
-236 Lowest Common Ancestor of a Binary Tree
-238 Product of Array Except Self
-239 Sliding Window Maximum
+226 Invert Binary Tree                                      Tree / Recursion(Loop)              E
+234 Palindrome Linked List                                  LinkedList                          E
+236 Lowest Common Ancestor of a Binary Tree                 Tree / Recursion(Loop / Map)        M
+238 Product of Array Except Self                                                                M
+239 Sliding Window Maximum                                  Multiset(Monotonic-Queue / DL-List(DE-Queue))   H
 
+---- 7/16 ----
+240 Search a 2D Matrix II                                                                       M
+279 Perfect Squares                                                                             M
+283 Move Zeroes                                                                                 E
+287 Find the Duplicate Number                                                                   M
+460 LFU Cache                                                                                   H
 
+---- 7/17 ----
+295 Find Median from Data Stream                                                                H
+449 Serialize and Deserialize BST                                                               M
+297 Serialize and Deserialize Binary Tree                                                       H
+300 Longest Increasing Subsequence                                                              M
+376 Wiggle Subsequence                                                                          M
+491 Increasing Subsequences                                                                     M
 
+---- 7/18 ----
+322 Coin Change                                                                                 M
+518 Coin Change 2                                                                               M
+241 Different Ways to Add Parentheses                                                           M
+678 Valid Parenthesis String                                                                    M
+301 Remove Invalid Parentheses                                                                  H
+856 Score of Parentheses                                                                        M
+
+---- 7/19 ----
+516 Longest Palindromic Subsequence                                                             M
+647 Palindromic Substrings                                                                      M
+792 Number of Matching Subsequences                                                             M
+1081 Smallest Subsequence of Distinct Characters                                                M
+1143 Longest Common Subsequence                                                                 M
+940 Distinct Subsequences II                                                                    H
 
 
 
