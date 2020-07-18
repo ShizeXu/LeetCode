@@ -191,6 +191,7 @@
 142 Linked List Cycle II                                    LinkedList / Set(Arithmetic)        M
 143 Reorder List                                            LinkedList(SlowFast&Merge)          M
 146 LRU Cache                                               OOD / Map / DL-List                 M
+460 LFU Cache                                               OOD / Map / DL-List                 H (7/17)    Extended from LRU, need extra map to track lists for all frequencies
 
 ---- 6/26 ----
 144 Binary Tree Preorder Traversal                          Tree / Pre / Stack                  M
@@ -269,21 +270,22 @@
 239 Sliding Window Maximum                                  Multiset(Monotonic-Queue / DL-List(DE-Queue))   H
 
 ---- 7/16 ----
-240 Search a 2D Matrix II                                                                       M
-279 Perfect Squares                                                                             M
+240 Search a 2D Matrix II                                   Search-Binary / Recursion(Loop)     M
+279 Perfect Squares                                         Recursion / Cache-Map(DP)           M
 283 Move Zeroes                                                                                 E
-287 Find the Duplicate Number                                                                   M
-460 LFU Cache                                                                                   H
+287 Find the Duplicate Number                               Search-Binary (LinkedList)          M
 
 ---- 7/17 ----
-295 Find Median from Data Stream                                                                H
+295 Find Median from Data Stream                            P-Queue(Min&MaxHeap)                H
+
+---- 7/18 ----
 449 Serialize and Deserialize BST                                                               M
 297 Serialize and Deserialize Binary Tree                                                       H
 300 Longest Increasing Subsequence                                                              M
 376 Wiggle Subsequence                                                                          M
 491 Increasing Subsequences                                                                     M
 
----- 7/18 ----
+---- 7/19 ----
 322 Coin Change                                                                                 M
 518 Coin Change 2                                                                               M
 241 Different Ways to Add Parentheses                                                           M
@@ -291,7 +293,7 @@
 301 Remove Invalid Parentheses                                                                  H
 856 Score of Parentheses                                                                        M
 
----- 7/19 ----
+---- 7/20 ----
 516 Longest Palindromic Subsequence                                                             M
 647 Palindromic Substrings                                                                      M
 792 Number of Matching Subsequences                                                             M
