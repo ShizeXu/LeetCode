@@ -277,12 +277,14 @@
 
 ---- 7/17 ----
 295 Find Median from Data Stream                            P-Queue(Min&MaxHeap)                H
+449 Serialize and Deserialize BST                           Tree / BFS(Recursion / Pre)         M       BST pre/post-order can be treated as in-order too
+297 Serialize and Deserialize Binary Tree                   Tree / BFS                          H
 
 ---- 7/18 ----
-449 Serialize and Deserialize BST                                                               M
-297 Serialize and Deserialize Binary Tree                                                       H
-300 Longest Increasing Subsequence                                                              M
+300 Longest Increasing Subsequence                          DP(Search-Binary on MaxVector)      M       Binary search on MaxVector can be easily achieved by ordered set
+673 Number of Longest Increasing Subsequence                                                    M
 376 Wiggle Subsequence                                                                          M
+329 Longest Increasing Path in a Matrix                                                         H
 491 Increasing Subsequences                                                                     M
 
 ---- 7/19 ----
