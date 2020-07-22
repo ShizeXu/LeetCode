@@ -287,15 +287,17 @@
 491 Increasing Subsequences                                 Recursion / DFS                     M
 376 Wiggle Subsequence                                      Greedy                              M
 
----- 7/20 ----
-322 Coin Change                                                                                 M
-518 Coin Change 2                                                                               M
+---- 7/21 ----
+322 Coin Change                                             DP (Recursion)                      M       Can use Combination and Permutation both
+518 Coin Change 2                                           DP (Recursion)                      M       Need to use Combination (loop coins first)
+
+---- 7/22 ----
 241 Different Ways to Add Parentheses                                                           M
 678 Valid Parenthesis String                                                                    M
 301 Remove Invalid Parentheses                                                                  H
 856 Score of Parentheses                                                                        M
 
----- 7/21 ----
+---- 7/23 ----
 516 Longest Palindromic Subsequence                                                             M
 647 Palindromic Substrings                                                                      M
 792 Number of Matching Subsequences                                                             M
