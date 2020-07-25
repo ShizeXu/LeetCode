@@ -288,8 +288,8 @@
 376 Wiggle Subsequence                                      Greedy                              M
 
 ---- 7/21 ----
-322 Coin Change                                             DP (Recursion)                      M       Can use Combination and Permutation both
-518 Coin Change 2                                           DP (Recursion)                      M       Need to use Combination (loop coins first)
+322 Coin Change                                             DP-1D (Recursion)                   M       Can use Combination and Permutation both
+518 Coin Change 2                                           DP-1D (Recursion)                   M       Need to use Combination (loop coins first)
 
 ---- 7/23 ----
 241 Different Ways to Add Parentheses                       Recursion                           M
@@ -297,15 +297,15 @@
 301 Remove Invalid Parentheses                              Recursion / Cache-Map / Trim        H       Map is used to 1) cache results with different lengths, 2) trim. Return the longest at the end
 856 Score of Parentheses                                    Stack                               M
 
----- 7/24 ----
-516 Longest Palindromic Subsequence                                                             M
-647 Palindromic Substrings                                                                      M
-792 Number of Matching Subsequences                                                             M
-1081 Smallest Subsequence of Distinct Characters                                                M
-1143 Longest Common Subsequence                                                                 M
-940 Distinct Subsequences II                                                                    H
-
 ---- 7/25 ----
+647 Palindromic Substrings                                  String / DP-1D                      M
+516 Longest Palindromic Subsequence                         String / DP-2D                      M
+792 Number of Matching Subsequences                         String                              M       Keep moving pointers of strings while iterating big string
+1081 Smallest Subsequence of Distinct Characters            String / Greedy                     M
+1143 Longest Common Subsequence                             String / DP-2D                      M
+940 Distinct Subsequences II                                DP-1D                               H       Keep track of # of sequences ending with 'c' for each char 'c'
+
+---- 7/26 ----
 406 Queue Reconstruction by Height              M
 437 Path Sum III                                E
 416 Partition Equal Subset Sum                  M
@@ -315,7 +315,7 @@
 581 Shortest Unsorted Continuous Subarray       E
 448 Find All Numbers Disappeared in an Array    E
 
----- 7/26 ----
+---- 7/27 ----
 394 Decode String                               M
 438 Find All Anagrams in a String               M
 543 Diameter of Binary Tree                     E
