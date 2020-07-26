@@ -307,13 +307,13 @@
 
 ---- 7/26 ----
 406 Queue Reconstruction by Height                          Sort / Greedy                       M
-416 Partition Equal Subset Sum                              M
+416 Partition Equal Subset Sum                              Sort / Recursion                    M       Sort in descending order
+494 Target Sum                                              M
+377 Combination Sum IV                                      M
 437 Path Sum III                                            M
-494 Target Sum                                  M
-377 Combination Sum IV                          M
-560 Subarray Sum Equals K                       M
-581 Shortest Unsorted Continuous Subarray       E
-448 Find All Numbers Disappeared in an Array    E
+560 Subarray Sum Equals K                                   M
+581 Shortest Unsorted Continuous Subarray                   E
+448 Find All Numbers Disappeared in an Array                E
 
 ---- 7/27 ----
 394 Decode String                               M
