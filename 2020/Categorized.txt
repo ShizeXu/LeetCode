@@ -306,9 +306,9 @@
 940 Distinct Subsequences II                                DP-1D                               H       Keep track of # of sequences ending with 'c' for each char 'c'
 
 ---- 7/26 ----
-406 Queue Reconstruction by Height              M
-437 Path Sum III                                E
-416 Partition Equal Subset Sum                  M
+406 Queue Reconstruction by Height                          Sort / Greedy                       M
+416 Partition Equal Subset Sum                              M
+437 Path Sum III                                            M
 494 Target Sum                                  M
 377 Combination Sum IV                          M
 560 Subarray Sum Equals K                       M
