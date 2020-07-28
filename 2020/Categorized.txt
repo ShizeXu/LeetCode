@@ -308,15 +308,19 @@
 ---- 7/26 ----
 406 Queue Reconstruction by Height                          Sort / Greedy                       M
 416 Partition Equal Subset Sum                              Sort / Recursion                    M       Sort in descending order
-494 Target Sum                                              M
-377 Combination Sum IV                                      M
-437 Path Sum III                                            M
+
+---- 7/27 ----
+494 Target Sum                                              Map                                 M
+377 Combination Sum IV                                      Recursion / Cache-Map(DP)           M
+437 Path Sum III                                            Recursion / Cache-Map               M
+
+---- 7/28 ----
 560 Subarray Sum Equals K                                   M
 581 Shortest Unsorted Continuous Subarray                   E
 448 Find All Numbers Disappeared in an Array                E
+394 Decode String                                           M
 
----- 7/27 ----
-394 Decode String                               M
+---- 7/29 ----
 438 Find All Anagrams in a String               M
 543 Diameter of Binary Tree                     E
 617 Merge Two Binary Trees                      E
