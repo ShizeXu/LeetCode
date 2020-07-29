@@ -315,10 +315,10 @@
 437 Path Sum III                                            Recursion / Cache-Map               M
 
 ---- 7/28 ----
-560 Subarray Sum Equals K                                   M
-581 Shortest Unsorted Continuous Subarray                   E
-448 Find All Numbers Disappeared in an Array                E
-394 Decode String                                           M
+560 Subarray Sum Equals K                                   Cache-Map                           M
+581 Shortest Unsorted Continuous Subarray                   TwoPass                             E
+448 Find All Numbers Disappeared in an Array                Sort-Bucket                         E
+394 Decode String                                                                               M
 
 ---- 7/29 ----
 438 Find All Anagrams in a String               M
