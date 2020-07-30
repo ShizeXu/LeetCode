@@ -267,7 +267,7 @@
 234 Palindrome Linked List                                  LinkedList                          E
 236 Lowest Common Ancestor of a Binary Tree                 Tree / Recursion(Loop / Map)        M
 238 Product of Array Except Self                                                                M
-239 Sliding Window Maximum                                  Multiset(Monotonic-Queue / DL-List(DE-Queue))   H
+239 Sliding Window Maximum                                  Multiset("Monotonic-Queue" / DL-List(DE-Queue)) H
 
 ---- 7/16 ----
 240 Search a 2D Matrix II                                   Search-Binary / Recursion(Loop)     M
@@ -322,10 +322,10 @@
 438 Find All Anagrams in a String                           Sliding-Window                      M
 
 ---- 7/29 ----
-543 Diameter of Binary Tree                     E
-617 Merge Two Binary Trees                      E
-621 Task Scheduler                              M
-739 Daily Temperatures                          M
+543 Diameter of Binary Tree                                 Tree / Recursion                    E
+617 Merge Two Binary Trees                                  Tree / Recursion                    E
+621 Task Scheduler                                          Multimap(Greedy)                    M       Use most frequent char as frame and extend it to tasks length as necessary
+739 Daily Temperatures                                      Stack                               M
 
 
 
