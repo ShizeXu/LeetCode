@@ -190,7 +190,8 @@
 141 Linked List Cycle                                       LinkedList                          E
 142 Linked List Cycle II                                    LinkedList / Set(Arithmetic)        M
 143 Reorder List                                            LinkedList(SlowFast&Merge)          M
-146 LRU Cache                                               OOD / Map / D-List                  M
+146 LRU Cache                                               OOD / Map / DL-List                 M
+460 LFU Cache                                               OOD / Map / DL-List                 H (7/17)    Extended from LRU, need extra map to track lists for all frequencies
 
 ---- 6/26 ----
 144 Binary Tree Preorder Traversal                          Tree / Pre / Stack                  M
@@ -238,7 +239,7 @@
 630 Course Schedule III                                     P-Queue / Greedy                    H
 
 ---- 7/2 ----
-209 Minimum Size Subarray Sum                               2P Window                           M
+209 Minimum Size Subarray Sum                               2P-Window                           M
 216 Combination Sum III                                     Recursion                           M
 208 Implement Trie (Prefix Tree)                            OOD / String / Trie                 M
 211 Add and Search Word - Data structure design             OOD / String / Trie                 M
@@ -255,6 +256,79 @@
 223 Rectangle Area                                          Geometry                            M
 218 The Skyline Problem                                     Recursion / D&C (Multiset)          H
 907 Sum of Subarray Minimums                                MinStack                            M
+
+---- 7/14 ----
+217 Contains Duplicate                                      Set                                 E
+219 Contains Duplicate II                                   Set                                 E
+220 Contains Duplicate III                                  Map / Sort-Bucket                   M
+
+---- 7/15 (Start TOP LIKED) ----
+226 Invert Binary Tree                                      Tree / Recursion(Loop)              E
+234 Palindrome Linked List                                  LinkedList                          E
+236 Lowest Common Ancestor of a Binary Tree                 Tree / Recursion(Loop / Map)        M
+238 Product of Array Except Self                                                                M
+239 Sliding Window Maximum                                  Multiset("Monotonic-Queue" / DL-List(DE-Queue)) H
+
+---- 7/16 ----
+240 Search a 2D Matrix II                                   Search-Binary / Recursion(Loop)     M
+279 Perfect Squares                                         Recursion / Cache-Map(DP)           M
+283 Move Zeroes                                                                                 E
+287 Find the Duplicate Number                               Search-Binary (LinkedList)          M
+
+---- 7/17 ----
+295 Find Median from Data Stream                            P-Queue(Min&MaxHeap)                H
+449 Serialize and Deserialize BST                           Tree / BFS(Recursion / Pre)         M       BST pre/post-order can be treated as in-order too
+297 Serialize and Deserialize Binary Tree                   Tree / BFS                          H
+
+---- 7/19 ----
+300 Longest Increasing Subsequence                          DP(Search-Binary on MaxVector)      M       Binary search on MaxVector can be easily achieved by ordered set
+673 Number of Longest Increasing Subsequence                DP                                  M       Extended from #300, saving solution count in dp array additionally
+329 Longest Increasing Path in a Matrix                     Recursion / DFS                     H
+491 Increasing Subsequences                                 Recursion / DFS                     M
+376 Wiggle Subsequence                                      Greedy                              M
+
+---- 7/21 ----
+322 Coin Change                                             DP-1D (Recursion)                   M       Can use Combination and Permutation both
+518 Coin Change 2                                           DP-1D (Recursion)                   M       Need to use Combination (loop coins first)
+
+---- 7/23 ----
+241 Different Ways to Add Parentheses                       Recursion                           M
+678 Valid Parenthesis String                                Counters                            M
+301 Remove Invalid Parentheses                              Recursion / Cache-Map / Trim        H       Map is used to 1) cache results with different lengths, 2) trim. Return the longest at the end
+856 Score of Parentheses                                    Stack                               M
+
+---- 7/25 ----
+647 Palindromic Substrings                                  String / DP-1D                      M
+516 Longest Palindromic Subsequence                         String / DP-2D                      M
+792 Number of Matching Subsequences                         String                              M       Keep moving pointers of strings while iterating big string
+1081 Smallest Subsequence of Distinct Characters            String / Greedy                     M
+1143 Longest Common Subsequence                             String / DP-2D                      M
+940 Distinct Subsequences II                                DP-1D                               H       Keep track of # of sequences ending with 'c' for each char 'c'
+
+---- 7/26 ----
+406 Queue Reconstruction by Height                          Sort / Greedy                       M
+416 Partition Equal Subset Sum                              Sort / Recursion                    M       Sort in descending order
+
+---- 7/27 ----
+494 Target Sum                                              Map                                 M
+377 Combination Sum IV                                      Recursion / Cache-Map(DP)           M
+437 Path Sum III                                            Recursion / Cache-Map               M
+
+---- 7/28 ----
+560 Subarray Sum Equals K                                   Cache-Map                           M
+581 Shortest Unsorted Continuous Subarray                   TwoPass                             E
+448 Find All Numbers Disappeared in an Array                Sort-Bucket                         E
+394 Decode String                                           Recursion(Loop / Stack)             M
+438 Find All Anagrams in a String                           Sliding-Window                      M
+
+---- 7/29 ----
+543 Diameter of Binary Tree                                 Tree / Recursion                    E
+617 Merge Two Binary Trees                                  Tree / Recursion                    E
+621 Task Scheduler                                          Multimap(Greedy)                    M       Use most frequent char as frame and extend it to tasks length as necessary
+739 Daily Temperatures                                      Stack                               M
+
+
+
 
 
 ---- Play ----
