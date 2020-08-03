@@ -328,8 +328,8 @@
 739 Daily Temperatures                                      Stack                               M
 
 ---- 8/2 (TOP INTERVIEWED) ----
-227 Basic Calculator II                                     Stack                               M
-224 Basic Calculator                                        Stack                               H
+227 Basic Calculator II                                     Stack(Loop / Counters)              M
+224 Basic Calculator                                        Stack(Loop / Counters)              H
 
 
 
