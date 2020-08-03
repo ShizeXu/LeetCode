@@ -58,6 +58,8 @@
 38  Count and Say                                           String / Recursion(Loop)        E
 39  Combination Sum                                         Recursion(Cache-Map)            M
 40  Combination Sum II                                      Recursion                       M
+216 Combination Sum III                                     Recursion                       M (7/2)
+377 Combination Sum IV                                      Recursion / Cache-Map(DP)       M (7/27)
 42  Trapping Rain Water                                     Greedy                          H
 43  Multiply Strings                                        (Loop)                          M
 44  Wildcard Matching                                       String / DP-2D                  H
@@ -150,6 +152,7 @@
 111 Minimum Depth of Binary Tree                            Tree / BFS                          E
 112 Path Sum                                                Tree / Recursion(Post/Loop) / DFS   E
 113 Path Sum II                                             Tree / Recursion(Post/Loop) / DFS   M
+437 Path Sum III                                            Recursion / Cache-Map               M (7/27)
 121 Best Time to Buy and Sell Stock                                                             E
 122 Best Time to Buy and Sell Stock II                      Greedy                              E
 123 Best Time to Buy and Sell Stock III                     DP-1D                               H
@@ -158,6 +161,7 @@
 ---- 6/22 ----
 114 Flatten Binary Tree to Linked List                      Tree / Pre / Stack                  M
 115 Distinct Subsequences                                   String / DP-2D                      H
+940 Distinct Subsequences II                                DP-1D                               H (7/25)    Keep track of # of sequences ending with 'c' for each char 'c'
 116 Populating Next Right Pointers in Each Node             Tree / BFS                          M
 117 Populating Next Right Pointers in Each Node II          Tree / BFS                          M
 124 Binary Tree Maximum Path Sum                            Tree / Recursion / DFS              H
@@ -240,7 +244,6 @@
 
 ---- 7/2 ----
 209 Minimum Size Subarray Sum                               2P-Window                           M
-216 Combination Sum III                                     Recursion                           M
 208 Implement Trie (Prefix Tree)                            OOD / String / Trie                 M
 211 Add and Search Word - Data structure design             OOD / String / Trie                 M
 212 Word Search II                                          String / Trie / Recursion / DFS     H
@@ -303,7 +306,6 @@
 792 Number of Matching Subsequences                         String                              M       Keep moving pointers of strings while iterating big string
 1081 Smallest Subsequence of Distinct Characters            String / Greedy                     M
 1143 Longest Common Subsequence                             String / DP-2D                      M
-940 Distinct Subsequences II                                DP-1D                               H       Keep track of # of sequences ending with 'c' for each char 'c'
 
 ---- 7/26 ----
 406 Queue Reconstruction by Height                          Sort / Greedy                       M
@@ -311,8 +313,6 @@
 
 ---- 7/27 ----
 494 Target Sum                                              Map                                 M
-377 Combination Sum IV                                      Recursion / Cache-Map(DP)           M
-437 Path Sum III                                            Recursion / Cache-Map               M
 
 ---- 7/28 ----
 560 Subarray Sum Equals K                                   Cache-Map                           M
@@ -327,6 +327,9 @@
 621 Task Scheduler                                          Multimap(Greedy)                    M       Use most frequent char as frame and extend it to tasks length as necessary
 739 Daily Temperatures                                      Stack                               M
 
+---- 8/2 (TOP INTERVIEWED) ----
+227 Basic Calculator II                                     Stack                               M
+224 Basic Calculator                                        Stack                               H
 
 
 
