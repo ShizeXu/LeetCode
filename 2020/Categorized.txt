@@ -42,6 +42,7 @@
 29  Divide Two Integers                                     Loop                            M
 30  Substring with Concatenation of All Words               Map                             H
 41  First Missing Positive                                  Sort-Bucket                     H
+268 Missing Number                                          Sort-Bucket                     E (8/9)
 
 ---- 6/9 ----
 31  Next Permutation                                                                        M
@@ -331,7 +332,10 @@
 227 Basic Calculator II                                     Stack(Loop / Counters)              M
 224 Basic Calculator                                        Stack(Loop / Counters)              H
 
-
+---- 8/9 ----
+237 Delete Node in a Linked List                            LinkedList                          E
+242 Valid Anagram                                           Map                                 E
+289 Game of Life                                            Vector                              M
 
 
 ---- Play ----

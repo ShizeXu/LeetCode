@@ -5,3 +5,6 @@
     b. Jave:
             i: >>: arithmetic
             ii: >>>: logical
+2. Unicode vs UTF-8
+    a. Unicode: a big dict of all chars from different languages
+    b. UTF-8: a variable-width character encoding capable of encoding all 1,112,064 valid character code points in Unicode using 1-4 byte code units
