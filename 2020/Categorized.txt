@@ -285,8 +285,9 @@
 297 Serialize and Deserialize Binary Tree                   Tree / BFS                          H
 
 ---- 7/19 ----
-300 Longest Increasing Subsequence                          DP(Search-Binary on MaxVector)      M       Binary search on MaxVector can be easily achieved by ordered set
+300 Longest Increasing Subsequence                          DP(Search-Binary on MaxVector)      M       Classic LIS problem. Binary search on MaxVector can be easily achieved by ordered set. O(nlogn)
 673 Number of Longest Increasing Subsequence                DP                                  M       Extended from #300, saving solution count in dp array additionally
+334 Increasing Triplet Subsequence                          DP-1D(Search-Binary on MaxVector)   M (8/11) When 3 becomes K, it's just similar to LIS problem (improving from O(n^2) to O(nlogn))
 329 Longest Increasing Path in a Matrix                     Recursion / DFS / Cache-Matrix      H
 491 Increasing Subsequences                                 Recursion / DFS                     M
 376 Wiggle Subsequence                                      Greedy                              M
@@ -344,7 +345,6 @@
 ---- 8/11 ----
 326 Power of Three                                          (Arithmetic / Log or Pow)           E
 328 Odd Even Linked List                                    LinkedList                          M
-334 Increasing Triplet Subsequence                          DP-1D(Search-Binary on MaxVector)   M       When 3 becomes K, it's just similar to LIS problem (improving from O(n^2) to O(nlogn))
 
 ---- 8/12 ----
 341 Flatten Nested List Iterator
