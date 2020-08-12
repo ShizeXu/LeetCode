@@ -342,9 +342,11 @@
 324 Wiggle Sort II                                                                              M
 
 ---- 8/11 ----
-326 Power of Three
-328 Odd Even Linked List
-334 Increasing Triplet Subsequence
+326 Power of Three                                          (Arithmetic / Log or Pow)           E
+328 Odd Even Linked List                                    LinkedList                          M
+334 Increasing Triplet Subsequence                          DP-1D(Search-Binary on MaxVector)   M       When 3 becomes K, it's just similar to LIS problem (improving from O(n^2) to O(nlogn))
+
+---- 8/12 ----
 341 Flatten Nested List Iterator
 344 Reverse String
 349 Intersection of Two Arrays
