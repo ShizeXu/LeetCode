@@ -346,11 +346,13 @@
 326 Power of Three                                          (Arithmetic / Log or Pow)           E
 328 Odd Even Linked List                                    LinkedList                          M
 
----- 8/12 ----
-341 Flatten Nested List Iterator
-344 Reverse String
-349 Intersection of Two Arrays
-350 Intersection of Two Arrays II
+---- 8/13 ----
+344 Reverse String                                          String                              E
+341 Flatten Nested List Iterator                            OOD / Stack                         M
+349 Intersection of Two Arrays                              Set                                 E
+350 Intersection of Two Arrays II                           Set                                 E
+
+---- 8/14 ----
 371 Sum of Two Integers
 378 Kth Smallest Element in a Sorted Matrix
 380 Insert Delete GetRandom O(1)
