@@ -1,10 +1,29 @@
 1. Bit right shift (left is always logical):
     a. c++:
-            i: signed int: logical 
+            i: signed int: logical (0 regardless of sign)
             ii: unsigned int: arithmetic
     b. Jave:
             i: >>: arithmetic
             ii: >>>: logical
+
 2. Unicode vs UTF-8
     a. Unicode: a big dict of all chars from different languages
     b. UTF-8: a variable-width character encoding capable of encoding all 1,112,064 valid character code points in Unicode using 1-4 byte code units
+
+3. Priority Queue
+    a. Compare function is reversed (min-heap: greater<int>; max-heap: less<int>)
+    b. Customized compare function usage (lambda):
+        auto mycomp = [](a, b){ // };
+        priority_queue<T, vector<T>, decltype(mycomp)> pq(mycomp);
+
+4. Unordered_*
+    a. Map or set doesn't take pair/vector or other class as key due to missing built in hash function
+    b. Customized hash function:
+        struct pair_hash
+        {
+                template <class T1, class T2>
+                std::size_t operator() (const std::pair<T1, T2> &pair) const
+                {
+                        return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
+                }
+        };

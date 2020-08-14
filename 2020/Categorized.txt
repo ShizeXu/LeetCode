@@ -351,10 +351,10 @@
 341 Flatten Nested List Iterator                            OOD / Stack                         M
 349 Intersection of Two Arrays                              Set                                 E
 350 Intersection of Two Arrays II                           Set                                 E
+371 Sum of Two Integers                                     Bit                                 E
+378 Kth Smallest Element in a Sorted Matrix                 Merge-Sort(Search-Binary)           M
 
 ---- 8/14 ----
-371 Sum of Two Integers
-378 Kth Smallest Element in a Sorted Matrix
 380 Insert Delete GetRandom O(1)
 384 Shuffle an Array
 395 Longest Substring with At Least K Repeating Characters
