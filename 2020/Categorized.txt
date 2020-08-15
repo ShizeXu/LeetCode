@@ -352,12 +352,14 @@
 349 Intersection of Two Arrays                              Set                                 E
 350 Intersection of Two Arrays II                           Set                                 E
 371 Sum of Two Integers                                     Bit                                 E
-378 Kth Smallest Element in a Sorted Matrix                 Merge-Sort(Search-Binary)           M
+378 Kth Smallest Element in a Sorted Matrix                 Merge-Sort(Search-Binary)           M       Alternative is binary search the range of (min, max) and use O(n) method in #240 to count
 
 ---- 8/14 ----
-380 Insert Delete GetRandom O(1)
-384 Shuffle an Array
-395 Longest Substring with At Least K Repeating Characters
+380 Insert Delete GetRandom O(1)                            OOD / Map / List / Rand             M       rand()
+384 Shuffle an Array                                        OOD / Rand                          M       rand()
+
+---- 8/15 ----
+395 Longest Substring with At Least K Repeating Characters  
 412 Fizz Buzz
 454 4Sum II
 923 3Sum With Multiplicity
