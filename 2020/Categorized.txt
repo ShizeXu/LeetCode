@@ -23,7 +23,8 @@
 14  Longest Common Prefix                                   String                          E
 15  3Sum                                                                                    M
 16  3Sum Closest                                                                            M
-18  4Sum                                                                                    M 
+18  4Sum                                                                                    M
+454 4Sum II                                                 Map                             M (8/16)
 17  Letter Combinations of a Phone Number                   Map / Loop(Recursion)           M
 19  Remove Nth Node From End of List                        LinkedList                      M
 21  Merge Two Sorted Lists                                  LinkedList                      E
@@ -359,10 +360,11 @@
 384 Shuffle an Array                                        OOD / Rand                          M       rand()
 
 ---- 8/15 ----
-395 Longest Substring with At Least K Repeating Characters  
-412 Fizz Buzz
-454 4Sum II
-923 3Sum With Multiplicity
+395 Longest Substring with At Least K Repeating Characters  (2P-Window)                         M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N)).
+
+---- 8/16 ----
+412 Fizz Buzz                                                                                   E
+923 3Sum With Multiplicity                                  Loop / Trim(Count / P-C)            M
 
 
 
