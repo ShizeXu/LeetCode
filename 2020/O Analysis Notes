@@ -8,3 +8,7 @@
 3. Heap (priority_queue) vs. BST (set/multiset)
    Heap just guarantees that elements on higher levels are greater (for max-heap) or smaller (for min-heap) than elements on lower levels, whereas BST guarantees order (from "left" to "right"). 
    If you want sorted elements, go with BST. Heap is better at findMin/findMax ( O(1) ), while BST is good at all finds ( O(logN) )
+
+4. Quick Select
+   Would be useful to find the Kth element or median. Average O(n).
+   C = n + n/2 + n/4 + n/8 + ... = O(n).
