@@ -362,12 +362,12 @@
 ---- 8/15 ----
 395 Longest Substring with At Least K Repeating Characters  (2P-Window)                         M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N)).
 
----- 8/16 ----
+---- 8/16 (Completed MOST INTERVIEWED) ----
 412 Fizz Buzz                                                                                   E
 923 3Sum With Multiplicity                                  Loop / Trim(Count / P-C)            M
 
-
-
+---- 8/19 ----
+304 Range Sum Query 2D - Immutable                          Cache-Pre                           M
 
 
 
