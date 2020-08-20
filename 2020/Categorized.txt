@@ -366,9 +366,9 @@
 412 Fizz Buzz                                                                                   E
 923 3Sum With Multiplicity                                  Loop / Trim(Count / P-C)            M
 
----- 8/19 ----
+---- 8/19 (Start MULTI-THREADING) ----
 304 Range Sum Query 2D - Immutable                          Cache-Pre                           M
-
+1114    Print in Order                                      MT / OOD                            E       Alternatives: condition_variable (with mutex, unique_lock)
 
 
 ---- Play ----
