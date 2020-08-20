@@ -41,5 +41,10 @@
         T2:
             ready = true;
             cv.notify_all();
+    d. new thread:
+        thread t1(void_function, param1, ...);
+	    thread t2(void_function, param1, ...);
+	    t1.join();
+	    t2.join();
 
 6. 
