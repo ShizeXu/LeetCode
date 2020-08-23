@@ -371,6 +371,10 @@
 1114    Print in Order                                      MT / OOD                            E       Alternatives: condition_variable (with mutex, unique_lock)
 1115    Print FooBar Alternately                            MT / OOD                            M       condition_variable (with mutex, unique_lock)
 1116    Print Zero Even Odd                                 MT / OOD                            M       condition_variable (with mutex, unique_lock)
+1117    Building H2O                                        MT / OOD                            M       Mutex (potential undefined behavior)
+1195    Fizz Buzz Multithreaded                             MT / OOD                            M       condition_variable (with mutex, unique_lock)
+1226    The Dining Philosophers                             MT / OOD                            M       condition_variable (with mutex, unique_lock)
+
 
 ---- Play ----
 6/10    1472    Design Browser History                          OOD / Stack(Vector)             M
