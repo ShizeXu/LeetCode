@@ -27,3 +27,24 @@
                         return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
                 }
         };
+
+5. Concurrency
+    a. this_thread::sleep_for(chrono::milliseconds(x)), this_thread::yield()
+    b. mutex: mutex a; a.lock(); a.unlock();
+    c. conditional_variable:
+        mutex mtx;
+        condition_variable cv;
+        T1:
+            unique_lock<mutex> lck(mtx);
+            while (!ready) cv.wait(lck);
+            ...
+        T2:
+            ready = true;
+            cv.notify_all();
+    d. new thread:
+        thread t1(void_function, param1, ...);
+	    thread t2(void_function, param1, ...);
+	    t1.join();
+	    t2.join();
+
+6. 
