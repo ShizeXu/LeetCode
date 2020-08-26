@@ -1,0 +1,20 @@
+            AWS		    MS		        G		        OSS (FB has no Public Computing)
+RDS	        Aurora		SQLDB/Orcas     Cloud SQL       MySQL
+NoSQL		DynamoDB    CosmosDB        BigTable        Apache Cassandra, Apache HBase(Hadoop)
+Block		S3          Blob Storage    Persistent Disk
+VM-like	    EC2         VM              VM
+DW          Redshift    DW              BigQuery        Apache Hive
+
+Redis & Memcached:
+    1. Both Redis and MemCached are in-memory, open-source data stores. Memcached, a high-performance distributed memory cache service, is designed for simplicity while Redis offers a rich set of features that make it effective for a wide range of use cases.
+    2. Faster (μs), in contrast to databases that store data on disk or SSDs (ms).
+
+No-SQL:
+    1. Key-Value
+        E.g. Redis, Voldemort, DynamoDB
+    2. Document DB
+        E.g. CouchDB, MongoDB
+    3. Wide-Column DB ()
+        E.g. Cassandra, HBase
+    4. Graph DB
+        E.g. Neo4J, InfiniteGraph
