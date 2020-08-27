@@ -377,9 +377,9 @@
 
 
 ---- Play ----
-6/10    1472    Design Browser History                          OOD / Stack(Vector)             M
-6/30    1496    Path Crossing                                   Set                             E
-
+1472    Design Browser History                              OOD / Stack(Vector)                 M
+1496    Path Crossing                                       Set                                 E
+222     Count Complete Tree Nodes                           Tree / Level                        M
 
 
 
