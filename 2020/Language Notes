@@ -49,4 +49,4 @@
     e. RWLock:
         C++11: read: shared_lock; write: unique_lock; Best practice: release read lock before upgrade to write lock
 
-6. 
+6. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)

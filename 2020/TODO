@@ -1,2 +1,13 @@
 Azure Kubernetes
 MySQL
+
+Design:
+FB:
+    State message searc (Elastic search): 索引双层桶设计: https://bre.is/brcedeFr
+
+
+FB:
+    LC 332, 523, 311, 397, 689, 658, 158, 388, 297, 282, 273, 1139, 863, 449, 958, 621, 567, 865, 791
+    349 (cases：1 要是已经排序了，咋办？2, 要是等你老了，国家发不起社保了，咋办？3, 要是一个数组大一个数组小，咋办？4, 要是国家医疗费用增长远远超过你工资的增长，咋办？5, 要是数组时而稀疏时而密集，咋办？)
+    Longest arithmetic progression/1027
+

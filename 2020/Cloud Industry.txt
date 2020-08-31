@@ -11,7 +11,7 @@ Redis & Memcached:
 
 No-SQL:
     1. Key-Value
-        E.g. Redis, Voldemort, DynamoDB
+        E.g. Redis, Memcached, Voldemort, DynamoDB, LevelDB, RocksDB
     2. Document DB
         E.g. CouchDB, MongoDB
     3. Wide-Column DB ()
