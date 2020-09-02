@@ -163,7 +163,7 @@
 ---- 6/22 ----
 114 Flatten Binary Tree to Linked List                      Tree / Pre / Stack                  M
 115 Distinct Subsequences                                   String / DP-2D                      H
-940 Distinct Subsequences II                                DP-1D                               H (7/25)    Keep track of # of sequences ending with 'c' for each char 'c'
+940 Distinct Subsequences II                                String / DP-1D                      H (7/25)    Keep track of # of sequences ending with 'c' for each char 'c'
 116 Populating Next Right Pointers in Each Node             Tree / BFS                          M
 117 Populating Next Right Pointers in Each Node II          Tree / BFS                          M
 124 Binary Tree Maximum Path Sum                            Tree / Recursion / DFS              H
@@ -361,6 +361,7 @@
 
 ---- 8/15 ----
 395 Longest Substring with At Least K Repeating Characters  (2P-Window)                         M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N)).
+340 Longest Substring with At Most K Distinct Characters    2P-Window                           H (9/1)
 
 ---- 8/16 (Completed MOST INTERVIEWED) ----
 412 Fizz Buzz                                                                                   E
@@ -392,12 +393,38 @@
 269     Alien Dictionary                                        Graph / Sort-Topo                   H
 
 ---- 9/1 ----
-348     Design Tic-Tac-Toe
-340     Longest Substring with At Most K Distinct Characters
+348     Design Tic-Tac-Toe                                      OOD                                 M
+277     Find the Celebrity                                                                          M       Narrowing down candidates. Or use two pass (first passes uses single pointer by updating Candidate or two l/r to search)
 
+---- 9/2 ----
+285     Inorder Successor in BST
+163     Missing Ranges
+251     Flatten 2D Vector
+308     Range Sum Query 2D - Mutable
 
-
-
+---- 9/3 (Top FB)----
+273     Integer to English Words
+973	    K Closest Points to Origin
+680	    Valid Palindrome II
+528	    Random Pick with Weight
+986	    Interval List Intersections
+158	    Read N Characters Given Read4 II - Call multiple times
+636	    Exclusive Time of Functions
+314	    Binary Tree Vertical Order Traversal
+311	    Sparse Matrix Multiplication
+721	    Accounts Merge
+938	    Range Sum of BST
+1428    Leftmost Column with at Least a One
+523	    Continuous Subarray Sum
+282	    Expression Add Operators
+785	    Is Graph Bipartite?
+249	    Group Shifted Strings
+670	    Maximum Swap
+339	    Nested List Weight Sum
+689	    Maximum Sum of 3 Non-Overlapping Subarrays
+1026    Maximum Difference Between Node and Ancestor
+398	    Random Pick Index
+896	    Monotonic Array
 
 
 
