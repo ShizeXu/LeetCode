@@ -18,3 +18,10 @@ No-SQL:
         E.g. Cassandra, HBase
     4. Graph DB
         E.g. Neo4J, InfiniteGraph
+
+Communication between Microservices:
+    1. System (with request instruction)
+        REST HTTP (synchronous), gRPC (google Remote Procedure Call), SMTP (mail), FTP (file)
+            a. OSS: AMQP (asynchronous), STOMP, and JMS
+    2. Data stream
+        TCP (Transmission Control Protocol), UDP (User Datagram Protocol)

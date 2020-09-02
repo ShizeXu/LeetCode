@@ -245,7 +245,7 @@
 630 Course Schedule III                                     P-Queue / Greedy                    H
 
 ---- 7/2 ----
-209 Minimum Size Subarray Sum                               2P-Window                           M
+209 Minimum Size Subarray Sum                               Sliding-Window                      M
 208 Implement Trie (Prefix Tree)                            OOD / String / Trie                 M
 211 Add and Search Word - Data structure design             OOD / String / Trie                 M
 212 Word Search II                                          String / Trie / Recursion / DFS     H
@@ -360,8 +360,8 @@
 384 Shuffle an Array                                        OOD / Rand                          M       rand()
 
 ---- 8/15 ----
-395 Longest Substring with At Least K Repeating Characters  (2P-Window)                         M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N)).
-340 Longest Substring with At Most K Distinct Characters    2P-Window                           H (9/1)
+395 Longest Substring with At Least K Repeating Characters  (Sliding-Window)                    M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N)).
+340 Longest Substring with At Most K Distinct Characters    Sliding-Window                      H (9/1)
 
 ---- 8/16 (Completed MOST INTERVIEWED) ----
 412 Fizz Buzz                                                                                   E
