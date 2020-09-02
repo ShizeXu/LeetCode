@@ -366,7 +366,7 @@
 ---- 8/16 (Completed MOST INTERVIEWED) ----
 412 Fizz Buzz                                                                                   E
 923 3Sum With Multiplicity                                  Loop / Trim(Count / P-C)            M
-304 Range Sum Query 2D - Immutable                          Cache-Pre                           M
+304 Range Sum Query 2D - Immutable                          OOD / Cache-Pre                     M
 
 ---- 8/19 (Start MULTI-THREADING) ----
 1114    Print in Order                                      MT / OOD                            E       Alternatives: condition_variable (with mutex, unique_lock)
@@ -396,11 +396,11 @@
 348     Design Tic-Tac-Toe                                      OOD                                 M
 277     Find the Celebrity                                                                          M       Narrowing down candidates. Or use two pass (first passes uses single pointer by updating Candidate or two l/r to search)
 
----- 9/2 ----
-285     Inorder Successor in BST
-163     Missing Ranges
-251     Flatten 2D Vector
-308     Range Sum Query 2D - Mutable
+---- 9/2 (Completed UNLOCKED MOST INTERVIEWED) ----
+285     Inorder Successor in BST                                Tree / In / Stack                   M       Space is O(logN). With Morris Traversal (use most right NULL of left sub tree to point to self), it can be done with O(1) space
+163     Missing Ranges                                                                              M
+251     Flatten 2D Vector                                       OOD                                 M
+308     Range Sum Query 2D - Mutable                            OOD / (BinaryIndexedTree)           M       BIT can improve total time from O(M * N) to (logM * logN)
 
 ---- 9/3 (Top FB)----
 273     Integer to English Words

@@ -12,3 +12,11 @@
 4. Quick Select
    Would be useful to find the Kth element or median. Average O(n).
    C = n + n/2 + n/4 + n/8 + ... = O(n).
+
+5. Binary Indexed Tree
+   Improve the complexity of acumulative sum from O(N) to O(logN). The idea is motivated by any number can be represented in sum of powers of 2.
+   So we can store sums in separate portions, e.g. for sum(0-11) = sum(0-8) + sum(9-10) + sum(11).
+      To Sum from a node to root - flip the right most bit ("i & -i" only keeps the right most '1'):
+         i -= i & (-i);
+      To Update all containing nodes - add the right most bit:
+         i += i & (-i);
