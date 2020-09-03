@@ -15,9 +15,16 @@ No-SQL:
     2. Document DB
         E.g. CouchDB, MongoDB
     3. Wide-Column DB ()
-        E.g. Cassandra, HBase
+        E.g. Cassandra (Cell based storage), HBase (Column based storage)
     4. Graph DB
         E.g. Neo4J, InfiniteGraph
+
+Effeciency:
+    1. MySQL / PostgreSQL : 1k QPS
+    2. Cassandra / MongoDB : 10k QPS
+    3. Redis / Memcached : 100k - 1m QPS
+    4. Machine: Laptop 100; single workstation: <=1k; ...
+
 
 Communication between Microservices:
     1. System (with request instruction)
@@ -25,3 +32,21 @@ Communication between Microservices:
             a. OSS: AMQP (asynchronous), STOMP, and JMS
     2. Data stream
         TCP (Transmission Control Protocol), UDP (User Datagram Protocol)
+    3. SQL Server sets up TCP session
+        Client API (ODBC/JDBC/SqlClient) -> Gateway -> TCP Socket duplication -> SQL Server
+
+Client sets up connection with server:
+    1. HTTP Long Polling
+        Client sends a request with timeout, and servers responses or waits until has something to response.
+    2. WebSocket
+        Maintain TCP Connection. Server can push message back.
+
+Rate Limiter:
+    The token bucket allows for sudden increase in traffic to some extent, while the leaky bucket is mainly used to ensure the smooth outflow rate.
+    1. Token bucket (burstable, limit the average rate)
+    2. Leaky bucket (smooth, limit the processing rate)
+        The implementation of the leaky bucket algorithm usually relies on the queue.
+        If your system receives a new access request and the queue is not full, it puts the request into the queue.
+        A processor pulls requests from the queue and processes it at a fixed frequency.
+        If the volume of the inbound access requests is too large and the queue becomes full, new requests will be discarded.
+    

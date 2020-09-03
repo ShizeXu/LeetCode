@@ -12,4 +12,4 @@ FB:
     Longest arithmetic progression/1027
 
 G:
-    Rate Limiter: LC 359, 362
+    Rate Limiter: LC 359_D, 362

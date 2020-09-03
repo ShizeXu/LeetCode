@@ -376,14 +376,6 @@
 1195    Fizz Buzz Multithreaded                             MT / OOD                            M       condition_variable (with mutex, unique_lock)
 1226    The Dining Philosophers                             MT / OOD                            M       condition_variable (with mutex, unique_lock)
 
-
----- Play ----
-1472    Design Browser History                              OOD / Stack(Vector)                 M
-1496    Path Crossing                                       Set                                 E
-222     Count Complete Tree Nodes                           Tree / Level                        M
-1254    Number of Closed Islands                            BFS(DFS)                            M
-
-
 ---- 8/31 Top Interviewed Catched (Unlocked Premium) ----
 252     Meeting Rooms                                           Sort                                M
 253     Meeting Rooms II                                        Sort / P-Queue(MinHeap)             M
@@ -426,6 +418,12 @@
 398	    Random Pick Index
 896	    Monotonic Array
 
+---- Play ----
+1472    Design Browser History                              OOD / Stack(Vector)                 M
+1496    Path Crossing                                       Set                                 E
+222     Count Complete Tree Nodes                           Tree / Level                        M
+1254    Number of Closed Islands                            BFS(DFS)                            M
+359     Logger Rate Limiter                                 OOD / Map                           E
 
 
 

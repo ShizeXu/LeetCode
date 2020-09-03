@@ -20,3 +20,10 @@
          i -= i & (-i);
       To Update all containing nodes - add the right most bit:
          i += i & (-i);
+            0
+    /    /    \       \
+   1    2      4       8
+        |     /  \    /  \
+        3    5    6  9    10
+                  |       |
+                  7       11
