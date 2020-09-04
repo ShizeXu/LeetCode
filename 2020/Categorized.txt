@@ -220,7 +220,7 @@
 ---- 6/29 ----
 168 Excel Sheet Column Title                                Digits                              E
 171 Excel Sheet Column Number                               Digits                              E
-172 Factorial Trailing Zeroes                               Arithmetic                          E
+172 Factorial Trailing Zeroes                               Arithmetic                          E       Counting 5s and its powers
 173 Binary Search Tree Iterator                             OOD / Tree / In / Stack             M
 174 Dungeon Game                                            DP-2D-Back                          H
 179 Largest Number                                          String                              M
@@ -357,10 +357,10 @@
 
 ---- 8/14 ----
 380 Insert Delete GetRandom O(1)                            OOD / Map / DL-List / Rand          M       rand()
-384 Shuffle an Array                                        OOD / Rand                          M       rand()
+384 Shuffle an Array                                        OOD / Rand                          M       rand(). Can be easily proved the chance for each number is equal
 
 ---- 8/15 ----
-395 Longest Substring with At Least K Repeating Characters  (Sliding-Window)                    M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N)).
+395 Longest Substring with At Least K Repeating Characters  (Sliding-Window)                    M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N))
 340 Longest Substring with At Most K Distinct Characters    Sliding-Window                      H (9/1)
 
 ---- 8/16 (Completed MOST INTERVIEWED) ----
@@ -380,6 +380,7 @@
 252     Meeting Rooms                                           Sort                                M
 253     Meeting Rooms II                                        Sort / P-Queue(MinHeap)             M
 1229    Meeting Scheduler                                       Sort-Merge                          M       If sorted by "start" then compare "end" to move either i or j
+986	    Interval List Intersections                             Sort-Merge                          M (9/3) Compare "end"
 278     First Bad Version                                       Search-Binary                       E
 953     Verifying an Alien Dictionary                                                               E
 269     Alien Dictionary                                        Graph / Sort-Topo                   H
@@ -395,11 +396,12 @@
 308     Range Sum Query 2D - Mutable                            OOD / (BinaryIndexedTree)           M       BIT can improve total time from O(M * N) to (logM * logN)
 
 ---- 9/3 (Top FB)----
-273     Integer to English Words
-973	    K Closest Points to Origin
-680	    Valid Palindrome II
-528	    Random Pick with Weight
-986	    Interval List Intersections
+273     Integer to English Words                                                                    H       Chunk in xxx blocks. Watch out for edge cases
+973	    K Closest Points to Origin                              P-Queue(Multimap)                   M
+680	    Valid Palindrome II                                                                         E
+528	    Random Pick with Weight                                 OOD / Rand / Search-Binary          E       rand()
+
+---- 9/4 ----
 158	    Read N Characters Given Read4 II - Call multiple times
 636	    Exclusive Time of Functions
 314	    Binary Tree Vertical Order Traversal

@@ -28,7 +28,19 @@
                 }
         };
 
-5. Concurrency
+5. Arithmatic operators
+    include<cmath>
+    a. a ^ b: pow(a, b)
+    b. log_a(b): log_10(b) / log_10(a)
+        log(x): log_e(x)
+        log2(x), log10(x)
+    c. a ^ 1/2: sqrt(a)
+
+6. Random number
+    a. rand() % mod
+    b. srand(time(0)) would be predictable even if waits
+
+6. Concurrency
     a. this_thread::sleep_for(chrono::milliseconds(x)), this_thread::yield()
     b. mutex: mutex a; a.lock(); a.unlock();
     c. conditional_variable:
@@ -51,4 +63,4 @@
     f. ThreadPool:
         
 
-6. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
+7. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
