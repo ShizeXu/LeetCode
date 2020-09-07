@@ -28,7 +28,7 @@
 17  Letter Combinations of a Phone Number                   Map / Loop(Recursion)           M
 19  Remove Nth Node From End of List                        LinkedList                      M
 21  Merge Two Sorted Lists                                  LinkedList                      E
-23  Merge k Sorted Lists                                    LinkedList / P-Queue (D&C)      H
+23  Merge k Sorted Lists                                    LinkedList / P-Queue (D&C)      H           ALternatives: Sort-Merge, both are O(N * logK)
 20  Valid Parentheses                                       String / Stack                  E
 22  Generate Parentheses                                    String / Recursion              M
 32  Longest Valid Parentheses                               String / Stack (DP-1D)          H
@@ -224,7 +224,7 @@
 173 Binary Search Tree Iterator                             OOD / Tree / In / Stack             M
 174 Dungeon Game                                            DP-2D-Back                          H
 179 Largest Number                                          String                              M
-215 Kth Largest Element in an Array                         Sort-Quick(P-Queue(MinHeap), Sort-Counting, Sort-merge)     M   Avg O(N) ( O(NlogK), O(N-range) ). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
+215 Kth Largest Element in an Array                         QuickSelect(P-Queue(MinHeap), Sort-Counting, Sort-merge)     M   Avg O(N) ( O(NlogK), O(N-range)). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
 
 ---- 6/30 ----
 189 Rotate Array                                                                                E
@@ -353,7 +353,7 @@
 349 Intersection of Two Arrays                              Set                                 E
 350 Intersection of Two Arrays II                           Set                                 E
 371 Sum of Two Integers                                     Bit                                 E
-378 Kth Smallest Element in a Sorted Matrix                 Merge-Sort(Search-Binary)           M       Alternative is binary search the range of (min, max) and use O(n) method in #240 to count
+378 Kth Smallest Element in a Sorted Matrix                 Merge-Sort(Search-Binary)           M       Alternative of binary search is applied on the range of (min, max) and use O(n) method in #240 to count
 
 ---- 8/14 ----
 380 Insert Delete GetRandom O(1)                            OOD / Map / DL-List / Rand          M       rand()
