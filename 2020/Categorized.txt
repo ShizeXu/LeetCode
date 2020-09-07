@@ -401,15 +401,17 @@
 680	    Valid Palindrome II                                                                         E
 528	    Random Pick with Weight                                 OOD / Rand / Search-Binary          E       rand()
 
----- 9/4 ----
-158	    Read N Characters Given Read4 II - Call multiple times
-636	    Exclusive Time of Functions
-314	    Binary Tree Vertical Order Traversal
-311	    Sparse Matrix Multiplication
-721	    Accounts Merge
-938	    Range Sum of BST
-1428    Leftmost Column with at Least a One
+---- 9/6 ----
+158	    Read N Characters Given Read4 II - Call multiple times  Queue                               M
+636	    Exclusive Time of Functions                             Stack                               M
+314	    Binary Tree Vertical Order Traversal                    Tree / BFS                          M       Use BFS (cannot use DFS) since we want from top to bottom order
+938	    Range Sum of BST                                        Tree / In / Stack                   E
+1428    Leftmost Column with at Least a One                     Search-Binary                       M
+721	    Accounts Merge                                          Graph / Map / Set                   M       Hard to use "unordered_multimap + set" since same person may not come in right sequence. Have to use graph (either on Person or Email)
+
+---- 9/7 ----
 523	    Continuous Subarray Sum
+311	    Sparse Matrix Multiplication
 282	    Expression Add Operators
 785	    Is Graph Bipartite?
 249	    Group Shifted Strings
