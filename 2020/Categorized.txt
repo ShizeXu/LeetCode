@@ -415,10 +415,12 @@
 282	    Expression Add Operators                                Recursion / DFS                     H       Special handle on '*' by storing the previous operand value. Also note for initial operator (i=0).
 
 ---- 9/8 ----
-785	    Is Graph Bipartite?
-249	    Group Shifted Strings
-670	    Maximum Swap
-339	    Nested List Weight Sum
+785	    Is Graph Bipartite?                                     Graph / BFS                         M
+249	    Group Shifted Strings                                   String / Map                        M
+670	    Maximum Swap                                            Digits                              M
+339	    Nested List Weight Sum                                  OOD / Recursion                     M       Iterative could be similar to level traversal of a tree
+
+---- 9/9 ----
 689	    Maximum Sum of 3 Non-Overlapping Subarrays
 1026    Maximum Difference Between Node and Ancestor
 398	    Random Pick Index
