@@ -319,6 +319,7 @@
 
 ---- 7/28 ----
 560 Subarray Sum Equals K                                   Cache-Map                           M
+523 Continuous Subarray Sum                                 Cache-Map                           M (9/7) Same as above, with additional mode in each iteration and also delay insert by 1 iter
 581 Shortest Unsorted Continuous Subarray                   TwoPass                             E
 448 Find All Numbers Disappeared in an Array                Sort-Bucket                         E
 394 Decode String                                           Recursion(Loop / Stack)             M
@@ -410,9 +411,10 @@
 721	    Accounts Merge                                          Graph / Map / Set                   M       Hard to use "unordered_multimap + set" since same person may not come in right sequence. Have to use graph (either on Person or Email)
 
 ---- 9/7 ----
-523	    Continuous Subarray Sum
-311	    Sparse Matrix Multiplication
-282	    Expression Add Operators
+311	    Sparse Matrix Multiplication                            Vector                              M
+282	    Expression Add Operators                                Recursion / DFS                     H       Special handle on '*' by storing the previous operand value. Also note for initial operator (i=0).
+
+---- 9/8 ----
 785	    Is Graph Bipartite?
 249	    Group Shifted Strings
 670	    Maximum Swap

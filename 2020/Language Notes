@@ -40,7 +40,7 @@
     a. rand() % mod
     b. srand(time(0)) would be predictable even if waits
 
-6. Concurrency
+7. Concurrency
     a. this_thread::sleep_for(chrono::milliseconds(x)), this_thread::yield()
     b. mutex: mutex a; a.lock(); a.unlock();
     c. conditional_variable:
@@ -63,4 +63,10 @@
     f. ThreadPool:
         
 
-7. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
+8. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
+
+9. Semaphore vs. Mutex
+    a. signalling vs locking mechanisms
+    b. A mutex can only be released by the thread which has ownership, i.e. the thread which previously called the Wait function, (or which took ownership when creating it). A semaphore can be released by any thread
+    c. Semaphore can have resource count being more than 1
+    c. A thread can call a wait function repeatedly on a recursive mutex without blocking. Semaphore would also cause block when same thread waits on the same semaphore multiple times
