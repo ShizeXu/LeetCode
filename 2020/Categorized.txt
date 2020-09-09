@@ -158,7 +158,8 @@
 121 Best Time to Buy and Sell Stock                                                             E
 122 Best Time to Buy and Sell Stock II                      Greedy                              E
 123 Best Time to Buy and Sell Stock III                     DP-1D                               H
-188 Best Time to Buy and Sell Stock IV                      DP-1D(trim)                         H (6/30)
+188 Best Time to Buy and Sell Stock IV                      DP-1D(trim)                         H (6/30)    When increasing k cannot bring extra benefit, we can stop
+689	Maximum Sum of 3 Non-Overlapping Subarrays              DP-1D                               H (9/8)     Similar to #123 or #188 (Best Time to Buy and Sell Stock). O(K*N)
 
 ---- 6/22 ----
 114 Flatten Binary Tree to Linked List                      Tree / Pre / Stack                  M
@@ -358,7 +359,7 @@
 
 ---- 8/14 ----
 380 Insert Delete GetRandom O(1)                            OOD / Map / DL-List / Rand          M       rand()
-384 Shuffle an Array                                        OOD / Rand                          M       rand(). Can be easily proved the chance for each number is equal
+384 Shuffle an Array                                        OOD / Rand                          M       rand(). Can be easily proved the chance for each number is equal (Reservoir Sampling)
 
 ---- 8/15 ----
 395 Longest Substring with At Least K Repeating Characters  (Sliding-Window)                    M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N))
@@ -405,7 +406,8 @@
 ---- 9/6 ----
 158	    Read N Characters Given Read4 II - Call multiple times  Queue                               M
 636	    Exclusive Time of Functions                             Stack                               M
-314	    Binary Tree Vertical Order Traversal                    Tree / BFS                          M       Use BFS (cannot use DFS) since we want from top to bottom order
+314	    Binary Tree Vertical Order Traversal                    Tree / BFS / List                   M       Use BFS (cannot use DFS) since we want from top to bottom order
+987     Vertical Order Traversal of a Binary Tree               Tree / BFS / List (9/9)             M       Comparing to 314 it needs extra sorting on same position
 938	    Range Sum of BST                                        Tree / In / Stack                   E
 1428    Leftmost Column with at Least a One                     Search-Binary                       M
 721	    Accounts Merge                                          Graph / Map / Set                   M       Hard to use "unordered_multimap + set" since same person may not come in right sequence. Have to use graph (either on Person or Email)
@@ -420,18 +422,28 @@
 670	    Maximum Swap                                            Digits                              M
 339	    Nested List Weight Sum                                  OOD / Recursion                     M       Iterative could be similar to level traversal of a tree
 
----- 9/9 ----
-689	    Maximum Sum of 3 Non-Overlapping Subarrays
-1026    Maximum Difference Between Node and Ancestor
-398	    Random Pick Index
-896	    Monotonic Array
+---- 9/9 (Completed Top FB) ----
+1026    Maximum Difference Between Node and Ancestor            Tree / Recursion / DFS              M
+398	    Random Pick Index                                       Search-Binary / Rand (Sampling)     M       rand(). Alternative: Reservoir Sampling without sorting
+896	    Monotonic Array                                                                             E
+
+---- 9/10 (Top FB & G & AMZN) ----
+692     Top K Frequent Words
+1192    Critical Connections in a Network
+767     Reorganize String
+426     Convert Binary Search Tree to Sorted Doubly Linked List
+270     Closest Binary Search Tree Value
+1060    Missing Element in Sorted Array
+722     Remove Comments
+1197    Minimum Knight Moves
+
 
 ---- Play ----
-1472    Design Browser History                              OOD / Stack(Vector)                 M
-1496    Path Crossing                                       Set                                 E
-222     Count Complete Tree Nodes                           Tree / Level                        M
-1254    Number of Closed Islands                            BFS(DFS)                            M
-359     Logger Rate Limiter                                 OOD / Map                           E
+1472    Design Browser History                                  OOD / Stack(Vector)                 M
+1496    Path Crossing                                           Set                                 E
+222     Count Complete Tree Nodes                               Tree / Level                        M
+1254    Number of Closed Islands                                BFS(DFS)                            M
+359     Logger Rate Limiter                                     OOD / Map                           E
 
 
 
