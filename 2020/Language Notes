@@ -27,6 +27,8 @@
                         return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
                 }
         };
+        
+        unordered_map<pair<T1, T2>, T3, pair_hash> map;
 
 5. Arithmatic operators
     include<cmath>

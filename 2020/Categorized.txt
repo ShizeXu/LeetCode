@@ -428,15 +428,17 @@
 896	    Monotonic Array                                                                             E
 
 ---- 9/10 (Top FB & G & AMZN) ----
-692     Top K Frequent Words
-1192    Critical Connections in a Network
+692     Top K Frequent Words                                    Map / P-Queue                       M
+1192    Critical Connections in a Network                       Graph / DFS / Cache-Vector          H       Find the MIN child ID via DFS and compare. Cache all the MINs to avoid duplicated DFS as optimization
+
+---- 
 767     Reorganize String
 426     Convert Binary Search Tree to Sorted Doubly Linked List
 270     Closest Binary Search Tree Value
 1060    Missing Element in Sorted Array
 722     Remove Comments
 1197    Minimum Knight Moves
-
+465     Optimal Account Balancing
 
 ---- Play ----
 1472    Design Browser History                                  OOD / Stack(Vector)                 M
