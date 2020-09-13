@@ -355,7 +355,7 @@
 349 Intersection of Two Arrays                              Set                                 E
 350 Intersection of Two Arrays II                           Set                                 E
 371 Sum of Two Integers                                     Bit                                 E
-378 Kth Smallest Element in a Sorted Matrix                 Merge-Sort(Search-Binary)           M       Alternative of binary search is applied on the range of (min, max) and use O(n) method in #240 to count
+378 Kth Smallest Element in a Sorted Matrix                 Sort-Merge(Search-Binary)           M       Alternative of binary search is applied on the range of (min, max) and use O(n) method in #240 to count
 
 ---- 8/14 ----
 380 Insert Delete GetRandom O(1)                            OOD / Map / DL-List / Rand          M       rand()
@@ -431,11 +431,13 @@
 692     Top K Frequent Words                                    Map / P-Queue                       M
 1192    Critical Connections in a Network                       Graph / DFS / Cache-Vector          H       Find the MIN child ID via DFS and compare. Cache all the MINs to avoid duplicated DFS as optimization
 
----- 
-767     Reorganize String
-426     Convert Binary Search Tree to Sorted Doubly Linked List
-270     Closest Binary Search Tree Value
-1060    Missing Element in Sorted Array
+---- 9/11 ----
+767     Reorganize String                                       Map / TwoPass                       M       Fill 0,2,4,... with most char first, then continue to fill same char and again 1,3,5,...
+426     Convert Binary Search Tree to Sorted Doubly Linked List Tree / In / Stack                   M
+270     Closest Binary Search Tree Value                        Tree / Recursion                    E
+272     Closest Binary Search Tree Value II                     Tree / In / Stack / Sort-Merge      H
+1060    Missing Element in Sorted Array                                                             M
+735     Asteroid Collision
 722     Remove Comments
 1197    Minimum Knight Moves
 465     Optimal Account Balancing

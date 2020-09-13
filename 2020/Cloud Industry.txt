@@ -22,7 +22,7 @@ No-SQL:
 Effeciency:
     1. MySQL / PostgreSQL : 1k QPS
     2. Cassandra / MongoDB : 10k QPS
-    3. Redis / Memcached : 100k - 1m QPS
+    3. Redis / Memcached : 100k - 1m QPS 
     4. Machine: Laptop 100; single workstation: <=1k; ...
 
 
@@ -52,3 +52,28 @@ Rate Limiter:
 
 Bloomer filter (in Bigtable) vs. Hashtable:
     Much more space efficient with tradeoff of some false positives
+
+HTTP Error Codes:
+    1. Informational responses (100–199)
+        100: Continue
+        101: Switching Protocol (protocol upgrade)
+    2. Successful responses (200–299)
+        200: Okay
+        201: Created
+        202: Accepted
+    3. Redirects (300–399)
+    4. Client errors (400–499)
+        400: Bad Request
+        401: Client Not Authorized
+        402: Payment Required
+        403: Forbidden (client identity is known to server)
+        404: Not Found
+        405: Method Not Allowed
+        408: Request Timeout
+    5. Server errors (500–599)
+        500: Internal Server Error
+        501: Not Implemented
+        502: Bad Gateway
+        503: Service Unavailable
+        504: Gateway Timeout
+        505: HTTP Version Not Supported
