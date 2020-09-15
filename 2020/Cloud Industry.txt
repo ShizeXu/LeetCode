@@ -70,6 +70,7 @@ HTTP Error Codes:
         404: Not Found
         405: Method Not Allowed
         408: Request Timeout
+        429: Too many requests
     5. Server errors (500–599)
         500: Internal Server Error
         501: Not Implemented

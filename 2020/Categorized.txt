@@ -437,9 +437,13 @@
 270     Closest Binary Search Tree Value                        Tree / Recursion                    E
 272     Closest Binary Search Tree Value II                     Tree / In / Stack / Sort-Merge      H
 1060    Missing Element in Sorted Array                                                             M
-735     Asteroid Collision
-722     Remove Comments
-1197    Minimum Knight Moves
+
+---- 9/14 ----
+735     Asteroid Collision                                      Stack                               M
+722     Remove Comments                                                                             M
+1197    Minimum Knight Moves                                    BFS / Queue / Cache-Map / Trim      M       Need custom hash function for pair
+
+---- 9/15 ----
 465     Optimal Account Balancing
 
 ---- Play ----

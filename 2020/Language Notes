@@ -72,3 +72,7 @@
     b. A mutex can only be released by the thread which has ownership, i.e. the thread which previously called the Wait function, (or which took ownership when creating it). A semaphore can be released by any thread
     c. Semaphore can have resource count being more than 1
     c. A thread can call a wait function repeatedly on a recursive mutex without blocking. Semaphore would also cause block when same thread waits on the same semaphore multiple times
+
+10. Volatile
+    The compiler should always read the value instead of using copy in register.
+    Within a single thread of execution, volatile accesses cannot be optimized out or reordered with another visible side effect that is sequenced-before or sequenced-after the volatile access.
