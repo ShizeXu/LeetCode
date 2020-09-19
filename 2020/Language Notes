@@ -27,8 +27,22 @@
                         return std::hash<T1>()(pair.first) ^ std::hash<T2>()(pair.second);
                 }
         };
+        
+        unordered_map<pair<T1, T2>, T3, pair_hash> map;
 
-5. Concurrency
+5. Arithmatic operators
+    include<cmath>
+    a. a ^ b: pow(a, b)
+    b. log_a(b): log_10(b) / log_10(a)
+        log(x): log_e(x)
+        log2(x), log10(x)
+    c. a ^ 1/2: sqrt(a)
+
+6. Random number
+    a. rand() % mod
+    b. srand(time(0)) would be predictable even if waits
+
+7. Concurrency
     a. this_thread::sleep_for(chrono::milliseconds(x)), this_thread::yield()
     b. mutex: mutex a; a.lock(); a.unlock();
     c. conditional_variable:
@@ -46,5 +60,37 @@
 	    thread t2(void_function, param1, ...);
 	    t1.join();
 	    t2.join();
+    e. RWLock:
+        C++11: read: shared_lock; write: unique_lock; Best practice: release read lock before upgrade to write lock
+    f. ThreadPool:
+        
 
-6. 
+8. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
+
+9. Semaphore vs. Mutex
+    a. signalling vs locking mechanisms
+    b. A mutex can only be released by the thread which has ownership, i.e. the thread which previously called the Wait function, (or which took ownership when creating it). A semaphore can be released by any thread
+    c. Semaphore can have resource count being more than 1
+    c. A thread can call a wait function repeatedly on a recursive mutex without blocking. Semaphore would also cause block when same thread waits on the same semaphore multiple times
+
+10. Volatile
+    The compiler should always read the value instead of using copy in register.
+    Within a single thread of execution, volatile accesses cannot be optimized out or reordered with another visible side effect that is sequenced-before or sequenced-after the volatile access.
+
+11. STL Strict Weak Ordering
+    Comparator defines euqal by checking "!(a < b) && !(b < a)". So when we want A equal B, we need to return FALSE for them in the comparator.
+
+    class MyComp {
+    public:
+        int memeber = 0;
+        bool operator()(const string& a, const string& b) const
+        {   
+            // Strings goes before numbers
+            if (a_value[0] >= '0' && a_value[0] <= '9') return false;
+            if (b_value[0] >= '0' && b_value[0] <= '9') return true;
+            return a_value.compare(b_value) < 0 || (a_value == b_value && a_id.compare(b_id) < 0);
+        } 
+    };
+    vector<string> reorderLogFiles(vector<string>& logs) {
+        stable_sort(logs.begin(), logs.end(), MyComp());
+    }

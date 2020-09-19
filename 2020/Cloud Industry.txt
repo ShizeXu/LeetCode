@@ -1,0 +1,86 @@
+            AWS		    MS		        G		        OSS (FB has no Public Computing)
+RDS	        Aurora		SQLDB/Orcas     Cloud SQL       MySQL
+NoSQL		DynamoDB    CosmosDB        Bigtable        Apache Cassandra, Apache HBase(Hadoop)
+Block		S3          Blob Storage    Persistent Disk
+VM-like	    EC2         VM              VM
+DW          Redshift    DW              BigQuery        Apache Hive
+
+Redis & Memcached:
+    1. Both Redis and MemCached are in-memory, open-source data stores. Memcached, a high-performance distributed memory cache service, is designed for simplicity while Redis offers a rich set of features that make it effective for a wide range of use cases.
+    2. Faster (μs), in contrast to databases that store data on disk or SSDs (ms).
+
+No-SQL:
+    1. Key-Value
+        E.g. Redis, Memcached, Voldemort, DynamoDB, LevelDB, RocksDB, Bigtable
+    2. Document DB
+        E.g. CouchDB, MongoDB
+    3. Wide-Column DB ()
+        E.g. Cassandra (Cell based storage), HBase (Column based storage)
+    4. Graph DB
+        E.g. Neo4J, InfiniteGraph
+
+Effeciency:
+    1. MySQL / PostgreSQL : 1k QPS
+    2. Cassandra / MongoDB : 10k QPS
+    3. Redis / Memcached : 100k - 1m QPS 
+    4. Machine: Laptop 100; single workstation: <=1k; ...
+
+
+Communication between Microservices:
+    1. System (with request instruction)
+        REST HTTP (synchronous), gRPC (google Remote Procedure Call), SMTP (mail), FTP (file)
+            a. OSS: AMQP (asynchronous), STOMP, and JMS
+    2. Data stream
+        TCP (Transmission Control Protocol), UDP (User Datagram Protocol)
+    3. SQL Server sets up TCP session
+        Client API (ODBC/JDBC/SqlClient) -> Gateway -> TCP Socket duplication -> SQL Server
+
+Client sets up connection with server:
+    1. HTTP Long Polling
+        Client sends a request with timeout, and servers responses or waits until has something to response.
+    2. WebSocket
+        Maintain TCP Connection. Server can push message back.
+
+Rate Limiter:
+    The token bucket allows for sudden increase in traffic to some extent, while the leaky bucket is mainly used to ensure the smooth outflow rate.
+    1. Token bucket (burstable, limit the average rate)
+    2. Leaky bucket (smooth, limit the processing rate)
+        The implementation of the leaky bucket algorithm usually relies on the queue.
+        If your system receives a new access request and the queue is not full, it puts the request into the queue.
+        A processor pulls requests from the queue and processes it at a fixed frequency.
+        If the volume of the inbound access requests is too large and the queue becomes full, new requests will be discarded.
+
+Bloomer filter (in Bigtable) vs. Hashtable:
+    Much more space efficient with tradeoff of some false positives
+
+HTTP Error Codes:
+    1. Informational responses (100–199)
+        100: Continue
+        101: Switching Protocol (protocol upgrade)
+    2. Successful responses (200–299)
+        200: Okay
+        201: Created
+        202: Accepted
+        203: Non-Authoritative Information
+        204: No Content
+        205: Reset Content
+        206: Partial Content
+    3. Redirects (300–399)
+    4. Client errors (400–499)
+        400: Bad Request
+        401: Client Not Authorized
+        402: Payment Required
+        403: Forbidden (client identity is known to server)
+        404: Not Found
+        405: Method Not Allowed
+        408: Request Timeout
+        429: Too many requests
+    5. Server errors (500–599)
+        500: Internal Server Error
+        501: Not Implemented
+        502: Bad Gateway
+        503: Service Unavailable
+        504: Gateway Timeout
+        505: HTTP Version Not Supported
+
+JSON: JSON objects are written in key/value pairs. Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null).

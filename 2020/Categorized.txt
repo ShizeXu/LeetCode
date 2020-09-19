@@ -28,7 +28,7 @@
 17  Letter Combinations of a Phone Number                   Map / Loop(Recursion)           M
 19  Remove Nth Node From End of List                        LinkedList                      M
 21  Merge Two Sorted Lists                                  LinkedList                      E
-23  Merge k Sorted Lists                                    LinkedList / P-Queue (D&C)      H
+23  Merge k Sorted Lists                                    LinkedList / P-Queue (D&C)      H           ALternatives: Sort-Merge, both are O(N * logK)
 20  Valid Parentheses                                       String / Stack                  E
 22  Generate Parentheses                                    String / Recursion              M
 32  Longest Valid Parentheses                               String / Stack (DP-1D)          H
@@ -158,12 +158,13 @@
 121 Best Time to Buy and Sell Stock                                                             E
 122 Best Time to Buy and Sell Stock II                      Greedy                              E
 123 Best Time to Buy and Sell Stock III                     DP-1D                               H
-188 Best Time to Buy and Sell Stock IV                      DP-1D(trim)                         H (6/30)
+188 Best Time to Buy and Sell Stock IV                      DP-1D(trim)                         H (6/30)    When increasing k cannot bring extra benefit, we can stop
+689	Maximum Sum of 3 Non-Overlapping Subarrays              DP-1D                               H (9/8)     Similar to #123 or #188 (Best Time to Buy and Sell Stock). O(K*N)
 
 ---- 6/22 ----
 114 Flatten Binary Tree to Linked List                      Tree / Pre / Stack                  M
 115 Distinct Subsequences                                   String / DP-2D                      H
-940 Distinct Subsequences II                                DP-1D                               H (7/25)    Keep track of # of sequences ending with 'c' for each char 'c'
+940 Distinct Subsequences II                                String / DP-1D                      H (7/25)    Keep track of # of sequences ending with 'c' for each char 'c'
 116 Populating Next Right Pointers in Each Node             Tree / BFS                          M
 117 Populating Next Right Pointers in Each Node II          Tree / BFS                          M
 124 Binary Tree Maximum Path Sum                            Tree / Recursion / DFS              H
@@ -220,11 +221,11 @@
 ---- 6/29 ----
 168 Excel Sheet Column Title                                Digits                              E
 171 Excel Sheet Column Number                               Digits                              E
-172 Factorial Trailing Zeroes                               Arithmetic                          E
+172 Factorial Trailing Zeroes                               Arithmetic                          E       Counting 5s and its powers
 173 Binary Search Tree Iterator                             OOD / Tree / In / Stack             M
 174 Dungeon Game                                            DP-2D-Back                          H
 179 Largest Number                                          String                              M
-215 Kth Largest Element in an Array                         Sort-Quick(P-Queue(MinHeap), Sort-Counting, Sort-merge)     M   Avg O(N) ( O(NlogK), O(N-range) ). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
+215 Kth Largest Element in an Array                         QuickSelect(P-Queue(MinHeap), Sort-Counting, Sort-merge)     M   Avg O(N) ( O(NlogK), O(N-range)). Extend: Find k1~k2 numbers? elemety dynamicaly changing value?
 
 ---- 6/30 ----
 189 Rotate Array                                                                                E
@@ -245,7 +246,7 @@
 630 Course Schedule III                                     P-Queue / Greedy                    H
 
 ---- 7/2 ----
-209 Minimum Size Subarray Sum                               2P-Window                           M
+209 Minimum Size Subarray Sum                               Sliding-Window                      M
 208 Implement Trie (Prefix Tree)                            OOD / String / Trie                 M
 211 Add and Search Word - Data structure design             OOD / String / Trie                 M
 212 Word Search II                                          String / Trie / Recursion / DFS     H
@@ -319,6 +320,7 @@
 
 ---- 7/28 ----
 560 Subarray Sum Equals K                                   Cache-Map                           M
+523 Continuous Subarray Sum                                 Cache-Map                           M (9/7) Same as above, with additional mode in each iteration and also delay insert by 1 iter
 581 Shortest Unsorted Continuous Subarray                   TwoPass                             E
 448 Find All Numbers Disappeared in an Array                Sort-Bucket                         E
 394 Decode String                                           Recursion(Loop / Stack)             M
@@ -353,19 +355,20 @@
 349 Intersection of Two Arrays                              Set                                 E
 350 Intersection of Two Arrays II                           Set                                 E
 371 Sum of Two Integers                                     Bit                                 E
-378 Kth Smallest Element in a Sorted Matrix                 Merge-Sort(Search-Binary)           M       Alternative is binary search the range of (min, max) and use O(n) method in #240 to count
+378 Kth Smallest Element in a Sorted Matrix                 Sort-Merge(Search-Binary)           M       Alternative of binary search is applied on the range of (min, max) and use O(n) method in #240 to count
 
 ---- 8/14 ----
 380 Insert Delete GetRandom O(1)                            OOD / Map / DL-List / Rand          M       rand()
-384 Shuffle an Array                                        OOD / Rand                          M       rand()
+384 Shuffle an Array                                        OOD / Rand                          M       rand(). Can be easily proved the chance for each number is equal (Reservoir Sampling)
 
 ---- 8/15 ----
-395 Longest Substring with At Least K Repeating Characters  (2P-Window)                         M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N)).
+395 Longest Substring with At Least K Repeating Characters  (Sliding-Window)                    M       Bruteforce: O(N^2) with counting vector helper. (2P-Window iterates unique char count in sub string: O(N))
+340 Longest Substring with At Most K Distinct Characters    Sliding-Window                      H (9/1)
 
 ---- 8/16 (Completed MOST INTERVIEWED) ----
 412 Fizz Buzz                                                                                   E
 923 3Sum With Multiplicity                                  Loop / Trim(Count / P-C)            M
-304 Range Sum Query 2D - Immutable                          Cache-Pre                           M
+304 Range Sum Query 2D - Immutable                          OOD / Cache-Pre                     M
 
 ---- 8/19 (Start MULTI-THREADING) ----
 1114    Print in Order                                      MT / OOD                            E       Alternatives: condition_variable (with mutex, unique_lock)
@@ -375,20 +378,91 @@
 1195    Fizz Buzz Multithreaded                             MT / OOD                            M       condition_variable (with mutex, unique_lock)
 1226    The Dining Philosophers                             MT / OOD                            M       condition_variable (with mutex, unique_lock)
 
+---- 8/31 Top Interviewed Catched (Unlocked Premium) ----
+252     Meeting Rooms                                           Sort                                M
+253     Meeting Rooms II                                        Sort / P-Queue(MinHeap)             M
+1229    Meeting Scheduler                                       Sort-Merge                          M       If sorted by "start" then compare "end" to move either i or j
+986	    Interval List Intersections                             Sort-Merge                          M (9/3) Compare "end"
+278     First Bad Version                                       Search-Binary                       E
+953     Verifying an Alien Dictionary                                                               E
+269     Alien Dictionary                                        Graph / Sort-Topo                   H
+
+---- 9/1 ----
+348     Design Tic-Tac-Toe                                      OOD                                 M
+277     Find the Celebrity                                                                          M       Narrowing down candidates. Or use two pass (first passes uses single pointer by updating Candidate or two l/r to search)
+
+---- 9/2 (Completed UNLOCKED MOST INTERVIEWED) ----
+285     Inorder Successor in BST                                Tree / In / Stack                   M       Space is O(logN). With Morris Traversal (use most right NULL of left sub tree to point to self), it can be done with O(1) space
+163     Missing Ranges                                                                              M
+251     Flatten 2D Vector                                       OOD                                 M
+308     Range Sum Query 2D - Mutable                            OOD / (BinaryIndexedTree)           M       BIT can improve total time from O(M * N) to (logM * logN)
+
+---- 9/3 (Top FB)----
+273     Integer to English Words                                                                    H       Chunk in xxx blocks. Watch out for edge cases
+973	    K Closest Points to Origin                              P-Queue(Multimap)                   M
+680	    Valid Palindrome II                                                                         E
+528	    Random Pick with Weight                                 OOD / Rand / Search-Binary          E       rand()
+
+---- 9/6 ----
+158	    Read N Characters Given Read4 II - Call multiple times  Queue                               M
+636	    Exclusive Time of Functions                             Stack                               M
+314	    Binary Tree Vertical Order Traversal                    Tree / BFS / List                   M       Use BFS (cannot use DFS) since we want from top to bottom order
+987     Vertical Order Traversal of a Binary Tree               Tree / BFS / List (9/9)             M       Comparing to 314 it needs extra sorting on same position
+938	    Range Sum of BST                                        Tree / In / Stack                   E
+1428    Leftmost Column with at Least a One                     Search-Binary                       M
+721	    Accounts Merge                                          Graph / Map / Set                   M       Hard to use "unordered_multimap + set" since same person may not come in right sequence. Have to use graph (either on Person or Email)
+
+---- 9/7 ----
+311	    Sparse Matrix Multiplication                            Vector                              M
+282	    Expression Add Operators                                Recursion / DFS                     H       Special handle on '*' by storing the previous operand value. Also note for initial operator (i=0).
+
+---- 9/8 ----
+785	    Is Graph Bipartite?                                     Graph / BFS                         M
+249	    Group Shifted Strings                                   String / Map                        M
+670	    Maximum Swap                                            Digits                              M
+339	    Nested List Weight Sum                                  OOD / Recursion                     M       Iterative could be similar to level traversal of a tree
+
+---- 9/9 (Completed Top FB) ----
+1026    Maximum Difference Between Node and Ancestor            Tree / Recursion / DFS              M
+398	    Random Pick Index                                       Search-Binary / Rand (Sampling)     M       rand(). Alternative: Reservoir Sampling without sorting
+896	    Monotonic Array                                                                             E
+
+---- 9/10 (Top FB & G & AMZN) ----
+692     Top K Frequent Words                                    Map / P-Queue                       M
+1192    Critical Connections in a Network                       Graph / DFS / Cache-Vector          H       Find the MIN child ID via DFS and compare. Cache all the MINs to avoid duplicated DFS as optimization
+
+---- 9/11 ----
+767     Reorganize String                                       Map / TwoPass                       M       Fill 0,2,4,... with most char first, then continue to fill same char and again 1,3,5,...
+426     Convert Binary Search Tree to Sorted Doubly Linked List Tree / In / Stack                   M
+270     Closest Binary Search Tree Value                        Tree / Recursion                    E
+272     Closest Binary Search Tree Value II                     Tree / In / Stack / Sort-Merge      H
+1060    Missing Element in Sorted Array                                                             M
+
+---- 9/14 ----
+735     Asteroid Collision                                      Stack                               M
+722     Remove Comments                                                                             M
+1197    Minimum Knight Moves                                    BFS / Queue / Cache-Map / Trim      M       Need custom hash function for pair
+
+---- 9/15 ----
+465     Optimal Account Balancing                               DFS / Recursion                     H
+698     Partition to K Equal Sum Subsets                        DFS / Recursion                     M       Double layer recursion
+
+---- 9/17 ----
+937     Reorder Data in Log Files                               Sort                                E
+829     Consecutive Numbers Sum                                 Arithmetic                          H
+
+---- 9/18 ----
+763     Partition Labels                                        Greedy                              M       Compare end
+981     Time Based Key-Value Store                              OOD / Search-Binary                 M
+588     Design In-Memory File System                            OOD / Trie                          H
+312     Burst Balloons                                          DP-2D                               H       Enumerate the last curst balloon to do D&C: O(N^3)
 
 ---- Play ----
-6/10    1472    Design Browser History                          OOD / Stack(Vector)             M
-6/30    1496    Path Crossing                                   Set                             E
-
-
-
-
-
-
-
-
-
-
+1472    Design Browser History                                  OOD / Stack(Vector)                 M
+1496    Path Crossing                                           Set                                 E
+222     Count Complete Tree Nodes                               Tree / Level                        M
+1254    Number of Closed Islands                                BFS(DFS)                            M
+359     Logger Rate Limiter                                     OOD / Map                           E
 
 
 

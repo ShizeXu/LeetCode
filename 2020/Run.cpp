@@ -1,7 +1,7 @@
-#include <4. Median of Two Sorted Arrays.cpp>
+#include <MazzWithKeyAndDoor.cpp>
 
 int main()
 {
-    P_4 test;
+    MazzWithKeyAndDoor test;
     test.RunTest();
 }
