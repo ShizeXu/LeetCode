@@ -61,6 +61,10 @@ HTTP Error Codes:
         200: Okay
         201: Created
         202: Accepted
+        203: Non-Authoritative Information
+        204: No Content
+        205: Reset Content
+        206: Partial Content
     3. Redirects (300–399)
     4. Client errors (400–499)
         400: Bad Request
@@ -78,3 +82,5 @@ HTTP Error Codes:
         503: Service Unavailable
         504: Gateway Timeout
         505: HTTP Version Not Supported
+
+JSON: JSON objects are written in key/value pairs. Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null).

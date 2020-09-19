@@ -76,3 +76,21 @@
 10. Volatile
     The compiler should always read the value instead of using copy in register.
     Within a single thread of execution, volatile accesses cannot be optimized out or reordered with another visible side effect that is sequenced-before or sequenced-after the volatile access.
+
+11. STL Strict Weak Ordering
+    Comparator defines euqal by checking "!(a < b) && !(b < a)". So when we want A equal B, we need to return FALSE for them in the comparator.
+
+    class MyComp {
+    public:
+        int memeber = 0;
+        bool operator()(const string& a, const string& b) const
+        {   
+            // Strings goes before numbers
+            if (a_value[0] >= '0' && a_value[0] <= '9') return false;
+            if (b_value[0] >= '0' && b_value[0] <= '9') return true;
+            return a_value.compare(b_value) < 0 || (a_value == b_value && a_id.compare(b_id) < 0);
+        } 
+    };
+    vector<string> reorderLogFiles(vector<string>& logs) {
+        stable_sort(logs.begin(), logs.end(), MyComp());
+    }

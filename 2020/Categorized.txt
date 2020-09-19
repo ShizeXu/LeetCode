@@ -444,7 +444,18 @@
 1197    Minimum Knight Moves                                    BFS / Queue / Cache-Map / Trim      M       Need custom hash function for pair
 
 ---- 9/15 ----
-465     Optimal Account Balancing
+465     Optimal Account Balancing                               DFS / Recursion                     H
+698     Partition to K Equal Sum Subsets                        DFS / Recursion                     M       Double layer recursion
+
+---- 9/17 ----
+937     Reorder Data in Log Files                               Sort                                E
+829     Consecutive Numbers Sum                                 Arithmetic                          H
+
+---- 9/18 ----
+763     Partition Labels                                        Greedy                              M       Compare end
+981     Time Based Key-Value Store                              OOD / Search-Binary                 M
+588     Design In-Memory File System                            OOD / Trie                          H
+312     Burst Balloons                                          DP-2D                               H       Enumerate the last curst balloon to do D&C: O(N^3)
 
 ---- Play ----
 1472    Design Browser History                                  OOD / Stack(Vector)                 M
