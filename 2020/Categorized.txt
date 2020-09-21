@@ -295,8 +295,8 @@
 376 Wiggle Subsequence                                      Greedy                              M
 
 ---- 7/21 ----
-322 Coin Change                                             DP-1D (Recursion)                   M       Can use Combination and Permutation both
-518 Coin Change 2                                           DP-1D (Recursion)                   M       Need to use Combination (loop coins first)
+322 Coin Change                                             DP-1D (Recursion)                   M       Knapsack problem. Can use either Combination (coins{amounts{}}) or Permutation (amounts{coins{}}) both
+518 Coin Change 2                                           DP-1D (Recursion)                   M       Knapsack problem. Need to use Combination (loop coins first)
 
 ---- 7/23 ----
 241 Different Ways to Add Parentheses                       Recursion                           M
@@ -463,7 +463,7 @@
 222     Count Complete Tree Nodes                               Tree / Level                        M
 1254    Number of Closed Islands                                BFS(DFS)                            M
 359     Logger Rate Limiter                                     OOD / Map                           E
-
+474     Ones and Zeroes                                         
 
 
 
