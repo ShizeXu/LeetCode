@@ -230,7 +230,7 @@
 ---- 6/30 ----
 189 Rotate Array                                                                                E
 190 Reverse Bits                                            Bit                                 E
-191 Number of 1 Bits                                        Bit                                 E
+191 Number of 1 Bits                                        Bit                                 E       Either keep shifting or use "n&(n-1)"
 187 Repeated DNA Sequences                                  Map(Bit)                            M
 200 Number of Islands                                       DFS(BFS)                            M
 198 House Robber                                            DP-1D                               E
@@ -273,7 +273,7 @@
 234 Palindrome Linked List                                  LinkedList                          E
 236 Lowest Common Ancestor of a Binary Tree                 Tree / Recursion(Loop / Map)        M
 238 Product of Array Except Self                                                                M
-239 Sliding Window Maximum                                  Multiset("Monotonic-Queue" / DL-List(DE-Queue)) H
+239 Sliding Window Maximum                                  Multiset("Monotonic-Queue" / DL-List(DE-Queue)) H   O(N). If use multimap it's O(N*logK)
 
 ---- 7/16 ----
 240 Search a 2D Matrix II                                   Search-Binary / Recursion(Loop)     M
@@ -301,8 +301,9 @@
 ---- 7/23 ----
 241 Different Ways to Add Parentheses                       Recursion                           M
 678 Valid Parenthesis String                                Counters                            M
-301 Remove Invalid Parentheses                              Recursion / Cache-Map / Trim        H       Map is used to 1) cache results with different lengths, 2) trim. Return the longest at the end
 856 Score of Parentheses                                    Stack                               M
+1249    Minimum Remove to Make Valid Parentheses            Stack                               M
+301 Remove Invalid Parentheses                              Recursion / Cache-Map / Trim        H       Map is used to 1) cache results with different lengths, 2) trim. Return the longest at the end
 
 ---- 7/25 ----
 647 Palindromic Substrings                                  String / DP-1D                      M
@@ -456,6 +457,14 @@
 981     Time Based Key-Value Store                              OOD / Search-Binary                 M
 588     Design In-Memory File System                            OOD / Trie                          H
 312     Burst Balloons                                          DP-2D                               H       Enumerate the last curst balloon to do D&C: O(N^3)
+
+---- 9/23 ----
+1123    Lowest Common Ancestor of Deepest Leaves                Tree / Post / DFS / Recursion       M
+958     Check Completeness of a Binary Tree                     Tree / BFS / Queue                  M
+498     Diagonal Traverse                                                                           M
+1474    Delete N Nodes After M Nodes of a Linked List           LinkedList                          E
+338     Counting Bits                                           Bit / DP-1D                         E
+708     Insert into a Sorted Circular Linked List               LinkedList                          M
 
 ---- Play ----
 1472    Design Browser History                                  OOD / Stack(Vector)                 M
