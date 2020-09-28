@@ -18,7 +18,7 @@
 
 ---- 6/6 ----
 8   String to Integer (atoi)                                Digits                          M
-10  Regular Expression Matching                             String / DP-2D                  H           Maximize regex matching in a stream
+10  Regular Expression Matching                             String / DP-2D                  H           Follow up: Maximize regex matching in a stream
 11  Container With Most Water                               Greedy                          M
 14  Longest Common Prefix                                   String                          E
 15  3Sum                                                                                    M
@@ -466,13 +466,19 @@
 338     Counting Bits                                           Bit / DP-1D                         E
 708     Insert into a Sorted Circular Linked List               LinkedList                          M
 
+---- 9/27 ----
+362     Design Hit Counter                                      OOD / List                          M
+
+---- 9/28 ----
+474     Ones and Zeroes
+
 ---- Play ----
 1472    Design Browser History                                  OOD / Stack(Vector)                 M
 1496    Path Crossing                                           Set                                 E
 222     Count Complete Tree Nodes                               Tree / Level                        M
 1254    Number of Closed Islands                                BFS(DFS)                            M
 359     Logger Rate Limiter                                     OOD / Map                           E
-474     Ones and Zeroes                                         
+753     Cracking the Safe
 
 
 
