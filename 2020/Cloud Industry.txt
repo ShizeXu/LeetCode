@@ -14,17 +14,16 @@ No-SQL:
         E.g. Redis, Memcached, Voldemort, DynamoDB, LevelDB, RocksDB, Bigtable
     2. Document DB
         E.g. CouchDB, MongoDB
-    3. Wide-Column DB ()
+    3. Wide-Column DB (two-dimensional key–value store)
         E.g. Cassandra (Cell based storage), HBase (Column based storage)
     4. Graph DB
         E.g. Neo4J, InfiniteGraph
 
-Effeciency:
+Efficiency:
     1. MySQL / PostgreSQL : 1k QPS
     2. Cassandra / MongoDB : 10k QPS
     3. Redis / Memcached : 100k - 1m QPS 
     4. Machine: Laptop 100; single workstation: <=1k; ...
-
 
 Communication between Microservices:
     1. System (with request instruction)
@@ -33,7 +32,7 @@ Communication between Microservices:
     2. Data stream
         TCP (Transmission Control Protocol), UDP (User Datagram Protocol)
     3. SQL Server sets up TCP session
-        Client API (ODBC/JDBC/SqlClient) -> Gateway -> TCP Socket duplication -> SQL Server
+        Client API (ODBC/JDBC/SqlClient) -> Gateway -> TCP Socket duplication -> TCP session with SQL Server
 
 Client sets up connection with server:
     1. HTTP Long Polling
@@ -84,3 +83,8 @@ HTTP Error Codes:
         505: HTTP Version Not Supported
 
 JSON: JSON objects are written in key/value pairs. Keys must be strings, and values must be a valid JSON data type (string, number, object, array, boolean or null).
+
+Popular Projects:
+    ZooKeeper: SF CM?
+    Kafka: Messaging system for Log processing (segment files)
+    Datadog: Watchdog, MDS Agent
