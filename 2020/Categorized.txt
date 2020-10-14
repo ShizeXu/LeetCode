@@ -482,7 +482,8 @@
 753     Cracking the Safe
 780     Reaching Points                                         Recursion(Iterative)                H       Use backward recursion, use mod instead of deduction to speed up
 1231    Divide Chocolate                                        Search-Binary                       H       Search the number range and count the cuts
-
+725     Split Linked List in Parts                              LinkedList                          M
+399     Evaluate Division                                       Graph / BFS                         M
 
 ---- SQL ----
 175 Combine Two Tables                                      SQL / Join                      E (6/29)

@@ -25,9 +25,13 @@ Efficiency:
     3. Redis / Memcached : 100k - 1m QPS 
     4. Machine: Laptop 100; single workstation: <=1k; ...
 
+REST vs. SOAP:
+    1. More flexible and simpler request format: jsut a simple URL (using HTTP verbs like Get/Put/Post/Delete/etc.), avoid the rquirement of XML request format
+    2. Response is flexible instead of XML/HTML:  Command Separated Value (CSV), JavaScript Object Notation (JSON) and Really Simple Syndication (RSS)
+
 Communication between Microservices:
     1. System (with request instruction)
-        REST HTTP (synchronous), gRPC (google Remote Procedure Call), SMTP (mail), FTP (file)
+        REST over HTTP protocol (synchronous), gRPC (google Remote Procedure Call), SMTP (mail), FTP (file)
             a. OSS: AMQP (asynchronous), STOMP, and JMS
     2. Data stream
         TCP (Transmission Control Protocol), UDP (User Datagram Protocol)
