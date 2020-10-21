@@ -96,3 +96,8 @@
     vector<string> reorderLogFiles(vector<string>& logs) {
         stable_sort(logs.begin(), logs.end(), MyComp());
     }
+
+12. Begin transaction
+    BEGIN TRANSACTION
+        ......
+    COMMIT
