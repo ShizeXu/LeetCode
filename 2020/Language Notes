@@ -67,7 +67,7 @@
     g. ThreadPool:
         
 
-8. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
+8. int Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
 
 9. Semaphore vs. Mutex
     a. signalling vs locking mechanisms
