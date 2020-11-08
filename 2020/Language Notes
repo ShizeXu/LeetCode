@@ -55,17 +55,19 @@
         T2:
             ready = true;
             cv.notify_all();
-    d. new thread:
-        thread t1(void_function, param1, ...);
-	    thread t2(void_function, param1, ...);
+    d. Wait for a delay or until notified:
+        cv.wait_for(lck, chrono::seconds(delay))
+    e. new thread:
+        thread t1(void_function, [this,] param1, ...); // this is for member function in the same class
+	    thread t2(void_function, [this,] param1, ...);
 	    t1.join();
 	    t2.join();
-    e. RWLock:
+    f. RWLock:
         C++11: read: shared_lock; write: unique_lock; Best practice: release read lock before upgrade to write lock
-    f. ThreadPool:
+    g. ThreadPool:
         
 
-8. Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
+8. int Foo::Bar(int random_arg) == int Foo_Bar(Foo* this, int random_arg)
 
 9. Semaphore vs. Mutex
     a. signalling vs locking mechanisms
@@ -94,3 +96,8 @@
     vector<string> reorderLogFiles(vector<string>& logs) {
         stable_sort(logs.begin(), logs.end(), MyComp());
     }
+
+12. Begin transaction
+    BEGIN TRANSACTION
+        ......
+    COMMIT

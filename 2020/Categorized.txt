@@ -18,7 +18,7 @@
 
 ---- 6/6 ----
 8   String to Integer (atoi)                                Digits                          M
-10  Regular Expression Matching                             String / DP-2D                  H           Maximize regex matching in a stream
+10  Regular Expression Matching                             String / DP-2D                  H           Follow up: Maximize regex matching in a stream
 11  Container With Most Water                               Greedy                          M
 14  Longest Common Prefix                                   String                          E
 15  3Sum                                                                                    M
@@ -175,7 +175,7 @@
 120 Triangle                                                                                    M
 125 Valid Palindrome                                        String                              E
 127 Word Ladder                                             String / Set / BFS(trim)            M
-126 Word Ladder II                                          BFS / Set / BFS(trim)               H
+126 Word Ladder II                                          String / Set / BFS(trim)            H
 
 ---- 6/24 ----
 128 Longest Consecutive Sequence                            Map                                 H
@@ -230,7 +230,7 @@
 ---- 6/30 ----
 189 Rotate Array                                                                                E
 190 Reverse Bits                                            Bit                                 E
-191 Number of 1 Bits                                        Bit                                 E
+191 Number of 1 Bits                                        Bit                                 E       Either keep shifting or use "n&(n-1)"
 187 Repeated DNA Sequences                                  Map(Bit)                            M
 200 Number of Islands                                       DFS(BFS)                            M
 198 House Robber                                            DP-1D                               E
@@ -240,8 +240,8 @@
 ---- 7/1 ----
 204 Count Primes                                            Arithmetic                          E
 205 Isomorphic Strings                                      Map                                 E
-207 Course Schedule                                         Graph / Sort-Topo                   M
-210 Course Schedule II                                      Graph / Sort-Topo                   M
+207 Course Schedule                                         Graph / Sort-Topo / BFS             M
+210 Course Schedule II                                      Graph / Sort-Topo / BFS             M
 1462 Course Schedule IV                                     Graph / Sort-Topo / Set(Matrix)     M
 630 Course Schedule III                                     P-Queue / Greedy                    H
 
@@ -273,7 +273,7 @@
 234 Palindrome Linked List                                  LinkedList                          E
 236 Lowest Common Ancestor of a Binary Tree                 Tree / Recursion(Loop / Map)        M
 238 Product of Array Except Self                                                                M
-239 Sliding Window Maximum                                  Multiset("Monotonic-Queue" / DL-List(DE-Queue)) H
+239 Sliding Window Maximum                                  Multiset("Monotonic-Queue" / DL-List(DE-Queue)) H   O(N). If use multimap it's O(N*logK)
 
 ---- 7/16 ----
 240 Search a 2D Matrix II                                   Search-Binary / Recursion(Loop)     M
@@ -295,14 +295,15 @@
 376 Wiggle Subsequence                                      Greedy                              M
 
 ---- 7/21 ----
-322 Coin Change                                             DP-1D (Recursion)                   M       Can use Combination and Permutation both
-518 Coin Change 2                                           DP-1D (Recursion)                   M       Need to use Combination (loop coins first)
+322 Coin Change                                             DP-1D (Recursion)                   M       Knapsack problem. Can use either Combination (coins{amounts{}}) or Permutation (amounts{coins{}}) both
+518 Coin Change 2                                           DP-1D (Recursion)                   M       Knapsack problem. Need to use Combination (loop coins first)
 
 ---- 7/23 ----
 241 Different Ways to Add Parentheses                       Recursion                           M
 678 Valid Parenthesis String                                Counters                            M
-301 Remove Invalid Parentheses                              Recursion / Cache-Map / Trim        H       Map is used to 1) cache results with different lengths, 2) trim. Return the longest at the end
 856 Score of Parentheses                                    Stack                               M
+1249    Minimum Remove to Make Valid Parentheses            Stack                               M
+301 Remove Invalid Parentheses                              Recursion / Cache-Map / Trim        H       Map is used to 1) cache results with different lengths, 2) trim. Return the longest at the end
 
 ---- 7/25 ----
 647 Palindromic Substrings                                  String / DP-1D                      M
@@ -457,16 +458,32 @@
 588     Design In-Memory File System                            OOD / Trie                          H
 312     Burst Balloons                                          DP-2D                               H       Enumerate the last curst balloon to do D&C: O(N^3)
 
+---- 9/23 ----
+1123    Lowest Common Ancestor of Deepest Leaves                Tree / Post / DFS / Recursion       M
+958     Check Completeness of a Binary Tree                     Tree / BFS / Queue                  M
+498     Diagonal Traverse                                                                           M
+1474    Delete N Nodes After M Nodes of a Linked List           LinkedList                          E
+338     Counting Bits                                           Bit / DP-1D                         E
+708     Insert into a Sorted Circular Linked List               LinkedList                          M
+
+---- 9/27 ----
+362     Design Hit Counter                                      OOD / List                          M
+
+---- 9/30 ----
+1423    Maximum Points You Can Obtain from Cards                                                    M
+474     Ones and Zeroes
+
 ---- Play ----
 1472    Design Browser History                                  OOD / Stack(Vector)                 M
 1496    Path Crossing                                           Set                                 E
 222     Count Complete Tree Nodes                               Tree / Level                        M
 1254    Number of Closed Islands                                BFS(DFS)                            M
 359     Logger Rate Limiter                                     OOD / Map                           E
-
-
-
-
+753     Cracking the Safe
+780     Reaching Points                                         Recursion(Iterative)                H       Use backward recursion, use mod instead of deduction to speed up
+1231    Divide Chocolate                                        Search-Binary                       H       Search the number range and count the cuts
+725     Split Linked List in Parts                              LinkedList                          M
+399     Evaluate Division                                       Graph / BFS                         M
 
 ---- SQL ----
 175 Combine Two Tables                                      SQL / Join                      E (6/29)
